@@ -46,7 +46,7 @@ MEMOME.Corpus = (function () {
     var e = entries.filter(function (x) { return x.id === id; })[0];
     if (!e) {
       container.innerHTML = '<div class="empty">Entry ' + MEMOME.esc(id) +
-        ' not found in this fixture. (Full corpus ships at deploy.)</div>';
+        ' not found in the corpus.</div>';
       return;
     }
     var an = e.agentNative || {};
