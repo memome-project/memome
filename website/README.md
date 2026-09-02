@@ -37,16 +37,15 @@ website/
     advisor.js        faithful port of advisor.py (same lexicon/threshold)
     scanner.js        port of selfcheck.py matching logic
     corpus.js         browser + entry renderer
-  data/corpus.fixture.js   6 real SHIP-tier entries, trimmed; window.MEMOME_CORPUS
+  data/corpus.js           full 92-entry public corpus export; window.MEMOME_CORPUS
   fixtures/demo-memory.md   the only file the scanner demo scans
   README.md           this file
 ```
 
 ## Wiring the real corpus at deploy
 
-`data/corpus.js` is the single data seam — already wired with the full
-92-entry public corpus export (CC-BY-4.0, shipping to the browser is intended).
-Regenerate it from `corpus/` etc. with:
+`data/corpus.js` is the single data seam — wired with the full
+92-entry public corpus export (CC-BY-4.0). Regenerate it with:
 
 ```bash
 python3 - <<'EOF'
