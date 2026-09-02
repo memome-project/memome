@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corpus browser — Memome</title>
+  <meta name="description" content="Browse the open Memome corpus of transmissible information patterns (CC-BY-4.0).">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <div id="status-banner" class="status-banner"></div>
+  <header class="site">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">memome<span>.dev</span></a>
+      <nav class="main">
+        <a href="index.html">Home</a>
+        <a href="corpus.html">Corpus</a>
+        <a href="advisor.html">Advisor</a>
+        <a href="scanner.html">Scanner demo</a>
+        <a href="inoculator.html">Inoculator</a>
+        <a href="docs.html">Docs</a>
+        <a href="contribute.html">Contribute</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Corpus</h1>
+    <p class="lead">The open knowledge base of transmissible information patterns — how they spread,
+      persist, mutate, affect hosts, and how they're detected or mitigated.</p>
+
+    <div class="note" id="fixture-note">
+      <b>Preview fixture:</b> this browser shows a subset of real launch-tier entries (MEMOME-000006,
+      000011, 000022, 000025, 000026, 000083) trimmed to public fields. The full corpus —
+      37 launch entries, 42 proposed, observations and responses — ships with the public release.
+    </div>
+
+    <input type="search" id="corpus-search" placeholder="Filter by ID, name, substrate, mechanism, status…" aria-label="Search corpus">
+
+    <div id="corpus-table" style="margin-top:12px"></div>
+
+    <h2 class="section-anchor" id="tiers">The three-tier model</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Patterns</h3>
+        <p>Named by what propagates. Every entry documents transmission mechanics, persistence,
+          observables, and mitigations — not just a label.</p>
+      </div>
+      <div class="card">
+        <h3>Proposed</h3>
+        <p>Real but not yet evidenced to the bar. Each carries its promotion path — submit evidence
+          and help promote entries into the core.</p>
+      </div>
+      <div class="card">
+        <h3>Observations &amp; responses</h3>
+        <p>Dated incident records and enforcement/court/policy records attached as evidence to parent
+          patterns. One Source ID = one evidentiary object.</p>
+      </div>
+    </div>
+    <p style="margin-top:16px">Corpus data is <b>CC-BY-4.0</b> — open, attribution required, cannot be
+      re-closed. <a href="license.html">See the license page</a> for how this fits with the product layers.</p>
+  </main>
+
+  <footer id="site-footer" class="site"></footer>
+  <script src="assets/js/site.js"></script>
+  <script src="data/corpus.js"></script>
+  <script src="assets/js/corpus.js"></script>
+  <script>
+    MEMOME.setActiveNav("corpus/");
+    var table = document.getElementById("corpus-table");
+    var search = document.getElementById("corpus-search");
+    function redraw() { MEMOME.Corpus.renderTable(MEMOME.Corpus.filter(search.value, MEMOME.Corpus.entries), table); }
+    search.addEventListener("input", redraw);
+    redraw();
+  </script>
+</body>
+</html>

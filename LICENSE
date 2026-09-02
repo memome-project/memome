@@ -1,0 +1,25 @@
+# License
+
+## Corpus data (JSON files in /corpus, /proposed, /observations, /responses, /references, /schema)
+
+The Memome corpus and schema are licensed under the
+**Creative Commons Attribution 4.0 International (CC-BY-4.0)** license.
+
+Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to share and adapt the material for any purpose, provided you
+give appropriate credit. See the license page on the website (license.html)
+for the DQ-008 layer map and attribution guidance.
+
+## Code (HTML, CSS, JS in /website) and docs (/docs)
+
+Website source code and documentation are licensed under the
+**Apache License 2.0**.
+
+Full text: https://www.apache.org/licenses/LICENSE-2.0.txt
+
+## Proprietary layers (not in this repository)
+
+The interventions/hardening catalog, outcome data, and the commercial
+scanner are proprietary product content and are intentionally NOT included
+in this public repository.

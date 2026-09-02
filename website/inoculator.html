@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inoculator — status: post-launch — Memome</title>
+  <meta name="description" content="The Memome inoculator deploys hardening content into live agent state. Status: post-launch, sandbox-gated by design. Not available yet — deliberately.">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <div id="status-banner" class="status-banner"></div>
+  <header class="site">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">memome<span>.dev</span></a>
+      <nav class="main">
+        <a href="index.html">Home</a>
+        <a href="corpus.html">Corpus</a>
+        <a href="advisor.html">Advisor</a>
+        <a href="scanner.html">Scanner demo</a>
+        <a href="inoculator.html">Inoculator</a>
+        <a href="docs.html">Docs</a>
+        <a href="contribute.html">Contribute</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Inoculator</h1>
+
+    <div class="card" style="border-color:var(--danger)">
+      <span class="tag later">status: post-launch</span>
+      <h3 style="margin:6px 0">This capability does not exist yet — and that is deliberate.</h3>
+      <p style="margin:0">The inoculator deploys hardening content from the positive catalog into live
+        agent state. It ships <b>after</b> the pilot and the v0.3 freeze, and only inside a sandbox.
+        No timeline is promised here.</p>
+    </div>
+
+    <h2 class="section-anchor" id="what">What it will be</h2>
+    <p>The inoculator completes the product loop: scan → detect → <b>harden</b> → rescan. Where the
+      scanner answers “are we contaminated?”, the inoculator deploys the fix — interventions from the
+      hardening catalog written into agent memory, workspace, and configuration, then verified by the
+      after-scan.</p>
+    <p>Its content uses an outcome-first evidence axis, mirroring the bad corpus's discipline:</p>
+    <ul>
+      <li><b>Verified outcome</b> — measured, with population/sample/method stated.</li>
+      <li><b>Observed-beneficial</b> — real-world signal, not yet measured.</li>
+      <li><b>Suggested</b> — explicitly labeled, never implied effective.</li>
+    </ul>
+
+    <h2 class="section-anchor" id="why-late">Why it's late on purpose</h2>
+    <p>Writing patterns into live agent state is exactly the class of operation our sandbox policy
+      (governance §9) was written for. The rule: detection and deployment tooling that touches real
+      systems runs only in an isolated environment — and we do not ship that capability from a laptop.
+      Publishing this status page is part of the discipline: <em>we state publicly that it ships later,
+      deliberately.</em></p>
+
+    <h2 class="section-anchor" id="now">What you can do now</h2>
+    <ul>
+      <li><a href="advisor.html">Try the Advisor</a> — free, in your browser.</li>
+      <li><a href="corpus.html">Browse the open corpus</a> — the threat side, CC-BY-4.0.</li>
+      <li><a href="docs.html#comment-period">Comment on the methodology and governance</a> — the community
+        weighs in on process and outcomes summaries; the intervention text itself is product content.</li>
+    </ul>
+    <p class="note">The hardening catalog is proprietary product content — the same relationship as MITRE
+      ATT&amp;CK (open) versus commercial detections and playbooks (closed). The methodology behind it is
+      public and open to comment.</p>
+  </main>
+
+  <footer id="site-footer" class="site"></footer>
+  <script src="assets/js/site.js"></script>
+  <script>MEMOME.setActiveNav("inoculator/");</script>
+</body>
+</html>

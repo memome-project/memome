@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Methodology &amp; governance — Memome</title>
+  <meta name="description" content="Memome methodology: schema, validator, evidence axes, dual-use gating, sandbox policy, status roadmap, and the 90-day public comment period.">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <div id="status-banner" class="status-banner"></div>
+  <header class="site">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">memome<span>.dev</span></a>
+      <nav class="main">
+        <a href="index.html">Home</a>
+        <a href="corpus.html">Corpus</a>
+        <a href="advisor.html">Advisor</a>
+        <a href="scanner.html">Scanner demo</a>
+        <a href="inoculator.html">Inoculator</a>
+        <a href="docs.html">Docs</a>
+        <a href="contribute.html">Contribute</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Methodology &amp; governance</h1>
+    <p class="lead">The trust layer is public by design: schema, validator, evidence rules, governance —
+      all open to inspection and to comment.</p>
+
+    <h2 class="section-anchor" id="comment-period">★ The 90-day public comment period</h2>
+    <div class="note" id="comment-state">
+      <b>Status:</b> <span id="comment-status">checking…</span>
+    </div>
+    <p>Before the v0.3 freeze, everything is on the table: the <b>entries</b> (IDs, classifications,
+      mitigations) <em>and</em> the <b>processes</b> (governance, promotion criteria, sourcing rubric,
+      naming protocol, dispute process, audit manifest). The pilot already ran six adversarial review
+      rounds; the comment period extends that to the public.</p>
+    <ul>
+      <li><b>Comment on an entry:</b> open an issue or PR citing the source; maintainers apply the
+        promotion criteria and must respond within the published SLA.</li>
+      <li><b>Comment on process:</b> the period covers the governance documents too. Governance is
+        reviewable, not aspirational.</li>
+      <li><b>What happens at freeze:</b> accepted changes land in v0.3; rejected proposals get a
+        documented reason; IDs are frozen and the deprecation policy applies from then on.</li>
+    </ul>
+
+    <h2 class="section-anchor" id="method">The evidence-first method</h2>
+    <ul>
+      <li><b>Inclusion:</b> ≥2 of 5 operational tests — identifiable semantic/behavioral pattern,
+        repeated transmission, adoption or behavioral effect, identifiable transmission mechanism,
+        recurrence across hosts or contexts.</li>
+      <li><b>Sources:</b> one Source ID = one identifiable evidentiary object. No bibliography
+        placeholders. Real, traceable cases only — no hypotheticals in the pilot corpus.</li>
+      <li><b>Mechanisms, not judgments:</b> entries describe how information propagates. No ideology
+        judgments, no labeling of ideas as “infectious.”</li>
+      <li><b>Naming:</b> patterns are named by what propagates — never by the incident, product, CVE,
+        court case, or campaign that evidenced them.</li>
+      <li><b>Evidence status:</b> every claim carries confidence with defined semantics; contested
+        classifications become assertions, never edit wars.</li>
+    </ul>
+
+    <h2 class="section-anchor" id="schema">Schema &amp; validator</h2>
+    <p>The corpus is validator-enforced: a JSON Schema plus consensus rules, and the validator is
+      load-bearing — every schema finding so far came from a real validation failure. Graph-integrity
+      checks (no self-lineage, no cycles, no time-travel, resolved references) land before v0.3.
+      Schema: <code>schema.v0.2-draft.json</code> (CC-BY-4.0). The interventions schema
+      (<code>v0.1-draft</code>, <code>INT-</code> namespace) governs the positive catalog's
+      outcome-first evidence tiers.</p>
+
+    <h2 class="section-anchor" id="governance">Governance</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Roles</h3>
+        <ul>
+          <li><b>Contributor</b> — anyone: submit entries, propose enums, flag disputes.</li>
+          <li><b>Coder</b> — pilot: 3–5 independent coders incl. ≥1 LLM, blind-round canonicalization.</li>
+          <li><b>Maintainer</b> — merges entries, runs the validator, publishes drafts.</li>
+          <li><b>Dual-use review board</b> — decides redaction and exploitability disputes.</li>
+          <li><b>Arbiter</b> — final appeal; decisions recorded as provenance.</li>
+        </ul>
+        <p>No single-editor authority over dual-use decisions.</p>
+      </div>
+      <div class="card">
+        <h3>RFC &amp; disputes</h3>
+        <ul>
+          <li><b>RFC:</b> propose → 14-day comment (pilot) → vote (maintainer + board, ≥2 distinct
+            supporters) → decision recorded.</li>
+          <li><b>Dispute:</b> whoever disputes first writes an assertion — no overwrites, no edit wars.</li>
+          <li><b>Escalation:</b> coding-guide fix after 3 contests; schema change via RFC if the guide
+            can't fix it. SLA published.</li>
+          <li><b>Deprecation:</b> enum values are never removed silently — deprecated ≥1 release cycle,
+            removed at a version boundary with a migration note.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-anchor" id="dual-use">Dual-use gating</h2>
+    <p>Content is gated when it materially improves replication, targeting, persistence, evasion, or
+      optimization: executable payloads, exact injection strings, reliable propagation recipes, and
+      benchmark details that lower replication difficulty. Every entry carries
+      <code>exploitImpact</code>, <code>requiredAccess</code>, and <code>disclosureStatus</code>
+      (full / partial / redacted / withheld). <b>Redacted material is never pretended away</b> — the ID
+      and a redaction reason stay visible. High-exploitability entries auto-review on a 12-month sunset.</p>
+
+    <h2 class="section-anchor" id="sandbox">Sandbox policy (firm rule)</h2>
+    <p>The project runs on a local machine while it is read-only analysis and authoring. It must
+      proactively migrate to a sandbox/VM at the first trigger of: downloading or running actual
+      payloads; detection tooling scanning real agent memory or live systems; building the agent
+      sandbox (live agents exposed to cataloged patterns — sandbox by design); or corpus expansion
+      into malware-adjacent territory. This is why the <a href="scanner.html">scanner demo is
+      fixture-only</a> and the <a href="inoculator.html">inoculator is post-launch</a> — publicly and
+      deliberately.</p>
+
+    <h2 class="section-anchor" id="status">Status &amp; roadmap</h2>
+    <table>
+      <thead><tr><th>Stage</th><th>Status</th><th>Contents</th></tr></thead>
+      <tbody>
+        <tr><td>v0.2-draft</td><td><b>Current</b></td><td>Schema + validator + corpus; NON-STABLE; 90-day comment period before freeze</td></tr>
+        <tr><td>Pilot</td><td>In flight</td><td>50–60 real entries, coder rounds, agreement analysis, pilot report</td></tr>
+        <tr><td>v0.3</td><td>Next</td><td>Freeze enums + IDs; deprecation policy; first stable release</td></tr>
+        <tr><td>Post-v0.3</td><td>Later</td><td>RFC-driven evolution; scanner subscription tier; inoculator (sandbox-gated)</td></tr>
+      </tbody>
+    </table>
+    <p>Full documents live in the <a href="https://github.com/memome-dev/memome" rel="noopener">public repo</a>:
+      governance, contributing guide, promotion criteria, sourcing rubric, naming protocol, dispute
+      process, audit manifest, coding guide.</p>
+  </main>
+
+  <footer id="site-footer" class="site"></footer>
+  <script src="assets/js/site.js"></script>
+  <script>
+    MEMOME.setActiveNav("docs/");
+    var s = MEMOME.SITE.commentPeriod === "open"
+      ? '<b style="color:var(--ok)">OPEN</b> — comment on entries and process until the v0.3 freeze. See how below.'
+      : '<b style="color:var(--warn)">NOT YET OPEN</b> — the 90-day public comment period opens with the public release. Until then, the pilot review rounds are the intake channel.';
+    document.getElementById("comment-status").innerHTML = s;
+  </script>
+</body>
+</html>

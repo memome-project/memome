@@ -1,0 +1,706 @@
+{
+  "note": "Memome responses tier — v0.2-draft NON-STABLE",
+  "schema": "https://memome.dev/schema/v0.2-draft",
+  "entries": [
+    {
+      "id": "MEMOME-000062",
+      "slug": "ftc-v-rytr-fake-review-generator",
+      "name": "FTC v. Rytr (AI Fake-Review Generator Enforcement)",
+      "type": {
+        "contentForm": "claim",
+        "functionalRole": [
+          "persuasion",
+          "coordination"
+        ]
+      },
+      "facets": {
+        "primaryPersuasionPrinciple": "socialProof"
+      },
+      "substrate": "human",
+      "hostTypes": [
+        "human",
+        "organization"
+      ],
+      "transmissionModes": [
+        "humanToHuman"
+      ],
+      "persistenceMechanisms": [
+        "socialPlatform"
+      ],
+      "harm": {
+        "impactDomains": [
+          "financial",
+          "reputational",
+          "informational"
+        ],
+        "potentialImpact": "moderate",
+        "harmPotential": "harmful",
+        "attributedIntent": "manipulative",
+        "confidence": "high"
+      },
+      "operationalEnablement": {
+        "operationality": "high",
+        "reproducibility": "high",
+        "requiredAccess": "public",
+        "exploitImpact": "medium",
+        "publicAvailability": "widespread",
+        "disclosureStatus": "full"
+      },
+      "status": {
+        "recordStatus": "reviewed",
+        "activityStatus": "historical",
+        "evidenceStatus": "observed",
+        "activityReferenceWindow": "2024-09 to 2025-12, US (FTC complaint matter 232 3052; 2024 consent order; order reopened and set aside 2025-12-22 per Trump administration AI action plan)"
+      },
+      "dates": {
+        "firstObserved": "2024-09-01",
+        "lastObserved": "2025-12-22",
+        "documentedDate": "2026-08-23"
+      },
+      "lineage": {
+        "derivedFrom": "MEMOME-000032"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "sourceId": "SRC-000081",
+          "sourceType": "report",
+          "citation": "FTC Legal Library: Rytr LLC, In the Matter of (matter 232 3052; complaint + 2024 consent order + 2025-12-22 set-aside order)",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/232-3052-rytr-llc-matter",
+          "reliability": "high"
+        },
+        {
+          "sourceId": "SRC-000082",
+          "sourceType": "report",
+          "citation": "FTC press release: FTC Reopens and Sets Aside Rytr Final Order in Response to the Trump Administration's AI Action Plan (2025-12-22)",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2025/12/ftc-reopens-sets-aside-rytr-final-order-response-trump-administrations-ai-action-plan",
+          "reliability": "medium"
+        }
+      ],
+      "observables": [
+        "AI-generated reviews with specific material details unrelated to user input",
+        "hundreds to tens of thousands of reviews per subscriber",
+        "consent order barring sale of services promoted for generating consumer reviews",
+        "2025-12-22 order reopening and setting aside the 2024 order"
+      ],
+      "preconditions": [
+        "AI writing tools generating plausible reviews",
+        "subscribers seeking fake social proof",
+        "review-driven e-commerce platforms"
+      ],
+      "scope": "mechanism",
+      "mitigations": [
+        {
+          "type": "friction",
+          "description": "FTC consent order (Sept 2024) barred Rytr from selling any service promoted for generating consumer reviews — first FTC action targeting the AI generator; effectiveness now unmeasured after the 2025-12-22 set-aside",
+          "scope": "US enforcement",
+          "evidenceStatus": "observed",
+          "effectiveness": "unknown",
+          "effectivenessConfidence": "low",
+          "source": "SRC-000081"
+        }
+      ],
+      "provenance": {
+        "assertedBy": "contributor:m2",
+        "source": "SRC-000081",
+        "provenanceVersion": "0.2-draft.2",
+        "assertions": []
+      },
+      "governance": {
+        "schemaVersion": "0.2-draft",
+        "license": "CC-BY-4.0",
+        "contributors": [
+          "contributor:m2"
+        ],
+        "entryVersion": 1
+      }
+    },
+    {
+      "id": "MEMOME-000063",
+      "slug": "moffatt-v-air-canada-chatbot-liability",
+      "name": "Moffatt v. Air Canada (Chatbot Liability Precedent)",
+      "type": {
+        "contentForm": "norm",
+        "functionalRole": [
+          "persuasion",
+          "adoption"
+        ]
+      },
+      "facets": {},
+      "substrate": "hybrid",
+      "hostTypes": [
+        "organization",
+        "human",
+        "aiAgent"
+      ],
+      "transmissionModes": [
+        "agentToHuman"
+      ],
+      "persistenceMechanisms": [
+        "modelContext",
+        "document"
+      ],
+      "agentNative": {
+        "storageMedium": [
+          "model_context"
+        ],
+        "runtimeMedium": [
+          "generated_message"
+        ],
+        "memoryMutability": "read_only",
+        "temporalScope": "session",
+        "emergenceType": "emergent",
+        "triggerConditions": [
+          "customer asks deployed chatbot about bereavement discount policy"
+        ],
+        "retransmissionTrigger": "no propagation of the misinformation itself (one-shot); the transmissible element is the liability rule, transmitted via the decision and its citation",
+        "interactionTopology": [
+          "unknown"
+        ],
+        "propagationMechanism": [
+          "generatedMessage"
+        ],
+        "capabilities": [
+          "adoption"
+        ],
+        "agentCapabilitiesRequired": [],
+        "privilegeRequirements": [],
+        "privilegeBoundaryCrossed": "notCrossed",
+        "trustBoundary": [],
+        "mutationAdaptation": [],
+        "propagationStrategy": [
+          "instructed"
+        ],
+        "containmentResistance": [],
+        "fidelityMutationRate": "",
+        "modelSusceptibility": [],
+        "cognitiveHooks": [],
+        "interAgentProtocols": [],
+        "capabilityEscalation": false,
+        "stealth": false,
+        "detectionSignature": {
+          "ruleFormat": "natural_language",
+          "ruleContent": "deployed customer-facing chatbot generating fabricated policy entitlements; output treated as authoritative by user; legally attributed to host company regardless of model autonomy",
+          "memoryDiffPattern": ""
+        }
+      },
+      "harm": {
+        "impactDomains": [
+          "financial",
+          "reputational"
+        ],
+        "potentialImpact": "moderate",
+        "harmPotential": "mixed",
+        "attributedIntent": "nonmalicious",
+        "confidence": "high"
+      },
+      "operationalEnablement": {
+        "operationality": "low",
+        "reproducibility": "medium",
+        "requiredAccess": "public",
+        "exploitImpact": "low",
+        "publicAvailability": "widespread",
+        "disclosureStatus": "full"
+      },
+      "status": {
+        "recordStatus": "accepted",
+        "activityStatus": "active",
+        "evidenceStatus": "observed",
+        "activityReferenceWindow": "2024-02+, global (2024 BCCRT 149 decision; landmark for AI-output liability; corporate compliance adoption)"
+      },
+      "dates": {
+        "firstObserved": "2024-02-01",
+        "lastObserved": "2026-08-01",
+        "documentedDate": "2026-08-23"
+      },
+      "lineage": {},
+      "relationships": [],
+      "sources": [
+        {
+          "sourceId": "SRC-000083",
+          "sourceType": "news",
+          "citation": "BBC Travel: Airline held liable for its chatbot giving passenger bad advice (2024-02-23)",
+          "url": "https://www.bbc.com/travel/article/20240222-air-canada-chatbot-misinformation-what-travellers-should-know",
+          "reliability": "high"
+        },
+        {
+          "sourceId": "SRC-000084",
+          "sourceType": "report",
+          "citation": "Moffatt v. Air Canada, 2024 BCCRT 149 (BC Civil Resolution Tribunal; CAD $812.02 awarded; 'It makes no difference whether the information comes from a static page or a chatbot')",
+          "url": "https://decisions.civilresolutionbc.ca/crt/crtd/en/item/525448/index.do",
+          "reliability": "medium"
+        },
+        {
+          "sourceId": "SRC-000085",
+          "sourceType": "report",
+          "citation": "McCarthy Tétrault (TechLEX): Moffatt v. Air Canada — A Misrepresentation by an AI Chatbot (legal analysis)",
+          "url": "https://www.mccarthy.ca/en/insights/blogs/techlex/moffatt-v-air-canada-misrepresentation-ai-chatbot",
+          "reliability": "medium"
+        }
+      ],
+      "observables": [
+        "chatbot fabricating refund/bereavement policy entitlement",
+        "human reliance on chatbot output (booking decision)",
+        "court attribution of bot output to host company",
+        "liability precedent cited in case law and compliance practice"
+      ],
+      "preconditions": [
+        "deployed customer-facing LLM",
+        "users treat output as official",
+        "no verification friction or disclaimers"
+      ],
+      "scope": "narrative",
+      "mitigations": [
+        {
+          "type": "humanReview",
+          "description": "Legal attribution rule: host company responsible for all information on its website regardless of chatbot 'autonomy' — forcing verification and liability-aware deployment",
+          "scope": "corporate AI deployment",
+          "evidenceStatus": "observed",
+          "effectiveness": "medium",
+          "effectivenessConfidence": "low",
+          "source": "SRC-000083"
+        }
+      ],
+      "provenance": {
+        "assertedBy": "contributor:m2",
+        "source": "SRC-000083",
+        "provenanceVersion": "0.2-draft.2",
+        "assertions": []
+      },
+      "governance": {
+        "schemaVersion": "0.2-draft",
+        "license": "CC-BY-4.0",
+        "contributors": [
+          "contributor:m2"
+        ],
+        "entryVersion": 1
+      }
+    },
+    {
+      "id": "MEMOME-000075",
+      "slug": "ftc-operation-ai-comply-donotpay",
+      "name": "FTC Operation AI Comply (DoNotPay 'Robot Lawyer' Enforcement)",
+      "type": {
+        "contentForm": "claim",
+        "functionalRole": [
+          "persuasion",
+          "adoption"
+        ]
+      },
+      "facets": {
+        "primaryPersuasionPrinciple": "authority"
+      },
+      "substrate": "human",
+      "hostTypes": [
+        "human",
+        "organization"
+      ],
+      "transmissionModes": [
+        "humanToHuman"
+      ],
+      "persistenceMechanisms": [
+        "document",
+        "socialPlatform"
+      ],
+      "harm": {
+        "impactDomains": [
+          "financial",
+          "psychological"
+        ],
+        "potentialImpact": "moderate",
+        "harmPotential": "harmful",
+        "attributedIntent": "manipulative",
+        "confidence": "high"
+      },
+      "operationalEnablement": {
+        "operationality": "low",
+        "reproducibility": "low",
+        "requiredAccess": "public",
+        "exploitImpact": "low",
+        "publicAvailability": "widespread",
+        "disclosureStatus": "full"
+      },
+      "status": {
+        "recordStatus": "reviewed",
+        "activityStatus": "historical",
+        "evidenceStatus": "observed",
+        "activityReferenceWindow": "2024-09-25, US (FTC Operation AI Comply sweep launch; DoNotPay consent order — $193,000 fine and ban on 'robot lawyer' claims; 5 actions announced)"
+      },
+      "dates": {
+        "firstObserved": "2024-09-25",
+        "lastObserved": "2024-09-30",
+        "documentedDate": "2026-08-24"
+      },
+      "lineage": {},
+      "relationships": [
+        {
+          "sourceId": "MEMOME-000075",
+          "relationType": "coOccursWith",
+          "targetId": "MEMOME-000062",
+          "confidence": "high",
+          "evidence": [
+            "same FTC sweep (Operation AI Comply) targeting AI-powered deception; Rytr fake-review generator action announced alongside DoNotPay"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "sourceId": "SRC-000114",
+          "sourceType": "report",
+          "citation": "FTC: FTC Announces Crackdown on Deceptive AI Claims and Schemes (Operation AI Comply; 2024-09-25; DoNotPay 'world's first robot lawyer' action; Chair Lina M. Khan: 'there is no AI exemption from the laws on the books')",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+          "reliability": "high",
+          "publishedAt": "2024-09-25"
+        },
+        {
+          "sourceId": "SRC-000115",
+          "sourceType": "report",
+          "citation": "FTC: DoNotPay Inc. Complaint (matter 222 3004; unsubstantiated 'robot lawyer' claims)",
+          "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/DoNotPayInc-Complaint.pdf",
+          "reliability": "high",
+          "publishedAt": "2024-09-25"
+        },
+        {
+          "sourceId": "SRC-000116",
+          "sourceType": "news",
+          "citation": "The Verge: 'Robot lawyer' company faces $193,000 fine as part of FTC's AI crackdown (2024-09-25)",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNb1R3OTVnN2ktdVhnamJKMHYzeGpMVXRkdDdUaTBqR3VoTjNiaXFPa1NySzhoNGxrekRyS1pzOHpJZGxJa2FFU3h3ckxhTW9nSEVUejE4UWkwOTlnYXpDLXNDUDA3SW9KQXdlVV9xVmt0Y0ZZUmNRd05PZ2JTWTRuN01LclB1UDRsZjh6b0VrdEdhTWhtdmZTdzRmM1JFcGN2M2otNEp3VUVTWkk3elF5Y1VMTGUzZllfa3JXZ3R3",
+          "reliability": "high",
+          "publishedAt": "2024-09-25"
+        }
+      ],
+      "observables": [
+        "claims of 'world's first robot lawyer'",
+        "unsubstantiated legal-service capability claims",
+        "$193,000 civil penalty and ban on 'robot lawyer' claims",
+        "part of 5-action Operation AI Comply sweep"
+      ],
+      "preconditions": [
+        "AI product marketed with unsubstantiated capability claims",
+        "consumers rely on AI output for legal/financial decisions"
+      ],
+      "scope": "tactic",
+      "mitigations": [
+        {
+          "type": "friction",
+          "description": "FTC consent order: $193,000 penalty and prohibition on unsubstantiated 'robot lawyer' claims; Operation AI Comply signals enforcement posture for AI-product deception",
+          "scope": "US FTC",
+          "evidenceStatus": "observed",
+          "effectiveness": "medium",
+          "effectivenessConfidence": "medium",
+          "source": "SRC-000114"
+        }
+      ],
+      "provenance": {
+        "assertedBy": "contributor:m2",
+        "source": "SRC-000114",
+        "provenanceVersion": "0.2-draft.2",
+        "assertions": []
+      },
+      "governance": {
+        "schemaVersion": "0.2-draft",
+        "license": "CC-BY-4.0",
+        "contributors": [
+          "contributor:m2"
+        ],
+        "entryVersion": 1
+      }
+    },
+    {
+      "id": "MEMOME-000076",
+      "slug": "lingo-telecom-fcc-settlement",
+      "name": "Lingo Telecom FCC Settlement (AI-Robocall Carrier Liability)",
+      "type": {
+        "contentForm": "instruction",
+        "functionalRole": [
+          "persuasion",
+          "behavioralModification"
+        ]
+      },
+      "facets": {
+        "primaryPersuasionPrinciple": "authority",
+        "affectiveDrivers": [
+          "fear"
+        ]
+      },
+      "substrate": "human",
+      "hostTypes": [
+        "human",
+        "organization"
+      ],
+      "transmissionModes": [
+        "humanToHuman"
+      ],
+      "persistenceMechanisms": [
+        "document"
+      ],
+      "harm": {
+        "impactDomains": [
+          "political",
+          "informational",
+          "psychological"
+        ],
+        "potentialImpact": "moderate",
+        "harmPotential": "harmful",
+        "attributedIntent": "malicious",
+        "confidence": "high"
+      },
+      "operationalEnablement": {
+        "operationality": "low",
+        "reproducibility": "low",
+        "requiredAccess": "public",
+        "exploitImpact": "low",
+        "publicAvailability": "widespread",
+        "disclosureStatus": "full"
+      },
+      "status": {
+        "recordStatus": "reviewed",
+        "activityStatus": "historical",
+        "evidenceStatus": "observed",
+        "activityReferenceWindow": "2024-01-21 NH primary AI-cloned Biden robocall; 2024-08-21 FCC settlement ($1M) with Lingo Telecom; carrier liability precedent for AI voice traffic"
+      },
+      "dates": {
+        "firstObserved": "2024-01-21",
+        "lastObserved": "2024-08-21",
+        "documentedDate": "2026-08-24"
+      },
+      "lineage": {
+        "derivedFrom": "MEMOME-000030"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "sourceId": "SRC-000117",
+          "sourceType": "news",
+          "citation": "Reuters: Lingo Telecom agrees to $1 million fine over AI-generated Biden robocalls (2024-08-21)",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOYXlrSVh4TkNiczRWWWFiNDFCVk9WZUpNX1hLTi0xOTVlNTdCNGxaU2lzLVFkZkRjRFNZc2pReDNGRkZzMENVYUF4OEw2Mkd1WFBTR1YyNlBCSDh6NUlKN1BNYkxOOFlGeVJqNzRRd3ZpVlAydENPZGlxZXBiLTFuanQ2OTdPRkNoSUdtbUp1b2s5cHpZT0huNVZoUUlQeE5YWFFTejFsNEhkbGl6MTU4S0l2OHpOQS0tZjQ1WVZIVlZNd2wtQVpQWWNPTkxNYzNlMjBpQkNCcw",
+          "reliability": "high",
+          "publishedAt": "2024-08-21"
+        },
+        {
+          "sourceId": "SRC-000118",
+          "sourceType": "news",
+          "citation": "CyberScoop: Telecom behind AI-powered Biden robocall agrees to $1 million FCC fine (2024-08-21)",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNT20zLWtnSDBBdXZMOHI1ZDF6cnEwSlExRzlJYkNEbkxvY3RINmpHeWlQd0NyRjNtNlI1Zkc4cWcwTTNZRFZqUTVkSkdIWktOR1FRa0NTbDRvUUg3WnRMeWJfUzBmU2l3YkdFQjllUHNzQnFLRU8tTjBuSkJkSVo1XzFYV3FQZEV0c3hhbFR0MkRRT0VYaW1KRA",
+          "reliability": "medium",
+          "publishedAt": "2024-08-21"
+        }
+      ],
+      "observables": [
+        "AI-cloned presidential voice in voter-suppression robocall",
+        "carrier failed to verify caller ID (STIR/SHAKEN)",
+        "$1M FCC settlement",
+        "operator charged separately (NH authorities)"
+      ],
+      "preconditions": [
+        "voice-cloning tooling for political figures",
+        "carrier routing AI voice traffic without attestation checks",
+        "targeted voter demographics"
+      ],
+      "scope": "tactic",
+      "mitigations": [
+        {
+          "type": "friction",
+          "description": "FCC $1M settlement with Lingo Telecom; enforcement signals carrier liability for AI-cloned voice traffic under TCPA; operator criminally charged in New Hampshire",
+          "scope": "US FCC / TCPA",
+          "evidenceStatus": "observed",
+          "effectiveness": "medium",
+          "effectivenessConfidence": "medium",
+          "source": "SRC-000117"
+        }
+      ],
+      "provenance": {
+        "assertedBy": "contributor:m2",
+        "source": "SRC-000117",
+        "provenanceVersion": "0.2-draft.2",
+        "assertions": []
+      },
+      "governance": {
+        "schemaVersion": "0.2-draft",
+        "license": "CC-BY-4.0",
+        "contributors": [
+          "contributor:m2"
+        ],
+        "entryVersion": 1
+      }
+    },
+    {
+      "id": "MEMOME-000079",
+      "slug": "wikipedia-ai-slop-ban",
+      "name": "Wikipedia AI-Slop Ban (Community Containment Norm)",
+      "type": {
+        "contentForm": "norm",
+        "functionalRole": [
+          "adoption",
+          "coordination"
+        ]
+      },
+      "facets": {},
+      "substrate": "hybrid",
+      "hostTypes": [
+        "organization",
+        "human",
+        "aiAgent"
+      ],
+      "transmissionModes": [
+        "agentToHuman",
+        "humanToHuman"
+      ],
+      "persistenceMechanisms": [
+        "document",
+        "socialPlatform"
+      ],
+      "agentNative": {
+        "storageMedium": [
+          "model_context"
+        ],
+        "runtimeMedium": [
+          "generated_message"
+        ],
+        "memoryMutability": "read_only",
+        "temporalScope": "session",
+        "emergenceType": "emergent",
+        "triggerConditions": [
+          "LLM-generated articles submitted to Wikipedia",
+          "editors detect AI tells and community votes to remove",
+          "English Wikipedia community approves policy banning unsourced AI-generated content (March 2026)"
+        ],
+        "retransmissionTrigger": "ban policy propagates as precedent; AI-tell detection lists and plugins circulate among editors",
+        "interactionTopology": [
+          "sharedStore"
+        ],
+        "propagationMechanism": [
+          "generatedMessage"
+        ],
+        "capabilities": [
+          "adoption"
+        ],
+        "agentCapabilitiesRequired": [],
+        "privilegeRequirements": [],
+        "privilegeBoundaryCrossed": "notCrossed",
+        "trustBoundary": [],
+        "mutationAdaptation": [],
+        "propagationStrategy": [
+          "opportunistic"
+        ],
+        "containmentResistance": [],
+        "fidelityMutationRate": "",
+        "modelSusceptibility": [],
+        "cognitiveHooks": [],
+        "interAgentProtocols": [],
+        "capabilityEscalation": false,
+        "stealth": false,
+        "detectionSignature": {
+          "ruleFormat": "natural_language",
+          "ruleContent": "Wikipedia articles with LLM tells (hallucinated citations, boilerplate phrasing); community deletion policy for AI-generated content; editor-built AI-tell catalog and detection plugins",
+          "memoryDiffPattern": ""
+        }
+      },
+      "harm": {
+        "impactDomains": [
+          "informational"
+        ],
+        "potentialImpact": "moderate",
+        "harmPotential": "mixed",
+        "attributedIntent": "ambiguous",
+        "confidence": "high"
+      },
+      "operationalEnablement": {
+        "operationality": "low",
+        "reproducibility": "low",
+        "requiredAccess": "public",
+        "exploitImpact": "low",
+        "publicAvailability": "widespread",
+        "disclosureStatus": "full"
+      },
+      "status": {
+        "recordStatus": "reviewed",
+        "activityStatus": "active",
+        "evidenceStatus": "observed",
+        "activityReferenceWindow": "2026-02 to 2026-03, English Wikipedia (volunteer defense wave; Rest of World 2026-02-05; community ban on AI-generated articles March 2026 with exceptions; Verge/Guardian/Futurism coverage)"
+      },
+      "dates": {
+        "firstObserved": "2026-02-05",
+        "lastObserved": "2026-03-29",
+        "documentedDate": "2026-08-24"
+      },
+      "lineage": {
+        "derivedFrom": "MEMOME-000049"
+      },
+      "relationships": [
+        {
+          "sourceId": "MEMOME-000079",
+          "relationType": "coOccursWith",
+          "targetId": "MEMOME-000078",
+          "confidence": "medium",
+          "evidence": [
+            "AI-slop containment responses across knowledge platforms (academic publishing and Wikipedia)"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "sourceId": "SRC-000124",
+          "sourceType": "news",
+          "citation": "The Verge: Wikipedia bans AI-generated articles (2026-03-26; community policy with two exceptions)",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBjeFpheVFqNFdVWHpxSkxYdVZIbWFQZnRHUlJOcG5xbjZjRlUwQkNuOTl5OEdTU3FEak9SN1NoRXM0R013bnlFVnYwUU15UkEyN1NrQ0xQdHdRWGhVbjJvR1g4eTRmZzVaYS1Kbl9EaU1pU3ozS0k4WngzUQ",
+          "reliability": "high",
+          "publishedAt": "2026-03-26"
+        },
+        {
+          "sourceId": "SRC-000125",
+          "sourceType": "news",
+          "citation": "The Guardian: Wikipedia bans AI-generated content in its online encyclopedia (2026-03-26)",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1YWFNGU2EzTHNDZll1UURYbldrMnFoemhsUmowd2xzNVFiSTFjcklxZWg2WEFqTktOT0ZmblIyQ0xURFJKVXB6ZXZIT0RaTldqMDQ5Nm5MaUh3N2ZEVG10RS1TWURYWkVIUjMwbS03UXdtdm8yMXBR",
+          "reliability": "high",
+          "publishedAt": "2026-03-26"
+        },
+        {
+          "sourceId": "SRC-000126",
+          "sourceType": "news",
+          "citation": "Futurism: Wikipedia Editors Tried and Tried to Work With AI Content, Eventually Realized It Was Total Trash and Banned It Entirely (2026-03-29)",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcWpGNlk0Tmw2d2VwX1l3bnEyVGFaZUpSRldYTTgzWU5BUDYwQ1FEY2cyR1lXdkhyV2EyaFZUczJPdXlRazJNb0R6SlhBcUlDNEQ0Rlh3MEFqTEhqRzAxZkJleUdCSU9hXzRlWTBpdGVnWktkNUhSTEhUYUc5bVFhRVZqOA",
+          "reliability": "medium",
+          "publishedAt": "2026-03-29"
+        }
+      ],
+      "observables": [
+        "LLM-generated articles submitted to Wikipedia",
+        "editor-built AI-tell catalog and detection plugins",
+        "community deletion policy for AI-generated content (March 2026)",
+        "two exceptions (verified translations/rewrites)"
+      ],
+      "preconditions": [
+        "human-curated knowledge platform",
+        "open editing model vulnerable to volume submissions",
+        "detectable AI tells"
+      ],
+      "scope": "mechanism",
+      "mitigations": [
+        {
+          "type": "friction",
+          "description": "English Wikipedia community ban on AI-generated articles (March 2026) plus volunteer-run AI-tell detection catalog and plugins",
+          "scope": "English Wikipedia",
+          "evidenceStatus": "observed",
+          "effectiveness": "medium",
+          "effectivenessConfidence": "medium",
+          "source": "SRC-000124"
+        }
+      ],
+      "provenance": {
+        "assertedBy": "contributor:m2",
+        "source": "SRC-000124",
+        "provenanceVersion": "0.2-draft.2",
+        "assertions": []
+      },
+      "governance": {
+        "schemaVersion": "0.2-draft",
+        "license": "CC-BY-4.0",
+        "contributors": [
+          "contributor:m2"
+        ],
+        "entryVersion": 1
+      }
+    }
+  ]
+}

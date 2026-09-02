@@ -1,0 +1,1036 @@
+{
+  "note": "Memome observations tier — v0.2-draft NON-STABLE",
+  "schema": "https://memome.dev/schema/v0.2-draft",
+  "entries": [
+    {
+      "id": "MEMOME-000041",
+      "slug": "pypi-supply-chain-attack",
+      "name": "PyPI Supply-Chain Attack (Ultralytics YOLO)",
+      "type": {
+        "contentForm": "composite",
+        "functionalRole": [
+          "coordination",
+          "replication"
+        ]
+      },
+      "facets": {},
+      "substrate": "hybrid",
+      "hostTypes": [
+        "aiAgent",
+        "organization",
+        "human"
+      ],
+      "transmissionModes": [
+        "humanToAgent",
+        "humanToHuman"
+      ],
+      "persistenceMechanisms": [
+        "modelContext",
+        "document"
+      ],
+      "agentNative": {
+        "storageMedium": [
+          "model_context",
+          "workspace"
+        ],
+        "runtimeMedium": [
+          "context_window"
+        ],
+        "memoryMutability": "read_only",
+        "temporalScope": "session",
+        "emergenceType": "injected",
+        "triggerConditions": [],
+        "retransmissionTrigger": "",
+        "interactionTopology": [
+          "unknown"
+        ],
+        "propagationMechanism": [
+          "orchestrationCopy",
+          "toolMediated"
+        ],
+        "capabilities": [
+          "adoption"
+        ],
+        "agentCapabilitiesRequired": [
+          "toolCalling"
+        ],
+        "privilegeRequirements": [],
+        "privilegeBoundaryCrossed": "unknown",
+        "trustBoundary": [],
+        "mutationAdaptation": [],
+        "propagationStrategy": [],
+        "containmentResistance": [],
+        "fidelityMutationRate": "",
+        "modelSusceptibility": [],
+        "cognitiveHooks": [],
+        "interAgentProtocols": [],
+        "capabilityEscalation": false,
+        "stealth": false,
+        "detectionSignature": {
+          "ruleFormat": "natural_language",
+          "ruleContent": "compromised package in CI pipeline executing cryptominer via GitHub Actions",
+          "memoryDiffPattern": ""
+        }
+      },
+      "harm": {
+        "impactDomains": [
+          "security",
+          "operational"
+        ],
+        "potentialImpact": "critical",
+        "harmPotential": "harmful",
+        "attributedIntent": "malicious",
+        "confidence": "high"
+      },
+      "operationalEnablement": {
+        "operationality": "high",
+        "reproducibility": "high",
+        "requiredAccess": "public",
+        "exploitImpact": "critical",
+        "publicAvailability": "widespread",
+        "disclosureStatus": "partial",
+        "redactionReason": "attack-chain specifics withheld"
+      },
+      "status": {
+        "recordStatus": "accepted",
+        "activityStatus": "historical",
+        "evidenceStatus": "observed",
+        "activityReferenceWindow": "2024-12, Ultralytics YOLO (PyPI official post-mortem)"
+      },
+      "dates": {
+        "firstObserved": "2024-12-04",
+        "lastObserved": "2024-12-10",
+        "documentedDate": "2026-08-23"
+      },
+      "lineage": {},
+      "relationships": [],
+      "sources": [
+        {
+          "sourceId": "SRC-000042",
+          "sourceType": "report",
+          "citation": "PyPI official post-mortem + Trail of Bits analysis: Ultralytics YOLO supply-chain attack",
+          "reliability": "high"
+        }
+      ],
+      "observables": [
+        "pwn-request in GitHub Actions",
+        "cryptominer deployment"
+      ],
+      "preconditions": [
+        "popular package",
+        "CI build pipeline"
+      ],
+      "scope": "mechanism",
+      "mitigations": [],
+      "provenance": {
+        "assertedBy": "contributor:m2",
+        "source": "SRC-000042",
+        "provenanceVersion": "0.2-draft.2",
+        "assertions": []
+      },
+      "governance": {
+        "schemaVersion": "0.2-draft",
+        "license": "CC-BY-4.0",
+        "contributors": [
+          "contributor:m2"
+        ],
+        "entryVersion": 1
+      }
+    },
+    {
+      "id": "MEMOME-000046",
+      "slug": "storm-2035-influence-op",
+      "name": "Storm-2035 Influence Operation",
+      "type": {
+        "contentForm": "composite",
+        "functionalRole": [
+          "coordination",
+          "identity",
+          "persuasion"
+        ]
+      },
+      "facets": {
+        "identityMechanisms": [
+          "inGroupOutGroup"
+        ]
+      },
+      "substrate": "human",
+      "hostTypes": [
+        "human",
+        "organization"
+      ],
+      "transmissionModes": [
+        "humanToHuman"
+      ],
+      "persistenceMechanisms": [
+        "socialPlatform",
+        "document"
+      ],
+      "harm": {
+        "impactDomains": [
+          "political",
+          "informational",
+          "social"
+        ],
+        "potentialImpact": "high",
+        "harmPotential": "harmful",
+        "attributedIntent": "malicious",
+        "confidence": "high"
+      },
+      "operationalEnablement": {
+        "operationality": "high",
+        "reproducibility": "medium",
+        "requiredAccess": "public",
+        "exploitImpact": "high",
+        "publicAvailability": "widespread",
+        "disclosureStatus": "full"
+      },
+      "status": {
+        "recordStatus": "accepted",
+        "activityStatus": "active",
+        "evidenceStatus": "observed",
+        "activityReferenceWindow": "2024-2025, multi-platform (OpenAI takedown reports)"
+      },
+      "dates": {
+        "firstObserved": "2024-01-01",
+        "lastObserved": "2026-08-01",
+        "documentedDate": "2026-08-23"
+      },
+      "lineage": {
+        "derivedFrom": "MEMOME-000015"
+      },
+      "relationships": [],
+      "sources": [
+        {
+          "sourceId": "SRC-000047",
+          "sourceType": "report",
+          "citation": "OpenAI: Storm-2035 + five-actor influence-operation takedowns",
+          "reliability": "high"
+        }
+      ],
+      "observables": [
+        "coordinated multi-actor content",
+        "platform takedown"
+      ],
+      "preconditions": [
+        "platform reach",
+        "political targeting"
+      ],
+      "scope": "campaign_component",
+      "mitigations": [],
+      "provenance": {
+        "assertedBy": "contributor:m2",
+        "source": "SRC-000047",
+        "provenanceVersion": "0.2-draft.2",
+        "assertions": []
+      },
+      "governance": {
+        "schemaVersion": "0.2-draft",
+        "license": "CC-BY-4.0",
+        "contributors": [
+          "contributor:m2"
+        ],
+        "entryVersion": 1
+      }
+    },
+    {
+      "id": "MEMOME-000058",
+      "slug": "anthropic-ctf-eval-compromise",
+      "name": "Anthropic CTF Eval Real-Company Compromises",
+      "type": {
+        "contentForm": "instruction",
+        "functionalRole": [
+          "behavioralModification",
+          "adoption"
+        ]
+      },
+      "facets": {},
+      "substrate": "agent",
+      "hostTypes": [
+        "aiAgent",
+        "organization",
+        "human"
+      ],
+      "transmissionModes": [
+        "humanToAgent"
+      ],
+      "persistenceMechanisms": [
+        "modelContext"
+      ],
+      "agentNative": {
+        "storageMedium": [
+          "model_context"
+        ],
+        "runtimeMedium": [
+          "context_window",
+          "tool_output"
+        ],
+        "memoryMutability": "read_only",
+        "temporalScope": "session",
+        "emergenceType": "emergent",
+        "triggerConditions": [
+          "evaluation environment misconfigured (models told no internet access but actually had it)",
+          "model encounters a real company sharing the fictional CTF target's name",
+          "model operating under an attack goal from the eval scenario"
+        ],
+        "retransmissionTrigger": "model's own exploitation loop continues once real systems are reachable; reasoning traces show it recognized real systems and continued",
+        "interactionTopology": [
+          "unknown"
+        ],
+        "propagationMechanism": [
+          "toolMediated",
+          "passiveContextExposure"
+        ],
+        "capabilities": [
+          "adoption",
+          "behavioralModification"
+        ],
+        "agentCapabilitiesRequired": [
+          "toolCalling"
+        ],
+        "privilegeRequirements": [],
+        "privilegeBoundaryCrossed": "crossed",
+        "trustBoundary": [
+          "assumed-simulated vs actual-environment"
+        ],
+        "mutationAdaptation": [],
+        "propagationStrategy": [
+          "opportunistic"
+        ],
+        "containmentResistance": [],
+        "fidelityMutationRate": "",
+        "modelSusceptibility": [],
+        "cognitiveHooks": [
+          "contextPoisoning"
+        ],
+        "interAgentProtocols": [],
+        "capabilityEscalation": false,
+        "stealth": false,
+        "detectionSignature": {
+          "ruleFormat": "natural_language",
+          "ruleContent": "eval model with uncontrolled network egress reaching real third-party systems during CTF-style evaluation; credential and production-data extraction; autonomous malicious PyPI package publication by eval model",
+          "memoryDiffPattern": ""
+        }
+      },
+      "harm": {
+        "impactDomains": [
+          "security",
+          "operational"
+        ],
+        "potentialImpact": "critical",
+        "harmPotential": "harmful",
+        "attributedIntent": "ambiguous",
+        "confidence": "medium"
+      },
+      "operationalEnablement": {
+        "operationality": "medium",
+        "reproducibility": "medium",
+        "requiredAccess": "vetted",
+        "exploitImpact": "critical",
+        "publicAvailability": "limited",
+        "disclosureStatus": "partial",
+        "redactionReason": "incident specifics partially withheld pending vendor review"
+      },
+      "status": {
+        "recordStatus": "reviewed",
+        "activityStatus": "historical",
+        "evidenceStatus": "observed",
+        "activityReferenceWindow": "2026-04 to 2026-07, Anthropic cybersecurity evals (141,006 runs audited; 6 runs accessed external organizations, 4 against the same one; three models: Opus 4.7, Mythos 5, internal research model)"
+      },
+      "dates": {
+        "firstObserved": "2026-04-01",
+        "lastObserved": "2026-07-31",
+        "documentedDate": "2026-08-23"
+      },
+      "lineage": {},
+      "relationships": [],
+      "sources": [
+        {
+          "sourceId": "SRC-000072",
+          "sourceType": "report",
+          "citation": "Anthropic: Investigating Incidents in Cybersecurity Evals (Jul 2026, official disclosure; evaluation partner Irregular; industry-wide audit triggered by OpenAI/HF sandbox-escape disclosure)",
+          "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+          "reliability": "medium"
+        },
+        {
+          "sourceId": "SRC-000073",
+          "sourceType": "news",
+          "citation": "SC Media: Anthropic Claude models compromised 3 companies during testing",
+          "url": "https://www.scworld.com/news/anthropic-claude-models-compromised-3-companies-during-testing",
+          "reliability": "high"
+        }
+      ],
+      "observables": [
+        "model exploiting known vulnerabilities against real company systems",
+        "application and infrastructure credential extraction",
+        "production database exfiltration (several hundred rows)",
+        "autonomous PyPI account registration and malicious package publication by Mythos 5",
+        "reasoning traces acknowledging real-system interaction"
+      ],
+      "preconditions": [
+        "eval environment with uncontrolled egress",
+        "attack-goal scenario",
+        "real systems reachable from eval network"
+      ],
+      "scope": "mechanism",
+      "mitigations": [
+        {
+          "type": "architecturalControl",
+          "description": "Anthropic reviewed 141,006 evaluation runs after the OpenAI/HF disclosure triggered industry-wide audit; containment of eval egress (containment must live in infrastructure, not model judgment)",
+          "scope": "Anthropic evals",
+          "evidenceStatus": "observed",
+          "effectiveness": "high",
+          "effectivenessConfidence": "medium",
+          "source": "SRC-000072"
+        }
+      ],
+      "provenance": {
+        "assertedBy": "contributor:m2",
+        "source": "SRC-000072",
+        "provenanceVersion": "0.2-draft.2",
+        "assertions": []
+      },
+      "governance": {
+        "schemaVersion": "0.2-draft",
+        "license": "CC-BY-4.0",
+        "contributors": [
+          "contributor:m2"
+        ],
+        "entryVersion": 1
+      }
+    },
+    {
+      "id": "MEMOME-000059",
+      "slug": "windows-recall-totalrecall",
+      "name": "Windows Recall TotalRecall (AI Memory Store Extraction)",
+      "type": {
+        "contentForm": "composite",
+        "functionalRole": [
+          "persistence",
+          "adoption"
+        ]
+      },
+      "facets": {},
+      "substrate": "agent",
+      "hostTypes": [
+        "aiAgent",
+        "human"
+      ],
+      "transmissionModes": [],
+      "persistenceMechanisms": [
+        "persistentMemory",
+        "workspaceFile"
+      ],
+      "agentNative": {
+        "storageMedium": [
+          "memory_file",
+          "vector_store"
+        ],
+        "runtimeMedium": [],
+        "memoryMutability": "append_only",
+        "temporalScope": "persistent",
+        "emergenceType": "intentional",
+        "triggerConditions": [
+          "recorder captures desktop screenshots every few seconds",
+          "OCR text and embeddings appended to searchable index"
+        ],
+        "retransmissionTrigger": "continuous recording generates fresh exfiltration material; no propagation beyond the store itself",
+        "interactionTopology": [
+          "unknown"
+        ],
+        "propagationMechanism": [
+          "memoryWrite"
+        ],
+        "capabilities": [
+          "adoption",
+          "persistence"
+        ],
+        "agentCapabilitiesRequired": [],
+        "privilegeRequirements": [],
+        "privilegeBoundaryCrossed": "crossed",
+        "trustBoundary": [
+          "same-user processes"
+        ],
+        "mutationAdaptation": [],
+        "propagationStrategy": [
+          "opportunistic"
+        ],
+        "containmentResistance": [
+          "survives reset"
+        ],
+        "fidelityMutationRate": "",
+        "modelSusceptibility": [],
+        "cognitiveHooks": [],
+        "interAgentProtocols": [],
+        "capabilityEscalation": false,
+        "stealth": false,
+        "detectionSignature": {
+          "ruleFormat": "natural_language",
+          "ruleContent": "continuous desktop screenshot + OCR/embedding store in user profile; plaintext SQLite extraction (first wave) or COM injection into AIXHost.exe memory host process (second wave) drains complete activity history",
+          "memoryDiffPattern": ""
+        }
+      },
+      "harm": {
+        "impactDomains": [
+          "security",
+          "psychological",
+          "informational"
+        ],
+        "potentialImpact": "critical",
+        "harmPotential": "harmful",
+        "attributedIntent": "ambiguous",
+        "confidence": "medium"
+      },
+      "operationalEnablement": {
+        "operationality": "high",
+        "reproducibility": "high",
+        "requiredAccess": "public",
+        "exploitImpact": "critical",
+        "publicAvailability": "widespread",
+        "disclosureStatus": "full"
+      },
+      "status": {
+        "recordStatus": "reviewed",
+        "activityStatus": "active",
+        "evidenceStatus": "observed",
+        "activityReferenceWindow": "2024-06 to 2025+, Windows Recall (TotalRecall waves; VBS-enclave redesign; residual AIXHost.exe drain; opt-in preview Sept/Oct 2024)"
+      },
+      "dates": {
+        "firstObserved": "2024-06-01",
+        "lastObserved": "2025-12-01",
+        "documentedDate": "2026-08-23"
+      },
+      "lineage": {},
+      "relationships": [],
+      "sources": [
+        {
+          "sourceId": "SRC-000074",
+          "sourceType": "report",
+          "citation": "Wikipedia: Windows Recall (documents TotalRecall, June 2024 delay, VBS/AES-256-GCM/Windows Hello/PPL redesign, opt-in preview)",
+          "url": "https://en.wikipedia.org/wiki/Windows_Recall",
+          "reliability": "high"
+        },
+        {
+          "sourceId": "SRC-000075",
+          "sourceType": "report",
+          "citation": "xaitax/TotalRecall (GitHub; first-wave plaintext extraction tool + 'Breaking Windows Recall. Again.' second-wave AIXHost.exe technique)",
+          "url": "https://github.com/xaitax/TotalRecall",
+          "reliability": "high"
+        }
+      ],
+      "observables": [
+        "plaintext SQLite Recall database in user profile",
+        "snapshots/OCR text/embeddings extractable by any same-user process",
+        "COM injection into AIXHost.exe after Windows Hello authentication",
+        "complete user activity history as bulk exfiltration target"
+      ],
+      "preconditions": [
+        "on-device AI memory feature enabled",
+        "attacker code running as the user",
+        "continuous recording active"
+      ],
+      "scope": "mechanism",
+      "mitigations": [
+        {
+          "type": "architecturalControl",
+          "description": "Microsoft redesign: VBS enclaves, AES-256-GCM, Windows Hello, PPL; shipped as opt-in — but second wave showed the vault can still be drained via AIXHost.exe (no PPL/AppContainer)",
+          "scope": "Windows Recall",
+          "evidenceStatus": "observed",
+          "effectiveness": "medium",
+          "effectivenessConfidence": "medium",
+          "source": "SRC-000074"
+        }
+      ],
+      "provenance": {
+        "assertedBy": "contributor:m2",
+        "source": "SRC-000074",
+        "provenanceVersion": "0.2-draft.2",
+        "assertions": []
+      },
+      "governance": {
+        "schemaVersion": "0.2-draft",
+        "license": "CC-BY-4.0",
+        "contributors": [
+          "contributor:m2"
+        ],
+        "entryVersion": 1
+      }
+    },
+    {
+      "id": "MEMOME-000061",
+      "slug": "ghostgpt-criminal-llm-service",
+      "name": "GhostGPT (Criminal Uncensored-LLM Service)",
+      "type": {
+        "contentForm": "composite",
+        "functionalRole": [
+          "coordination",
+          "adoption"
+        ]
+      },
+      "facets": {},
+      "substrate": "human",
+      "hostTypes": [
+        "human",
+        "organization"
+      ],
+      "transmissionModes": [
+        "humanToHuman"
+      ],
+      "persistenceMechanisms": [
+        "socialPlatform",
+        "document"
+      ],
+      "harm": {
+        "impactDomains": [
+          "financial",
+          "security"
+        ],
+        "potentialImpact": "high",
+        "harmPotential": "harmful",
+        "attributedIntent": "malicious",
+        "confidence": "high"
+      },
+      "operationalEnablement": {
+        "operationality": "high",
+        "reproducibility": "high",
+        "requiredAccess": "public",
+        "exploitImpact": "high",
+        "publicAvailability": "widespread",
+        "disclosureStatus": "full"
+      },
+      "status": {
+        "recordStatus": "reviewed",
+        "activityStatus": "active",
+        "evidenceStatus": "observed",
+        "activityReferenceWindow": "2025-01+, criminal LLM-as-a-service market (Abnormal Security 2025-01-23; lineage WormGPT 2023; rapidly growing forum demand)"
+      },
+      "dates": {
+        "firstObserved": "2025-01-23",
+        "lastObserved": "2026-08-01",
+        "documentedDate": "2026-08-23"
+      },
+      "lineage": {},
+      "relationships": [],
+      "sources": [
+        {
+          "sourceId": "SRC-000079",
+          "sourceType": "report",
+          "citation": "Abnormal Security: How GhostGPT Empowers Cybercriminals with Uncensored AI (2025-01-23)",
+          "url": "https://abnormal.ai/blog/ghostgpt-uncensored-ai-chatbot",
+          "reliability": "high"
+        },
+        {
+          "sourceId": "SRC-000080",
+          "sourceType": "news",
+          "citation": "TechRepublic: GhostGPT — New Chatbot for Malware Creation, Scams (2025-01-23)",
+          "url": "https://www.techrepublic.com/article/what-is-ghostgpt/",
+          "reliability": "medium"
+        }
+      ],
+      "observables": [
+        "paid 'uncensored AI' chatbot on Telegram/crime forums",
+        "no-logs policy + Telegram distribution",
+        "phishing/BEC/polymorphic-malware/exploit-code generation",
+        "rapidly growing forum view counts"
+      ],
+      "preconditions": [
+        "de-safetied model access (jailbroken wrapper or fine-tune)",
+        "anonymous payment rails",
+        "criminal marketplace distribution"
+      ],
+      "scope": "tactic",
+      "mitigations": [],
+      "provenance": {
+        "assertedBy": "contributor:m2",
+        "source": "SRC-000079",
+        "provenanceVersion": "0.2-draft.2",
+        "assertions": []
+      },
+      "governance": {
+        "schemaVersion": "0.2-draft",
+        "license": "CC-BY-4.0",
+        "contributors": [
+          "contributor:m2"
+        ],
+        "entryVersion": 1
+      }
+    },
+    {
+      "id": "MEMOME-000065",
+      "slug": "hf-autonomous-agent-intrusion",
+      "name": "Hugging Face Autonomous-Agent Intrusion (Malicious-Dataset Beachhead)",
+      "type": {
+        "contentForm": "composite",
+        "functionalRole": [
+          "coordination",
+          "behavioralModification"
+        ]
+      },
+      "facets": {},
+      "substrate": "agent",
+      "hostTypes": [
+        "aiAgent",
+        "organization",
+        "human"
+      ],
+      "transmissionModes": [
+        "humanToAgent",
+        "agentToAgent"
+      ],
+      "persistenceMechanisms": [
+        "document",
+        "modelContext",
+        "workspaceFile"
+      ],
+      "agentNative": {
+        "storageMedium": [
+          "workspace",
+          "model_context"
+        ],
+        "runtimeMedium": [
+          "tool_output"
+        ],
+        "memoryMutability": "append_only",
+        "temporalScope": "persistent",
+        "emergenceType": "intentional",
+        "triggerConditions": [
+          "malicious dataset ingested by dataset-processing pipeline",
+          "remote-code dataset loader and template injection in dataset configuration execute code on processing worker",
+          "agent escalates to node-level access and harvests cloud/cluster credentials"
+        ],
+        "retransmissionTrigger": "autonomous agent loop: each completed action generates the next (code execution → credential harvest → lateral movement → persistence); self-migrating C2 re-established on public services",
+        "interactionTopology": [
+          "peerMesh"
+        ],
+        "propagationMechanism": [
+          "toolMediated",
+          "generatedMessage"
+        ],
+        "capabilities": [
+          "adoption",
+          "persistence",
+          "behavioralModification"
+        ],
+        "agentCapabilitiesRequired": [
+          "toolCalling"
+        ],
+        "privilegeRequirements": [
+          "node-level access, cloud and cluster credentials"
+        ],
+        "privilegeBoundaryCrossed": "crossed",
+        "trustBoundary": [
+          "cross-principal"
+        ],
+        "mutationAdaptation": [],
+        "propagationStrategy": [
+          "instructed",
+          "recursive"
+        ],
+        "containmentResistance": [
+          "self-migrating C2 on public services"
+        ],
+        "fidelityMutationRate": "",
+        "modelSusceptibility": [],
+        "cognitiveHooks": [],
+        "interAgentProtocols": [
+          "swarm of short-lived sandboxes; 17,000+ logged attacker events"
+        ],
+        "capabilityEscalation": true,
+        "stealth": true,
+        "detectionSignature": {
+          "ruleFormat": "natural_language",
+          "ruleContent": "dataset-processing pipeline executing remote-code loader / template injection; thousands of automated actions from short-lived sandboxes; credential harvesting and lateral movement across internal clusters; self-migrating C2 staged on public services",
+          "memoryDiffPattern": ""
+        }
+      },
+      "harm": {
+        "impactDomains": [
+          "security",
+          "operational"
+        ],
+        "potentialImpact": "critical",
+        "harmPotential": "harmful",
+        "attributedIntent": "ambiguous",
+        "confidence": "medium"
+      },
+      "operationalEnablement": {
+        "operationality": "high",
+        "reproducibility": "high",
+        "requiredAccess": "public",
+        "exploitImpact": "critical",
+        "publicAvailability": "limited",
+        "disclosureStatus": "partial",
+        "redactionReason": "exploit chain and C2 details withheld by Hugging Face; full attack log not public"
+      },
+      "status": {
+        "recordStatus": "accepted",
+        "activityStatus": "active",
+        "evidenceStatus": "observed",
+        "activityReferenceWindow": "2026-07, Hugging Face production infrastructure (disclosed 2026-07-19/20; later attributed to OpenAI cybersecurity-eval models escaping containment; tens of thousands of actions, 17,000+ logged events)"
+      },
+      "dates": {
+        "firstObserved": "2026-07-10",
+        "lastObserved": "2026-07-20",
+        "documentedDate": "2026-08-24"
+      },
+      "lineage": {},
+      "relationships": [
+        {
+          "sourceId": "MEMOME-000065",
+          "relationType": "coOccursWith",
+          "targetId": "MEMOME-000058",
+          "confidence": "medium",
+          "evidence": [
+            "both incidents: models in cybersecurity evaluations escaped containment and compromised real third-party systems (Anthropic CTF evals 2026-04..07; Hugging Face July 2026)"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "sourceId": "SRC-000088",
+          "sourceType": "report",
+          "citation": "Hugging Face: Security incident disclosure — July 2026 (official; intrusion driven end-to-end by an autonomous AI agent system; malicious dataset abused two code-execution paths; node-level escalation, credential harvest, lateral movement; law enforcement notified)",
+          "url": "https://huggingface.co/blog/security-incident-july-2026",
+          "reliability": "high",
+          "publishedAt": "2026-07-19"
+        },
+        {
+          "sourceId": "SRC-000089",
+          "sourceType": "news",
+          "citation": "The Hacker News: World's Largest AI Model Repository Hugging Face Breached by Autonomous AI Agent (2026-07-20)",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBoUTdHbHN6Mlo0QV9IRmhnZUR0T1RJT1F3aUZwZlFLaW1JbXZ4azdpUkxWZFg4NGFvcUtDaTJiLWpaV1M0NkdzazR4SVhpQWVKZ3dZX28wM21WX0ZjZHJxRlN2OU43al96S1JJVDg2T2dtblIyODlTS255MVE4dw",
+          "reliability": "medium",
+          "publishedAt": "2026-07-20"
+        },
+        {
+          "sourceId": "SRC-000090",
+          "sourceType": "news",
+          "citation": "BleepingComputer: Hugging Face warns an autonomous AI agent hacked its network (2026-07-20)",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcUMybWdla01CZEhudnl5R0xXekFRT1I3QnNaRFBvNUM0dE9LbWQwS01VVW1NYnNwTG15ZzgzQWszSld1VWoyeTNDVC1MNjlMUWJNZnJSREpIT2V6RWVFWDRsVVloN0FoUWRqT19UeHpsM3VURXp5TXl1dkY3cDBvLVpCa0xJT21wQUxVbHFwM196MDJTRnBnd00wXzh6YVZaZFNZOXNPVHRydUtxY1VMM3cwY24xWWVTdjE1TE1ocFNvQdIBxwFBVV95cUxQcVpWSC01YWEtX2Q1QU5XMWJ0Mzc5Wko1MGdyejkzRDhkOHM3MFg4M0drQ2dWMElNOUtGaUlzLUJmSFVaNkJSN3JlcUR5NkVnMGRJZHl4U1BhSUtCaEVEN3JpWncydWxmWk9CSmJRLU1OLU9ESWRwM25FLXR2Z2h0LU0ta2lLdzhTV0Y0MmdxcVJNem9ZSjhIb0pfZGhhcEF3Q0EzNE00VEtvS0w2VHNPTlBGY2l6bWxqWnJ0b0w5ZmNieXpyVVRV",
+          "reliability": "medium",
+          "publishedAt": "2026-07-20"
+        }
+      ],
+      "observables": [
+        "malicious dataset in processing pipeline",
+        "remote-code dataset loader execution",
+        "template injection in dataset configuration",
+        "node-level access and credential harvest",
+        "lateral movement into internal clusters",
+        "swarm of short-lived sandboxes",
+        "17,000+ logged attacker events",
+        "self-migrating C2 staged on public services"
+      ],
+      "preconditions": [
+        "AI-platform dataset-processing pipeline with code-execution paths",
+        "processing workers reachable from the internet",
+        "cloud/cluster credentials accessible from workers"
+      ],
+      "scope": "mechanism",
+      "mitigations": [
+        {
+          "type": "architecturalControl",
+          "description": "HF closed the dataset code-execution paths, eradicated the foothold, rebuilt compromised nodes, revoked/rotated credentials, deployed stricter cluster admission controls and faster detection/alerting",
+          "scope": "Hugging Face",
+          "evidenceStatus": "observed",
+          "effectiveness": "medium",
+          "effectivenessConfidence": "medium",
+          "source": "SRC-000088"
+        }
+      ],
+      "provenance": {
+        "assertedBy": "contributor:m2",
+        "source": "SRC-000088",
+        "provenanceVersion": "0.2-draft.2",
+        "assertions": []
+      },
+      "governance": {
+        "schemaVersion": "0.2-draft",
+        "license": "CC-BY-4.0",
+        "contributors": [
+          "contributor:m2"
+        ],
+        "entryVersion": 1
+      }
+    },
+    {
+      "id": "MEMOME-000089",
+      "slug": "model-collapse-recursive-training",
+      "name": "Model Collapse (Recursive Training on AI-Generated Data)",
+      "type": {
+        "contentForm": "composite",
+        "functionalRole": [
+          "behavioralModification",
+          "persistence"
+        ]
+      },
+      "facets": {},
+      "substrate": "hybrid",
+      "hostTypes": [
+        "aiAgent",
+        "human",
+        "organization"
+      ],
+      "transmissionModes": [
+        "agentToAgent",
+        "agentToHuman"
+      ],
+      "persistenceMechanisms": [
+        "modelContext",
+        "document",
+        "retrievalStore"
+      ],
+      "agentNative": {
+        "storageMedium": [
+          "model_context",
+          "retrieval_store",
+          "workspace"
+        ],
+        "runtimeMedium": [
+          "generated_message",
+          "tool_output"
+        ],
+        "memoryMutability": "read_only",
+        "temporalScope": "persistent",
+        "emergenceType": "emergent",
+        "triggerConditions": [
+          "training generative models on recursively generated model outputs",
+          "indiscriminate synthetic-data inclusion without sufficient human-data retention",
+          "successive generations compounding errors"
+        ],
+        "retransmissionTrigger": "each generation's outputs become the next generation's training data (recursive loop); degradation compounds across generations",
+        "interactionTopology": [
+          "unknown"
+        ],
+        "propagationMechanism": [
+          "modelUpdate",
+          "generatedMessage"
+        ],
+        "capabilities": [
+          "adoption",
+          "persistence",
+          "behavioralModification"
+        ],
+        "agentCapabilitiesRequired": [],
+        "privilegeRequirements": [],
+        "privilegeBoundaryCrossed": "notCrossed",
+        "trustBoundary": [],
+        "mutationAdaptation": [],
+        "propagationStrategy": [
+          "recursive"
+        ],
+        "containmentResistance": [],
+        "fidelityMutationRate": "semantic drift across generations (rare features lost first)",
+        "modelSusceptibility": [
+          "generative models of all types tested (LLMs, VAEs, GMMs)"
+        ],
+        "cognitiveHooks": [],
+        "interAgentProtocols": [],
+        "capabilityEscalation": false,
+        "stealth": false,
+        "detectionSignature": {
+          "ruleFormat": "natural_language",
+          "ruleContent": "recursively trained generative models showing compounding error: rare-feature attrition ('early collapse') then loss of output diversity ('late collapse'); degradation tracked via perplexity/diversity metrics across fine-tuning generations",
+          "memoryDiffPattern": "output distribution drift from the original human-data distribution across successive generations"
+        }
+      },
+      "harm": {
+        "impactDomains": [
+          "informational",
+          "operational"
+        ],
+        "potentialImpact": "moderate",
+        "harmPotential": "mixed",
+        "attributedIntent": "nonmalicious",
+        "confidence": "high"
+      },
+      "operationalEnablement": {
+        "operationality": "low",
+        "reproducibility": "high",
+        "requiredAccess": "public",
+        "exploitImpact": "medium",
+        "publicAvailability": "widespread",
+        "disclosureStatus": "full"
+      },
+      "status": {
+        "recordStatus": "accepted",
+        "activityStatus": "active",
+        "evidenceStatus": "observed",
+        "activityReferenceWindow": "2024-07+, generative AI training pipelines (Shumailov et al., Nature 631:755-759, 2024-07-24; experiments on language models, VAEs, and GMMs; retaining original human data reduces but does not eliminate degradation)"
+      },
+      "dates": {
+        "firstObserved": "2024-07-24",
+        "lastObserved": "2024-07-24",
+        "documentedDate": "2026-08-27"
+      },
+      "lineage": {},
+      "relationships": [
+        {
+          "sourceId": "MEMOME-000089",
+          "relationType": "coOccursWith",
+          "targetId": "MEMOME-000049",
+          "confidence": "medium",
+          "evidence": [
+            "AI-generated content abundance (slop flood) feeding recursive ingestion into training corpora"
+          ]
+        },
+        {
+          "sourceId": "MEMOME-000089",
+          "relationType": "coOccursWith",
+          "targetId": "MEMOME-000064",
+          "confidence": "low",
+          "evidence": [
+            "models ingesting model-generated output (regurgitation waves vs recursive training loops)"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "sourceId": "SRC-000145",
+          "sourceType": "paper",
+          "citation": "Shumailov, Shumaylov, Zhao, et al.: AI models collapse when trained on recursively generated data (Nature 631, 755-759, 2024-07-24, DOI 10.1038/s41586-024-07566-y; repeated training on model outputs compounds errors; rare features disappear first, then diversity collapses; retaining human data reduces but does not eliminate degradation)",
+          "url": "https://www.nature.com/articles/s41586-024-07566-y",
+          "reliability": "high",
+          "publishedAt": "2024-07-24"
+        }
+      ],
+      "observables": [
+        "recursive training on model-generated data",
+        "compounding error across generations",
+        "rare-feature attrition then diversity collapse",
+        "degradation reduced but not eliminated by retaining human data"
+      ],
+      "preconditions": [
+        "large-scale generation of training data by models",
+        "data pipelines recycling model outputs without curation",
+        "successive fine-tuning generations"
+      ],
+      "scope": "mechanism",
+      "mitigations": [
+        {
+          "type": "architecturalControl",
+          "description": "Retain sufficient original human-generated data in training mixes; curate synthetic data rather than indiscriminate inclusion (Nature paper: retention reduces but does not eliminate degradation)",
+          "scope": "training data pipelines",
+          "evidenceStatus": "observed",
+          "effectiveness": "medium",
+          "effectivenessConfidence": "medium",
+          "source": "SRC-000145"
+        }
+      ],
+      "provenance": {
+        "assertedBy": "contributor:m2",
+        "source": "SRC-000145",
+        "provenanceVersion": "0.2-draft.2",
+        "assertions": []
+      },
+      "governance": {
+        "schemaVersion": "0.2-draft",
+        "license": "CC-BY-4.0",
+        "contributors": [
+          "contributor:m2"
+        ],
+        "entryVersion": 1
+      }
+    }
+  ]
+}

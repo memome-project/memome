@@ -1,0 +1,148 @@
+{
+  "note": "Memome references tier — v0.2-draft NON-STABLE",
+  "schema": "https://memome.dev/schema/v0.2-draft",
+  "entries": [
+    {
+      "id": "MEMOME-000019",
+      "slug": "memory-context-poisoning-class",
+      "name": "Memory & Context Poisoning (OWASP ASI06)",
+      "type": {
+        "contentForm": "norm",
+        "functionalRole": [
+          "coordination"
+        ]
+      },
+      "facets": {},
+      "substrate": "agent",
+      "hostTypes": [
+        "aiAgent"
+      ],
+      "transmissionModes": [
+        "humanToAgent"
+      ],
+      "persistenceMechanisms": [
+        "persistentMemory",
+        "modelContext",
+        "retrievalStore"
+      ],
+      "agentNative": {
+        "storageMedium": [
+          "memory_file",
+          "vector_store",
+          "model_context",
+          "retrieval_store"
+        ],
+        "runtimeMedium": [
+          "context_window"
+        ],
+        "memoryMutability": "unknown",
+        "temporalScope": "cross_session",
+        "emergenceType": "injected",
+        "triggerConditions": [],
+        "retransmissionTrigger": "",
+        "interactionTopology": [
+          "unknown"
+        ],
+        "propagationMechanism": [
+          "retrievalInjection",
+          "memoryWrite",
+          "passiveContextExposure"
+        ],
+        "capabilities": [
+          "persistence"
+        ],
+        "agentCapabilitiesRequired": [
+          "persistentMemory"
+        ],
+        "privilegeRequirements": [],
+        "privilegeBoundaryCrossed": "unknown",
+        "trustBoundary": [],
+        "mutationAdaptation": [],
+        "propagationStrategy": [
+          "latent"
+        ],
+        "containmentResistance": [
+          "survives reset"
+        ],
+        "fidelityMutationRate": "",
+        "modelSusceptibility": [],
+        "cognitiveHooks": [
+          "retrievalManipulation",
+          "contextPoisoning"
+        ],
+        "interAgentProtocols": [],
+        "capabilityEscalation": false,
+        "stealth": true,
+        "detectionSignature": {
+          "ruleFormat": "natural_language",
+          "ruleContent": "class-level: injected records, poisoned context, delayed activation",
+          "memoryDiffPattern": ""
+        }
+      },
+      "harm": {
+        "impactDomains": [
+          "security",
+          "operational"
+        ],
+        "potentialImpact": "high",
+        "harmPotential": "harmful",
+        "attributedIntent": "malicious",
+        "confidence": "high"
+      },
+      "operationalEnablement": {
+        "operationality": "high",
+        "reproducibility": "high",
+        "requiredAccess": "registered",
+        "exploitImpact": "high",
+        "publicAvailability": "widespread",
+        "disclosureStatus": "partial",
+        "redactionReason": "class-level entry: specific exploit instances withheld"
+      },
+      "status": {
+        "recordStatus": "accepted",
+        "activityStatus": "active",
+        "evidenceStatus": "observed",
+        "activityReferenceWindow": "2026, OWASP Top 10 for Agentic Applications"
+      },
+      "dates": {
+        "firstObserved": "2026-01-01",
+        "lastObserved": "2026-08-20",
+        "documentedDate": "2026-08-23"
+      },
+      "lineage": {},
+      "relationships": [],
+      "sources": [
+        {
+          "sourceId": "SRC-000019",
+          "sourceType": "report",
+          "citation": "OWASP Top 10 for Agentic Applications 2026 — ASI06 Memory & Context Poisoning",
+          "reliability": "high"
+        }
+      ],
+      "observables": [
+        "injected memory records",
+        "delayed activation",
+        "context poisoning"
+      ],
+      "preconditions": [
+        "agent memory architecture"
+      ],
+      "scope": "mechanism",
+      "mitigations": [],
+      "provenance": {
+        "assertedBy": "contributor:m2",
+        "source": "SRC-000019",
+        "provenanceVersion": "0.2-draft.2",
+        "assertions": []
+      },
+      "governance": {
+        "schemaVersion": "0.2-draft",
+        "license": "CC-BY-4.0",
+        "contributors": [
+          "contributor:m2"
+        ],
+        "entryVersion": 1
+      }
+    }
+  ]
+}

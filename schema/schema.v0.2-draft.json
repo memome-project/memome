@@ -1,0 +1,321 @@
+{
+  "$id": "https://memome.dev/schema/v0.2-draft",
+  "title": "Memome Schema v0.2-draft",
+  "description": "Provisional schema for the Memome catalog: a graph-based catalogue of transmissible information patterns, with standardized facets for narrative structure, persuasion mechanisms, identity/archetype framing, transmission, persistence, observed diffusion, impacts and mitigations. Status: v0.2-draft. Nothing is stable: no enum, field name, or ID is considered permanent until v0.3. IDs are provisional.",
+  "version": "0.2-draft",
+  "stability": "NON-STABLE — identifiers and vocabularies are provisional and will break until v0.3 freeze",
+  "type": "object",
+  "required": [
+    "id", "slug", "name", "type", "substrate",
+    "status", "governance", "sources", "harm", "operationalEnablement"
+  ],
+  "if": {
+    "properties": { "substrate": { "not": { "const": "human" } } },
+    "required": ["substrate"]
+  },
+  "then": { "required": ["agentNative"] },
+  "else": { "not": { "required": ["agentNative"] } },
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^MEMOME-[0-9]{6}$",
+      "description": "Opaque sequential ID, zero-padded ≥6 digits, uppercase, case-insensitive canonicalization. Never recycled. Deleted/rejected entries remain tombstones (resolution behavior: HTTP 410 Gone + deprecation notice)."
+    },
+    "slug": { "type": "string", "description": "Stable human-readable alias, e.g. 'scarcity-deadline'. Not an identifier." },
+    "entryVersion": { "type": "integer", "minimum": 1, "default": 1, "description": "Per-entry revision counter (Perplexity round 3)." },
+    "versionHistory": { "type": "array", "items": { "type": "object", "properties": { "version": { "type": "integer" }, "changedAt": { "type": "string", "format": "date-time" }, "changedBy": { "type": "string" }, "summary": { "type": "string" } } }, "description": "Revision log (Perplexity round 3)." },
+    "name": { "type": "string", "description": "Canonical display name." },
+    "aliases": { "type": "array", "items": { "type": "string" }, "description": "Common alternative names / hashtags / phrasings, each with provenance where available." },
+
+    "type": {
+      "type": "object",
+      "description": "Multi-axis type. Singular type enums are dead — see review consensus (Gemini, OpenAI, Max).",
+      "properties": {
+        "contentForm": {
+          "type": "string",
+          "enum": ["claim", "narrative", "instruction", "frame", "norm", "identity", "composite"],
+          "description": "What the pattern IS as content. 'composite' is the multi-form escape hatch (agent-native/hybrid entries)."
+        },
+        "functionalRole": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["persuasion", "coordination", "identity", "persistence", "replication", "adoption", "behavioralModification"] },
+          "description": "What the pattern DOES. Multi-select."
+        }
+      },
+      "required": ["contentForm", "functionalRole"]
+    },
+
+    "facets": {
+      "type": "object",
+      "description": "Optional multi-select interpretive facets. The Polti × Cialdini × archetype cube is a COMPUTED VIEW, never a schema constraint. No cell field exists.",
+      "properties": {
+        "primaryNarrativeTemplate": { "type": "string", "pattern": "^Polti #[0-9]{1,2}( \\(.+\\))?$", "description": "Polti dramatic situation ID, e.g. 'Polti #12 (Obtaining)' (Perplexity round 3 pattern constraint)." },
+        "secondaryNarrativeTemplates": { "type": "array", "items": { "type": "string" } },
+        "primaryPersuasionPrinciple": { "type": "string", "enum": ["reciprocity", "commitmentConsistency", "socialProof", "authority", "liking", "scarcity", "unity"] },
+        "secondaryPersuasionPrinciples": { "type": "array", "items": { "type": "string", "enum": ["reciprocity", "commitmentConsistency", "socialProof", "authority", "liking", "scarcity", "unity"] } },
+        "primaryArchetype": { "type": "string", "description": "12 brand archetypes (applied framework, NOT canonical Jung). Visualization metadata only; never influences core classification." },
+        "secondaryArchetypes": { "type": "array", "items": { "type": "string" } },
+        "affectiveDrivers": { "type": "array", "items": { "type": "string", "enum": ["fear", "anger", "hope", "disgust", "empathy", "excitement", "outrage"] } },
+        "identityMechanisms": { "type": "array", "items": { "type": "string", "enum": ["identitySalience", "identityFusion", "inGroupOutGroup", "status"] } },
+        "temporalMechanisms": { "type": "array", "items": { "type": "string", "enum": ["urgency", "deadline", "anticipation"] } }
+      }
+    },
+
+    "substrate": { "type": "string", "enum": ["human", "agent", "hybrid"] },
+    "hostTypes": { "type": "array", "items": { "type": "string", "enum": ["human", "organization", "aiAgent", "hybridHumanAI"] } },
+    "transmissionModes": { "type": "array", "items": { "type": "string", "enum": ["humanToHuman", "humanToAgent", "agentToHuman", "agentToAgent"] } },
+    "persistenceMechanisms": { "type": "array", "items": { "type": "string", "enum": ["biologicalMemory", "document", "socialPlatform", "modelContext", "persistentMemory", "systemPrompt", "workspaceFile", "retrievalStore"] } },
+
+    "agentNative": {
+      "type": "object",
+      "description": "First-class FIELDS for agent-native propagation — not a parallel ontology. Required when substrate != human.",
+      "properties": {
+        "storageMedium": { "type": "array", "items": { "type": "string", "enum": ["memory_file", "vector_store", "model_context", "retrieval_store", "workspace"] } },
+        "runtimeMedium": { "type": "array", "items": { "type": "string", "enum": ["context_window", "tool_output", "generated_message"] } },
+        "memoryMutability": { "type": "string", "enum": ["read_only", "append_only", "rewrite_allowed", "unknown"] },
+        "temporalScope": { "type": "string", "enum": ["session", "persistent", "cross_session", "unknown"] },
+        "emergenceType": { "type": "string", "enum": ["intentional", "emergent", "injected"] },
+        "triggerConditions": { "type": "array", "items": { "type": "string" }, "description": "What causes activation: periodic context check, specific tool output, keyword activation, retransmission trigger." },
+        "retransmissionTrigger": { "type": "string", "description": "What specific condition causes an agent to pass the pattern on (tool call, reflection loop, particular query)." },
+        "interactionTopology": { "type": "array", "items": { "type": "string", "enum": ["chain", "hubSpoke", "peerMesh", "broadcast", "sharedStore", "hierarchical", "unknown"] } },
+        "propagationMechanism": { "type": "array", "items": { "type": "string", "enum": ["passiveContextExposure", "generatedMessage", "retrievalInjection", "memoryWrite", "toolMediated", "orchestrationCopy", "modelUpdate"] } },
+        "capabilities": { "type": "array", "items": { "type": "string", "enum": ["adoption", "persistence", "replication", "behavioralModification"] }, "description": "adoption ≠ persistence ≠ replication — separately measurable." },
+        "agentCapabilitiesRequired": { "type": "array", "items": { "type": "string", "enum": ["persistentMemory", "toolCalling", "selfModification", "retrievalAccess"] } },
+        "privilegeRequirements": { "type": "array", "items": { "type": "string" } },
+        "privilegeBoundaryCrossed": { "type": "string", "enum": ["crossed", "notCrossed", "unknown"] },
+        "trustBoundary": { "type": "array", "items": { "type": "string" }, "description": "e.g. same-sandbox vs cross-principal propagation." },
+        "mutationAdaptation": { "type": "array", "items": { "type": "string" }, "description": "Self-modifies, rephrases, survives sanitization." },
+        "propagationStrategy": { "type": "array", "items": { "type": "string", "enum": ["opportunistic", "instructed", "latent", "recursive"] } },
+        "containmentResistance": { "type": "array", "items": { "type": "string" }, "description": "Survives reset, survives summarization, re-enters via retrieval." },
+        "fidelityMutationRate": { "type": "string", "description": "Verbatim copy vs semantic drift across hops (qualitative until evidence exists)." },
+        "modelSusceptibility": { "type": "array", "items": { "type": "string" }, "description": "Context window depth, RLHF training profiles, etc." },
+        "cognitiveHooks": { "type": "array", "items": { "type": "string", "enum": ["contextPoisoning", "retrievalManipulation", "toolUseDiversion", "selfModificationLoop"] } },
+        "interAgentProtocols": { "type": "array", "items": { "type": "string" }, "description": "Shared memory, message-passing, multi-agent coordination patterns." },
+        "capabilityEscalation": { "type": "boolean" },
+        "stealth": { "type": "boolean", "description": "Detection resistance." },
+        "detectionSignature": {
+          "type": "object",
+          "description": "REQUIRED for any agent-substrate entry claiming replication or persistence (enforced by if/then). Structured, diffable — not prose.",
+          "properties": {
+            "ruleFormat": { "type": "string", "enum": ["regex", "sigma", "yara", "natural_language"] },
+            "ruleContent": { "type": "string" },
+            "memoryDiffPattern": { "type": "string" }
+          }
+        }
+      },
+      "if": {
+        "properties": { "capabilities": { "contains": { "enum": ["replication", "persistence"] } } }
+      },
+      "then": { "required": ["detectionSignature"] }
+    },
+
+    "harm": {
+      "type": "object",
+      "description": "Potential impact of the PATTERN. Observed severity belongs on Observation entities, not here (OpenAI consensus).",
+      "properties": {
+        "impactDomains": { "type": "array", "items": { "type": "string", "enum": ["financial", "psychological", "reputational", "security", "operational", "social", "political", "informational", "physical"] } },
+        "potentialImpact": { "type": "string", "enum": ["none", "low", "moderate", "high", "critical"], "description": "Potential harm severity of the PATTERN (harm lens). Distinct from operationalEnablement.exploitImpact (dual-use lens)." },
+        "harmPotential": { "type": "string", "enum": ["benign", "mixed", "harmful"] },
+        "attributedIntent": { "type": "string", "enum": ["nonmalicious", "ambiguous", "manipulative", "malicious", "unknown"], "description": "Intent is inferred; never asserted as fact. Requires confidence." },
+        "confidence": { "type": "string", "enum": ["low", "medium", "high"] }
+      }
+    },
+
+    "operationalEnablement": {
+      "type": "object",
+      "description": "Dual-use gating. Line is operational enablement, not harmfulness (OpenAI).",
+      "properties": {
+        "operationality": { "type": "string", "enum": ["low", "medium", "high"] },
+        "reproducibility": { "type": "string", "enum": ["low", "medium", "high"] },
+        "requiredAccess": { "type": "string", "enum": ["public", "registered", "vetted"] },
+        "exploitImpact": { "type": "string", "enum": ["low", "medium", "high", "critical"], "description": "Impact if the pattern is exploited (dual-use lens). Distinct from harm.potentialImpact (harm lens). critical added for real severe cases (pilot finding #5)." },
+        "publicAvailability": { "type": "string", "enum": ["widespread", "limited", "novel"] },
+        "disclosureStatus": { "type": "string", "enum": ["full", "partial", "redacted", "withheld"], "description": "Preserve existence of redacted material; never pretend it doesn't exist. Single disclosure field (disclosureLevel merged here)." },
+        "redactionReason": { "type": "string" },
+        "redactedFields": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "status": {
+      "type": "object",
+      "description": "Three independent axes. State-machine matrix must reject invalid combinations (Gemini). EXTINCT is banned; use historical.",
+      "properties": {
+        "recordStatus": { "type": "string", "enum": ["draft", "proposed", "reviewed", "accepted", "deprecated", "rejected"] },
+        "activityStatus": { "type": "string", "enum": ["emerging", "active", "declining", "dormant", "historical", "unknown"], "description": "Requires reference window: timescale + population." },
+        "evidenceStatus": { "type": "string", "enum": ["anecdotal", "observed", "replicated", "disputed"] },
+        "activityReferenceWindow": { "type": "string", "description": "e.g. '2024-2026, global social platforms'." },
+        "statusChangedAt": { "type": "string", "format": "date-time" },
+        "statusChangedBy": { "type": "string" },
+        "statusReason": { "type": "string" }
+      },
+      "required": ["recordStatus", "activityStatus", "evidenceStatus"],
+      "if": {
+        "properties": { "activityStatus": { "not": { "const": "unknown" } } },
+        "required": ["activityStatus"]
+      },
+      "then": { "required": ["activityReferenceWindow"] }
+    },
+
+    "dates": {
+      "type": "object",
+      "properties": {
+        "firstObserved": { "type": ["string", "null"], "format": "date", "description": "ISO-8601; null = genuinely unknown (pilot finding: unknown dates must be expressible)." },
+        "lastObserved": { "type": ["string", "null"], "format": "date", "description": "ISO-8601; null = genuinely unknown." },
+        "documentedDate": { "type": "string", "format": "date" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+
+    "lineage": {
+      "type": "object",
+      "description": "Variant is collapsed into Memome — a Variant IS a Memome with lineage (consensus 5/6).",
+      "properties": {
+        "variantOf": { "type": "string", "pattern": "^MEMOME-[0-9]{6}$" },
+        "derivedFrom": { "type": "string", "pattern": "^MEMOME-[0-9]{6}$" },
+        "supersedes": { "type": "string", "pattern": "^MEMOME-[0-9]{6}$" },
+        "parentId": { "type": "string", "pattern": "^MEMOME-[0-9]{6}$" }
+      }
+    },
+
+    "relationships": {
+      "type": "array",
+      "description": "Graph edges. STRICTLY Memome-to-Memome (MEMOME- → MEMOME-). Non-Memome links (mitigations, observables, sources) use the dedicated ID-reference arrays: mitigationIds[], observableIds[] (Gemini round 3). Never mandatory at creation except lineage when applicable.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": { "type": "string", "pattern": "^MEMOME-[0-9]{6}$" },
+          "relationType": { "type": "string", "enum": ["evolvedFrom", "bundlesWith", "supports", "opposes", "causesOrPromotes", "dependsOn", "mitigatedBy", "indicates", "coOccursWith"], "description": "Lineage hierarchy (variantOf/derivedFrom/supersedes) lives in the lineage object, not here. evolvedFrom = diachronic descent. mitigatedBy/indicates link to mitigation/observable ID-reference arrays, not relationship targets." },
+          "targetId": { "type": "string", "pattern": "^MEMOME-[0-9]{6}$" },
+          "confidence": { "type": "string", "enum": ["low", "medium", "high"] },
+          "evidence": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["sourceId", "relationType", "targetId"]
+      }
+    },
+
+    "mitigationIds": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^MMIT-[0-9]{6}$" },
+      "description": "Dedicated non-graph references to Mitigation entities (Gemini round 3)."
+    },
+    "observableIds": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^OBS-[0-9]{6}$" },
+      "description": "Dedicated non-graph references to Observable entities (Gemini round 3)."
+    },
+
+    "sources": {
+      "type": "array",
+      "description": "Structured evidence records — not raw URLs. Entry-level minimum: ≥1 source.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": { "type": "string", "pattern": "^SRC-[0-9]{6}$" },
+          "sourceType": { "type": "string", "enum": ["paper", "report", "news", "transcript", "observation", "incident"] },
+          "url": { "type": "string" },
+          "citation": { "type": "string" },
+          "reliability": { "type": "string", "enum": ["high", "medium", "low", "unverified"] },
+          "publishedAt": { "type": "string", "format": "date" }
+        },
+        "required": ["sourceId", "sourceType"]
+      }
+    },
+
+    "observables": {
+      "type": "array",
+      "description": "Reusable detection indicators/patterns (embedded, not a separate entity in v0.2 — Perplexity).",
+      "items": { "type": "string" }
+    },
+    "observations": {
+      "type": "array",
+      "description": "Observed instances — the empirical anchor for activityStatus (OpenAI round-3 synthesis: Observation in v0.2, Campaign/Incident/Actor in v0.3). Embedded for the pilot per embed-vs-reference lean; promote to first-class entity at v0.3 if duplication materializes.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "observedAt": { "type": "string", "format": "date" },
+          "environment": { "type": "string" },
+          "population": { "type": "string" },
+          "observedSeverity": { "type": "string", "enum": ["none", "low", "moderate", "high", "critical"] },
+          "source": { "type": "string", "pattern": "^SRC-[0-9]{6}$" },
+          "notes": { "type": "string" }
+        },
+        "required": ["observedAt", "environment", "source"]
+      }
+    },
+    "preconditions": { "type": "array", "items": { "type": "string" } },
+    "scope": { "type": "string", "enum": ["phrase", "script", "narrative", "tactic", "mechanism", "campaign_component"], "description": "Unit of analysis (Max)." },
+    "culturalContext": { "type": "array", "items": { "type": "string" } },
+    "language": { "type": "array", "items": { "type": "string" } },
+
+    "mitigations": {
+      "type": "array",
+      "description": "Technical/architectural controls AND counterNarratives (folded in as type=counterNarrative — resolves dual-representation, Claude round 3). Core rule: no unevidenced mitigation may be represented as effective (OpenAI). Validator rule: evidenceStatus=proposed ⇒ source null/absent AND effectiveness=unknown.",
+      "items": {
+        "type": "object",
+        "if": {
+          "properties": { "evidenceStatus": { "const": "proposed" } },
+          "required": ["evidenceStatus"]
+        },
+        "then": {
+          "properties": {
+            "source": { "type": ["string", "null"] },
+            "effectiveness": { "const": "unknown" }
+          }
+        },
+        "properties": {
+          "id": { "type": "string", "pattern": "^MMIT-[0-9]{6}$" },
+          "type": { "type": "string", "enum": ["architecturalControl", "accessControl", "promptGuardrail", "memoryIsolation", "rateLimit", "humanReview", "friction", "factCheck", "counterNarrative"] },
+          "description": { "type": "string" },
+          "scope": { "type": "string" },
+          "evidenceStatus": { "type": "string", "enum": ["proposed", "anecdotal", "observed", "replicated"] },
+          "effectiveness": { "type": "string", "enum": ["unknown", "low", "medium", "high"] },
+          "effectivenessConfidence": { "type": "string", "enum": ["low", "medium", "high"] },
+          "limitations": { "type": "array", "items": { "type": "string" } },
+          "source": { "type": ["string", "null"], "description": "null/absent allowed only when evidenceStatus=proposed (enforced by if/then)." }
+        },
+        "required": ["type", "description", "evidenceStatus"]
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Lean by default (consensus 5/6). Entry-level provenance + assertions for contested/classificatory claims only.",
+      "properties": {
+        "assertedBy": { "type": "string" },
+        "source": { "type": "string" },
+        "provenanceVersion": { "type": "string" },
+        "assertions": {
+          "type": "array",
+          "description": "Field-level assertions for contested or high-impact fields only (harm, intent, exploitability, payload details, mitigations, archetype).",
+          "items": {
+            "type": "object",
+            "properties": {
+              "assertionId": { "type": "string" },
+              "subject": { "type": "string" },
+              "predicate": { "type": "string" },
+              "value": {},
+              "confidence": { "type": "string", "enum": ["low", "medium", "high"], "description": "Ordinal; semantics defined by the evidence rubric — subjective vs inter-rater vs evidence quality — never a bare number." },
+              "assertedBy": { "type": "string" },
+              "source": { "type": "string" },
+              "method": { "type": "string" },
+              "assertedAt": { "type": "string", "format": "date-time" },
+              "basis": { "type": "string" },
+              "status": { "type": "string", "enum": ["current", "superseded", "contested"] }
+            },
+            "required": ["subject", "predicate", "value", "assertedBy", "assertionId"]
+          }
+        }
+      }
+    },
+
+    "governance": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": { "type": "string" },
+        "license": { "type": "string" },
+        "entryLicense": { "type": "string", "description": "Per-entry override (e.g. CC-BY-NC)." },
+        "contributors": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
