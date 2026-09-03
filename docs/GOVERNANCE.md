@@ -67,12 +67,20 @@ Rules:
 
 ## 7. Inclusion criteria (operational tests, not vibes)
 
+**Admission is lenient; core is strict (ruling 2026-09-03).** Inclusion means acceptance into the living corpus — documented, findable, evidence-labeled. Core/stable membership is a separate, higher bar (replicated evidence + stronger consensus). The asymmetry is deliberate: it is worse to leave a real, harmful pattern undocumented than to host a labeled, uncertain one — and nothing is ever rejected outright, only parked in `proposed/`.
+
 Accept if **≥3 of 5**:
 1. Identifiable semantic or behavioral pattern
 2. Evidence of repeated transmission
 3. Evidence of adoption or behavioral effect
 4. Identifiable transmission mechanism
 5. Recurrence across hosts or contexts
+
+Tests 1 and 4 are near-universal by design (any named pattern has a shape; transmissionModes is a required schema field). **The load-bearing tests are 2, 3, and 5** — so ≥3-of-5 acceptance ⇔ at least one load-bearing test is satisfied. A 2-of-5 candidate (tests 1+4 only) is logged as *proposed*, never rejected outright, and upgraded when evidence accumulates.
+
+Note the harm gate inside Test 3: it is satisfied by *documented* `potentialImpact ≥ moderate` even with no adoption evidence — a meme that exists, is malicious, and caused harm clears the admission bar by construction the moment that harm is documented.
+
+**Reviewer consensus:** the review panel is six independent reviewers; the proposer cannot vote on their own entry, so five votes are cast. **≥3 of 5 independent yes-votes includes an entry; 2 of 5 = proposed.** Reported as 3-of-5 *independent* votes — the proposer's support is definitional and never counted as signal (not "4 of 6"). Votes are channel-isolated (reviewers never see each other's votes), reviewers are cheap, and rounds are iterative: a marginal admission is re-examined as evidence accrues. Core/stable promotion and the INT- (interventions) catalog hold the higher bar: ≥4 of 5 consensus plus replicated evidence — false positives there would recommend mitigations that don't work.
 
 **Test 0 (Object identity) — applied before the five:** *Name what is propagating, without naming the incident, product, CVE, court case, regulator, campaign, or affected software.* If that sentence cannot be answered cleanly, do not score the five tests yet. (Adopted from OpenAI's round-4 review.)
 
