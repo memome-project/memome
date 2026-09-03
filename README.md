@@ -42,9 +42,8 @@ We deliberately ship a *tiered* corpus rather than one flat list:
 
 ## License
 
-- **Corpus data** (entries, schema, docs): **CC-BY-4.0** — open, attribution required, shareable, cannot be re-closed. The corpus is the standard; open is non-negotiable.
-- **Code** (validator, tools, advisor, scanner): **Apache-2.0** — open with patent grant, no copyleft friction in procurement.
-- **Hosted services, certification program, and the Memome trademark** are the monetization layer — separate from the licenses. Open engine, sell the experience (Databricks/Confluent model).
+- **Corpus data** (entries, schema, docs): **CC-BY-4.0** — open, attribution required, cannot be re-closed.
+- **Contributions** are accepted under these terms. See LICENSE for details.
 
 ## The one-line version
 
