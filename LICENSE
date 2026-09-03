@@ -8,18 +8,22 @@ The Memome corpus and schema are licensed under the
 Full text: https://creativecommons.org/licenses/by/4.0/legalcode
 
 You are free to share and adapt the material for any purpose, provided you
-give appropriate credit. See the license page on the website (license.html)
-for the DQ-008 layer map and attribution guidance.
+give appropriate credit.
 
-## Code (HTML, CSS, JS in /website) and docs (/docs)
+## Documentation (/docs)
 
-Website source code and documentation are licensed under the
-**Apache License 2.0**.
+Documentation is licensed under the
+**Creative Commons Attribution 4.0 International (CC-BY-4.0)** license,
+consistent with the corpus it describes.
 
-Full text: https://www.apache.org/licenses/LICENSE-2.0.txt
+## Contributions
 
-## Proprietary layers (not in this repository)
+Contributions to this repository are accepted under the same terms:
+corpus data and documentation under CC-BY-4.0. By opening a pull request,
+you agree to license your contribution accordingly.
 
-The interventions/hardening catalog, outcome data, and the commercial
-scanner are proprietary product content and are intentionally NOT included
-in this public repository.
+## Other Memome materials
+
+Materials not present in this repository (tools, the hardening catalog,
+and any commercial product content) are not covered by this license and
+are not granted by it.

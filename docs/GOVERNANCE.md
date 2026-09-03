@@ -104,9 +104,8 @@ Plus: real cases only; one Source ID = one evidentiary object; no forced values 
 
 **Option A confirmed:** Dan holds schema/launch decisions + final appeal authority. Maintainers (M2 initially) execute routine promote/reject rulings by applying the documented criteria mechanically (Test 0 + 5 tests + source rules). All rulings recorded with a written reason. Dan is the appeal. This prevents the owner from being the bottleneck on proposed entries while preserving final control.
 
-## 11. Licensing (APPROVED — DQ-008, Aug 29 2026)
+## 11. Licensing
 
-- **Corpus data:** CC-BY-4.0 — open standard, attribution required, cannot be re-closed.
-- **Code:** Apache-2.0 — open, patent grant, no copyleft friction.
-- **Monetization layer:** hosted services, certification program, and the Memome trademark (registered pre-launch) — proprietary services, not code. Open engine, sell the experience.
-- **Trademark (DQ-003):** elevated to PRE-LAUNCH — clearance search + US filing before public launch; "Memome-certified" certification is the durable monetization lever.
+- **Corpus data** (entries, schema, docs): **CC-BY-4.0** — open, attribution required, cannot be re-closed.
+- **Contributions** are accepted under these terms.
+- Materials not in this repository are not granted by this license. See LICENSE for details.
