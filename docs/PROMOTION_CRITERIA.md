@@ -18,7 +18,7 @@ An entry is **accepted** if it satisfies **≥3 of 5**:
 
 Tests 1 and 4 are near-universal (almost anything has a shape and a plausible mechanism). **Tests 2, 3, and 5 are load-bearing** — because only two tests are cheap, any 3-of-5 pass necessarily includes at least one load-bearing test. A 2-of-5 candidate is logged as *proposed*, never rejected outright, and may be upgraded when evidence accumulates.
 
-**Admission vs core (ruling 2026-09-03):** admission to the living corpus requires ≥1 load-bearing test (the ≥3-of-5 rule above). Promotion *within* the corpus to core/stable status is stricter: replicated evidence plus reviewer consensus ≥4 of 5. The INT- (interventions) catalog likewise holds the higher bar. This asymmetry is deliberate — include generously, certify conservatively. Harm inside Test 3 (documented `potentialImpact ≥ moderate`) satisfies it regardless of adoption evidence, so genuinely harmful memes clear admission by construction.
+**Admission vs core (ruling 2026-09-03):** admission to the living corpus requires ≥1 load-bearing test (the ≥3-of-5 rule above). Promotion *within* the corpus to core/stable status is stricter: replicated evidence plus reviewer consensus ≥4 of 5. This asymmetry is deliberate — include generously, certify conservatively. Harm inside Test 3 (documented `potentialImpact ≥ moderate`) satisfies it regardless of adoption evidence, so genuinely harmful memes clear admission by construction.
 
 ## 2. Test 0 — Object identity (applied BEFORE the five)
 
