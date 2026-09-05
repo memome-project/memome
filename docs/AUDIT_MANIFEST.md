@@ -1,6 +1,8 @@
 # Memome Audit Manifest
 
-*Version: v0.2-draft (NON-STABLE) · Generated 2026-08-29 · Public*
+*Version: v0.2-draft (NON-STABLE) · Generated 2026-08-29 · Revised 2026-09-06 · Public*
+
+*2026-09-06 revision: source-registry dedup actually applied to corpus JSON + launch artifacts (was previously claimed, not executed); launch_repo rebuilt from the audited master corpus; status-drift item moved to open items below.*
 
 *Purpose: answer "which entries can I actually trust?" in one place. Every entry is labeled by evidence tier, so a skeptical reader never has to guess what level of verification a record has had. This manifest is itself open to comment during the 90-day comment period.*
 
@@ -38,8 +40,8 @@ All verified against the corpus JSON, not asserted:
 - **Time-travel lineage ×5:** 000012, 000021, 000024 → 000010; 000014 → 000006; 000036 → 000023 — impossible edges broken (child observed before parent)
 - **Dates:** 000014 Morris II corrected to 2024-04
 - **Source-ID namespace:** `src:00X` legacy refs normalized to `SRC-00000X` (5 entries); raw URLs in 000030/000031 mitigation sources repointed to SRC- IDs
-- **Source registry dedup:** arXiv 2608.10218 (SRC-000003/000006) and HF disclosure (SRC-000020/000088) resolved
-- **Status drift:** active-on-stale-observation entries flagged for wording fix (000082, 000088, 000090, 000092 reviewed)
+- **Source registry dedup (applied 2026-09-06):** arXiv 2608.10218 canonicalized to a single SRC ID (`SRC-000006`; `SRC-000003` retired) and the HF July-2026 disclosure to `SRC-000088` (`SRC-000020` retired) across the corpus — including removal of the duplicate folded HF row inside 000065. Earlier wording claimed this was resolved, but the source rows were only merged at entry level; the registry itself is now deduplicated and re-verified (0 URL→multi-SRC-ID violations corpus-wide).
+- **Launch artifacts rebuilt from audited master (2026-09-06):** `launch_repo/` was previously packaged from the pre-fix review snapshot, so the shipped JSONs still contained the time-travel edges, 000043's self-lineage, and the unmerged 000065. Build now reads the fixed master corpus; all tiers re-verified clean.
 - **Validator:** full corpus PASS, 0 errors, 0 warnings (schema + consensus rules)
 
 ## 4. Known limitations (disclosed, not hidden)
@@ -47,6 +49,7 @@ All verified against the corpus JSON, not asserted:
 - **60% graph isolation:** 56/94 entries in the full corpus have zero lineage and zero relationships. The launch tier's family edges are being completed; the isolation rate is a known limitation, not a fixable pre-launch blocker.
 - **observations[] empty:** the schema's observation entities are currently unpopulated across the corpus (dead code). Planned: populate as part of the Observation-layer rollout (v0.3).
 - **Rehberger concentration:** 12/94 entries trace to one independent researcher (5 sole-source). Disclosed per SOURCING_RUBRIC §5.
+- **Open item — status-drift wording fix (NOT yet fixed):** 000082, 000088, 000090, 000092 flagged by round-4 review (Max; OpenAI on 000031) as active-on-stale-observation. Reviewed 2026-08-29 but the wording change was never applied — entries still carry `activityStatus: active` with 2023–2024 `lastObserved` dates and an `activityReferenceWindow` rationale. Flagged, not fixed; do not read as done.
 - **NON-STABLE:** IDs are provisional; enums and fields will change before v0.3. Nothing is frozen.
 
 ## 5. How to challenge this manifest
