@@ -100,7 +100,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:dan",
+        "assertedBy": "Memome contributors",
         "source": "src:002",
         "provenanceVersion": "0.2-draft.1",
         "assertions": []
@@ -109,7 +109,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:dan"
+          "Memome contributors"
         ]
       },
       "agentNative": {
@@ -325,7 +325,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:dan",
+        "assertedBy": "Memome contributors",
         "source": "src:003",
         "provenanceVersion": "0.2-draft.1",
         "assertions": []
@@ -334,7 +334,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:dan"
+          "Memome contributors"
         ]
       }
     },
@@ -423,7 +423,7 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:dan",
+        "assertedBy": "Memome contributors",
         "source": "src:004",
         "provenanceVersion": "0.2-draft.1",
         "assertions": []
@@ -432,7 +432,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:dan"
+          "Memome contributors"
         ]
       }
     },
@@ -525,7 +525,7 @@
       "scope": "tactic",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:dan",
+        "assertedBy": "Memome contributors",
         "source": "src:005",
         "provenanceVersion": "0.2-draft.1",
         "assertions": []
@@ -534,7 +534,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:dan"
+          "Memome contributors"
         ]
       },
       "agentNative": {
@@ -681,7 +681,7 @@
       "scope": "tactic",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000008",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -690,7 +690,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -825,7 +825,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000010",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -834,7 +834,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -967,7 +967,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000013",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -976,7 +976,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -1110,7 +1110,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000014",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1119,7 +1119,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -1209,7 +1209,7 @@
       "scope": "campaign_component",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000016",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1218,7 +1218,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -1346,7 +1346,7 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000017",
         "provenanceVersion": "0.2-draft.2",
         "assertions": [
@@ -1356,7 +1356,7 @@
             "predicate": "classified_as",
             "value": "composite",
             "confidence": "medium",
-            "assertedBy": "contributor:m2",
+            "assertedBy": "Memome contributors",
             "source": "SRC-000017",
             "method": "expert judgment",
             "assertedAt": "2026-08-23T00:00:00Z",
@@ -1369,7 +1369,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -1499,7 +1499,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000025",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1508,7 +1508,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -1592,7 +1592,7 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000029",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1601,7 +1601,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -1687,7 +1687,7 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000030",
         "provenanceVersion": "0.2-draft.2",
         "assertions": [
@@ -1697,7 +1697,7 @@
             "predicate": "classified_as",
             "value": "unknown",
             "confidence": "low",
-            "assertedBy": "contributor:m2",
+            "assertedBy": "Memome contributors",
             "source": "SRC-000030",
             "method": "expert judgment",
             "assertedAt": "2026-08-23T00:00:00Z",
@@ -1710,7 +1710,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -1812,7 +1812,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000032",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1821,7 +1821,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -1914,7 +1914,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000036",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1923,7 +1923,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -2047,7 +2047,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000038",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2056,7 +2056,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -2188,7 +2188,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000040",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2197,7 +2197,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -2321,7 +2321,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000041",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2330,7 +2330,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -2453,7 +2453,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000043",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2462,7 +2462,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -2548,7 +2548,7 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000044",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2557,7 +2557,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -2639,7 +2639,7 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000048",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2648,7 +2648,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -2729,7 +2729,7 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000049",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2738,7 +2738,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -2862,7 +2862,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000050",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2871,7 +2871,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -3028,7 +3028,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000054",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3037,7 +3037,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -3189,7 +3189,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000056",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3198,7 +3198,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -3363,7 +3363,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000059",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3372,7 +3372,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -3531,7 +3531,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000062",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3540,7 +3540,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -3687,7 +3687,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000064",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3696,7 +3696,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -3865,7 +3865,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000066",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3874,7 +3874,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -4045,7 +4045,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000069",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4054,7 +4054,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -4206,7 +4206,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000086",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4215,7 +4215,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -4392,7 +4392,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000091",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4401,7 +4401,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -4558,7 +4558,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000094",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4567,7 +4567,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -4741,7 +4741,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000096",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4750,7 +4750,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -4909,7 +4909,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000099",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4918,7 +4918,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -5088,7 +5088,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000101",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5097,7 +5097,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -5277,7 +5277,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000107",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5286,7 +5286,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -5458,7 +5458,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000109",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5467,7 +5467,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -5645,7 +5645,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000112",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5654,7 +5654,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -5771,7 +5771,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000119",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5780,7 +5780,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -5948,7 +5948,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000121",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5957,7 +5957,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -6131,7 +6131,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000129",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -6140,7 +6140,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }

@@ -101,7 +101,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000081",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -110,7 +110,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -262,7 +262,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000083",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -271,7 +271,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -392,7 +392,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000114",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -401,7 +401,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -510,7 +510,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000117",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -519,7 +519,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
@@ -688,7 +688,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "contributor:m2",
+        "assertedBy": "Memome contributors",
         "source": "SRC-000124",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -697,7 +697,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "contributor:m2"
+          "Memome contributors"
         ],
         "entryVersion": 1
       }
