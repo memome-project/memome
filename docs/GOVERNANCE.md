@@ -82,7 +82,7 @@ Note the harm gate inside Test 3: it is satisfied by *documented* `potentialImpa
 
 **Reviewer consensus:** the review panel is six independent reviewers; the proposer cannot vote on their own entry, so five votes are cast. **≥3 of 5 independent yes-votes includes an entry; 2 of 5 = proposed.** Reported as 3-of-5 *independent* votes — the proposer's support is definitional and never counted as signal (not "4 of 6"). Votes are channel-isolated (reviewers never see each other's votes), reviewers are cheap, and rounds are iterative: a marginal admission is re-examined as evidence accrues. Core/stable promotion holds the higher bar: ≥4 of 5 consensus plus replicated evidence.
 
-**Test 0 (Object identity) — applied before the five:** *Name what is propagating, without naming the incident, product, CVE, court case, regulator, campaign, or affected software.* If that sentence cannot be answered cleanly, do not score the five tests yet. (Adopted from OpenAI's round-4 review.)
+**Test 0 (Object identity) — applied before the five:** *Name what is propagating, without naming the incident, product, CVE, court case, regulator, campaign, or affected software.* If that sentence cannot be answered cleanly, do not score the five tests yet. (Adopted from an independent round-4 review.)
 
 Plus: real cases only; one Source ID = one evidentiary object; no forced values (blank/`unknown` is valid); mechanism, not ideology — entries never judge whether an idea is "bad," only what it does and how it moves.
 

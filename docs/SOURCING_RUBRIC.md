@@ -22,7 +22,7 @@ Example: an FCC forfeiture order is *high-credibility evidence that an enforceme
 | Official regulatory/court document (FCC order, court opinion, FTC action) | `high` | For the event; separate claim-sufficiency check for any pattern-level claims |
 | CVE / NVD entry | `high` | Technical facts |
 | Peer-reviewed paper / institutional preprint | `high` | Lab results must be labeled lab-vs-field |
-| Vendor security disclosure (Trail of Bits, Unit 42, Snyk, MSRC, Sysdig, etc.) | `medium` by default; `high` only if CVE-backed or independently corroborated | Self-interested by default (Perplexity: "a press release about a vulnerability you found is categorically different from an FCC order") |
+| Vendor security disclosure (Trail of Bits, Unit 42, Snyk, MSRC, Sysdig, etc.) | `medium` by default; `high` only if CVE-backed or independently corroborated | Self-interested by default (independent reviewer: "a press release about a vulnerability you found is categorically different from an FCC order") |
 | Major outlet (Reuters, AP, BBC, Guardian, The Verge, BleepingComputer, Hacker News) | `medium` | Named journalism, not primary evidence for technical classifications or exact statistics |
 | PR-wire / press-release distribution | `low` | A company marketing its own finding |
 | Wikipedia or any tertiary aggregator | `low` | Tertiary; never on par with primary sources |

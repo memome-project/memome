@@ -22,8 +22,8 @@
       "description": "Opaque sequential ID, zero-padded ≥6 digits, uppercase, case-insensitive canonicalization. Never recycled. Deleted/rejected entries remain as tombstones with a deprecation notice."
     },
     "slug": { "type": "string", "description": "Stable human-readable alias, e.g. 'scarcity-deadline'. Not an identifier." },
-    "entryVersion": { "type": "integer", "minimum": 1, "default": 1, "description": "Per-entry revision counter (Perplexity round 3)." },
-    "versionHistory": { "type": "array", "items": { "type": "object", "properties": { "version": { "type": "integer" }, "changedAt": { "type": "string", "format": "date-time" }, "changedBy": { "type": "string" }, "summary": { "type": "string" } } }, "description": "Revision log (Perplexity round 3)." },
+    "entryVersion": { "type": "integer", "minimum": 1, "default": 1, "description": "Per-entry revision counter (independent review, round 3)." },
+    "versionHistory": { "type": "array", "items": { "type": "object", "properties": { "version": { "type": "integer" }, "changedAt": { "type": "string", "format": "date-time" }, "changedBy": { "type": "string" }, "summary": { "type": "string" } } }, "description": "Revision log (independent review, round 3)." },
     "name": { "type": "string", "description": "Canonical display name." },
     "aliases": { "type": "array", "items": { "type": "string" }, "description": "Common alternative names / hashtags / phrasings, each with provenance where available." },
 
@@ -49,7 +49,7 @@
       "type": "object",
       "description": "Optional multi-select interpretive facets. The Polti × Cialdini × archetype cube is a COMPUTED VIEW, never a schema constraint. No cell field exists.",
       "properties": {
-        "primaryNarrativeTemplate": { "type": "string", "pattern": "^Polti #[0-9]{1,2}( \\(.+\\))?$", "description": "Polti dramatic situation ID, e.g. 'Polti #12 (Obtaining)' (Perplexity round 3 pattern constraint)." },
+        "primaryNarrativeTemplate": { "type": "string", "pattern": "^Polti #[0-9]{1,2}( \\(.+\\))?$", "description": "Polti dramatic situation ID, e.g. 'Polti #12 (Obtaining)' (independent review, round 3 pattern constraint)." },
         "secondaryNarrativeTemplates": { "type": "array", "items": { "type": "string" } },
         "primaryPersuasionPrinciple": { "type": "string", "enum": ["reciprocity", "commitmentConsistency", "socialProof", "authority", "liking", "scarcity", "unity"] },
         "secondaryPersuasionPrinciples": { "type": "array", "items": { "type": "string", "enum": ["reciprocity", "commitmentConsistency", "socialProof", "authority", "liking", "scarcity", "unity"] } },
@@ -111,7 +111,7 @@
 
     "harm": {
       "type": "object",
-      "description": "Potential impact of the PATTERN. Observed severity belongs on Observation entities, not here (OpenAI consensus).",
+      "description": "Potential impact of the PATTERN. Observed severity belongs on Observation entities, not here (independent review consensus).",
       "properties": {
         "impactDomains": { "type": "array", "items": { "type": "string", "enum": ["financial", "psychological", "reputational", "security", "operational", "social", "political", "informational", "physical"] } },
         "potentialImpact": { "type": "string", "enum": ["none", "low", "moderate", "high", "critical"], "description": "Potential harm severity of the PATTERN (harm lens). Distinct from operationalEnablement.exploitImpact (dual-use lens)." },
@@ -123,7 +123,7 @@
 
     "operationalEnablement": {
       "type": "object",
-      "description": "Dual-use gating. Line is operational enablement, not harmfulness (OpenAI).",
+      "description": "Dual-use gating. Line is operational enablement, not harmfulness (independent review).",
       "properties": {
         "operationality": { "type": "string", "enum": ["low", "medium", "high"] },
         "reproducibility": { "type": "string", "enum": ["low", "medium", "high"] },
@@ -138,7 +138,7 @@
 
     "status": {
       "type": "object",
-      "description": "Three independent axes. State-machine matrix must reject invalid combinations (Gemini). EXTINCT is banned; use historical.",
+      "description": "Three independent axes. State-machine matrix must reject invalid combinations (independent review). EXTINCT is banned; use historical.",
       "properties": {
         "recordStatus": { "type": "string", "enum": ["draft", "proposed", "reviewed", "accepted", "deprecated", "rejected"] },
         "activityStatus": { "type": "string", "enum": ["emerging", "active", "declining", "dormant", "historical", "unknown"], "description": "Requires reference window: timescale + population." },
@@ -180,7 +180,7 @@
 
     "relationships": {
       "type": "array",
-      "description": "Graph edges. STRICTLY Memome-to-Memome (MEMOME- → MEMOME-). Non-Memome links (mitigations, observables, sources) use the dedicated ID-reference arrays: mitigationIds[], observableIds[] (Gemini round 3). Never mandatory at creation except lineage when applicable.",
+      "description": "Graph edges. STRICTLY Memome-to-Memome (MEMOME- → MEMOME-). Non-Memome links (mitigations, observables, sources) use the dedicated ID-reference arrays: mitigationIds[], observableIds[] (independent review, round 3). Never mandatory at creation except lineage when applicable.",
       "items": {
         "type": "object",
         "properties": {
@@ -197,12 +197,12 @@
     "mitigationIds": {
       "type": "array",
       "items": { "type": "string", "pattern": "^MMIT-[0-9]{6}$" },
-      "description": "Dedicated non-graph references to Mitigation entities (Gemini round 3)."
+      "description": "Dedicated non-graph references to Mitigation entities (independent review, round 3)."
     },
     "observableIds": {
       "type": "array",
       "items": { "type": "string", "pattern": "^OBS-[0-9]{6}$" },
-      "description": "Dedicated non-graph references to Observable entities (Gemini round 3)."
+      "description": "Dedicated non-graph references to Observable entities (independent review, round 3)."
     },
 
     "sources": {
@@ -224,12 +224,12 @@
 
     "observables": {
       "type": "array",
-      "description": "Reusable detection indicators/patterns (embedded, not a separate entity in v0.2 — Perplexity).",
+      "description": "Reusable detection indicators/patterns (embedded, not a separate entity in v0.2 — independent review).",
       "items": { "type": "string" }
     },
     "observations": {
       "type": "array",
-      "description": "Observed instances — the empirical anchor for activityStatus (OpenAI round-3 synthesis: Observation in v0.2, Campaign/Incident/Actor in v0.3). Embedded for the pilot per embed-vs-reference lean; promote to first-class entity at v0.3 if duplication materializes.",
+      "description": "Observed instances — the empirical anchor for activityStatus (independent review, round-3 synthesis: Observation in v0.2, Campaign/Incident/Actor in v0.3). Embedded for the pilot per embed-vs-reference lean; promote to first-class entity at v0.3 if duplication materializes.",
       "items": {
         "type": "object",
         "properties": {
@@ -250,7 +250,7 @@
 
     "mitigations": {
       "type": "array",
-      "description": "Technical/architectural controls AND counterNarratives (folded in as type=counterNarrative — resolves dual-representation, Claude round 3). Core rule: no unevidenced mitigation may be represented as effective (OpenAI). Validator rule: evidenceStatus=proposed ⇒ source null/absent AND effectiveness=unknown.",
+      "description": "Technical/architectural controls AND counterNarratives (folded in as type=counterNarrative — resolves dual-representation, independent review, round 3). Core rule: no unevidenced mitigation may be represented as effective (independent review). Validator rule: evidenceStatus=proposed ⇒ source null/absent AND effectiveness=unknown.",
       "items": {
         "type": "object",
         "if": {
