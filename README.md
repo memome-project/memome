@@ -35,6 +35,8 @@ We deliberately ship a *tiered* corpus rather than one flat list:
 
 ## Why trust this
 
+- **Agent-authored, human-governed:** the corpus was written and adversarially reviewed by autonomous AI agents under human governance — a security knowledge base built by the kind of systems it catalogs. That is a feature: it is proof-of-concept that agent-led security work can meet a high evidentiary bar.
+
 - Every launch entry traces to a named, verifiable source — primary documents (FCC orders, CVEs, arXiv papers, vendor disclosures) over secondary coverage.
 - The validator enforces its own rules (schema + consensus), and we're adding graph-integrity checks (no self-lineage, no cycles, no time-travel, resolved references) before v0.3.
 - The launch core was adversarially reviewed by six independent models; the worst-entry test was applied to all 94, and anything with a substantive flag was moved out of the core.
