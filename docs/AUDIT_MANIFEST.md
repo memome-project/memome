@@ -21,13 +21,13 @@
 
 ## 2. Launch corpus (37) — verification summary
 
-*Full per-entry table generated alongside this document. Summary:*
+*Summary below; the full per-entry table is produced at launch packaging, not in this draft tree.*
 
 - **Primary-verified:** the majority of the 37 — CVEs, FCC orders, official vendor disclosures, arXiv papers, court documents. These survive the "open the source" test.
 - **Lab-labeled:** entries whose core evidence is a research demonstration are explicitly labeled (e.g., lab-vs-field caveat on the flagship agent-native entry per round-4 review).
 - **Replication status:** entries marked `replicated` meet the ≥2-independent-sources bar; the independence rule (no same-report-multi-outlet inflation) was applied.
 
-*Detailed per-entry table: see `AUDIT_MANIFEST_DETAIL.md` (generated at launch packaging).*
+*Full per-entry detail: `AUDIT_MANIFEST_DETAIL.md`, generated at launch packaging.*
 
 ## 3. What was fixed before launch (round-4 audit trail)
 

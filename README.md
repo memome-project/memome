@@ -10,7 +10,7 @@ Memome is the MITRE ATT&CK of information propagation and manipulation: a shared
 
 | Directory | Contents |
 |-----------|----------|
-| `corpus/` | **37 launch entries** — the launch core. These 37 of the 94 entries assessed for this draft survived six adversarial reviews (Grok, OpenAI, Max, Claude, Perplexity, Gemini) plus strict triage with no substantive flags standing; the rest remain in `proposed/`, live as dated observation/response records, or were retired. |
+| `corpus/` | **37 launch entries** — the launch core. These 37 of the 94 entries assessed for this draft survived six independent adversarial reviews plus strict triage with no substantive flags standing; the rest remain in `proposed/`, live as dated observation/response records, or were retired. |
 | `proposed/` | **42 entries awaiting evidence** — patterns we believe are real but that need repeated-transmission/recurrence evidence or source upgrades. **We want your input here.** Each proposed entry documents its promotion path. |
 | `observations/` | **7 dated incident records** — real events attached as evidence to parent patterns (e.g., the July 2026 Hugging Face incident). |
 | `responses/` | **5 enforcement/court/policy records** — mitigations, rulings, takedowns (e.g., FCC forfeiture orders). |

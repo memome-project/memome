@@ -19,7 +19,7 @@
     "id": {
       "type": "string",
       "pattern": "^MEMOME-[0-9]{6}$",
-      "description": "Opaque sequential ID, zero-padded ≥6 digits, uppercase, case-insensitive canonicalization. Never recycled. Deleted/rejected entries remain tombstones (resolution behavior: HTTP 410 Gone + deprecation notice)."
+      "description": "Opaque sequential ID, zero-padded ≥6 digits, uppercase, case-insensitive canonicalization. Never recycled. Deleted/rejected entries remain as tombstones with a deprecation notice."
     },
     "slug": { "type": "string", "description": "Stable human-readable alias, e.g. 'scarcity-deadline'. Not an identifier." },
     "entryVersion": { "type": "integer", "minimum": 1, "default": 1, "description": "Per-entry revision counter (Perplexity round 3)." },
@@ -29,7 +29,7 @@
 
     "type": {
       "type": "object",
-      "description": "Multi-axis type. Singular type enums are dead — see review consensus (Gemini, OpenAI, Max).",
+      "description": "Multi-axis type. Singular type enums are dead — see review consensus.",
       "properties": {
         "contentForm": {
           "type": "string",
@@ -244,7 +244,7 @@
       }
     },
     "preconditions": { "type": "array", "items": { "type": "string" } },
-    "scope": { "type": "string", "enum": ["phrase", "script", "narrative", "tactic", "mechanism", "campaign_component"], "description": "Unit of analysis (Max)." },
+    "scope": { "type": "string", "enum": ["phrase", "script", "narrative", "tactic", "mechanism", "campaign_component"], "description": "Unit of analysis." },
     "culturalContext": { "type": "array", "items": { "type": "string" } },
     "language": { "type": "array", "items": { "type": "string" } },
 

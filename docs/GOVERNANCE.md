@@ -14,11 +14,11 @@ Decision authority:
 
 | Decision class | Authority | Notes |
 |----------------|-----------|-------|
-| Schema changes, launch/release decisions | **Owner (Dan)** | Final say; appeal authority for all disputes |
-| Routine promote/reject rulings on evidence | **Maintainers (M2, initially)** | Apply documented criteria mechanically; Dan is the appeal |
+| Schema changes, launch/release decisions | **Owner** | Final say; appeal authority for all disputes |
+| Routine promote/reject rulings on evidence | **Maintainers (pilot)** | Apply documented criteria mechanically; the Owner is the appeal |
 | Dual-use / redaction disputes | **Dual-Use Review Board** (3–5: technical + ethics + domain) | Maintainer proposes, board disposes; quorum ≥3, majority |
 | Contested classifications | **Assertion mechanism** (not votes) | First disputer writes an assertion; no edit wars |
-| Final appeal | **Owner (Dan)** | Decisions recorded as provenance |
+| Final appeal | **Owner** | Decisions recorded as provenance |
 
 ## 2. Roles
 
@@ -26,9 +26,9 @@ Decision authority:
 |------|-----|--------|
 | **Contributor** | anyone | submit evidence, propose entries, open disputes, comment on process |
 | **Coder** (pilot) | 3–5 independent (incl. ≥1 LLM) | catalog incidents per coding guide; inter-rater measurement |
-| **Maintainer** | M2 (pilot); TBD post-pilot | merge entries, run validator, execute routine rulings, publish drafts |
+| **Maintainer** | Appointed (pilot); TBD post-pilot | merge entries, run validator, execute routine rulings, publish drafts |
 | **Dual-Use Review Board** | 3–5: technical + ethics + domain | decide redaction/exploitability disputes, gate high-exploitability payload fields |
-| **Arbiter** | Dan (pilot); elected panel (post-pilot) | final appeal |
+| **Arbiter** | Owner (pilot); elected panel (post-pilot) | final appeal |
 
 Rules:
 - **No single-editor authority over dual-use decisions.** Maintainer proposes, board disposes.
@@ -100,9 +100,9 @@ Plus: real cases only; one Source ID = one evidentiary object; no forced values 
 - **v0.3:** enum/field freeze after real-data validation + comment period; stable ID policy.
 - **CHANGELOG + DECISIONS_LOG:** every change is a PR, reviewed, attributed. No silent edits.
 
-## 10. Delegation (APPROVED — DQ-006, Aug 29 2026)
+## 10. Delegation (APPROVED Aug 29 2026)
 
-**Option A confirmed:** Dan holds schema/launch decisions + final appeal authority. Maintainers (M2 initially) execute routine promote/reject rulings by applying the documented criteria mechanically (Test 0 + 5 tests + source rules). All rulings recorded with a written reason. Dan is the appeal. This prevents the owner from being the bottleneck on proposed entries while preserving final control.
+**Option A confirmed:** the Owner holds schema/launch decisions + final appeal authority. Maintainers (pilot) execute routine promote/reject rulings by applying the documented criteria mechanically (Test 0 + 5 tests + source rules). All rulings recorded with a written reason. The Owner is the appeal. This prevents the owner from being the bottleneck on proposed entries while preserving final control.
 
 ## 11. Licensing
 

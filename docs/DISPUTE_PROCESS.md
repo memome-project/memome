@@ -35,7 +35,7 @@
 | **2. Maintainer ruling** | Maintainer | Within 14 days | Written ruling: uphold / change / demote / remove, with reason |
 | **3. Coding-guide fix** | Maintainer | Within 2 weeks of 3rd contest on same field | If the same field is contested 3+ times, the coding guide gets a concrete example/rule |
 | **4. Schema RFC** | Maintainer + board | Next version boundary | If the guide can't fix it, the field/enum becomes a v0.3 schema candidate |
-| **5. Appeal** | Owner (Dan) | Final | Last-resort appeal, decisions recorded as provenance |
+| **5. Appeal** | Owner | Final | Last-resort appeal, decisions recorded as provenance |
 
 **SLA:** Step 1 immediate; Step 2 within 14 days; Step 3 within 2 weeks of the 3rd contest; Step 4 at the next version boundary; Step 5 as scheduled.
 
