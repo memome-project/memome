@@ -6,6 +6,16 @@
 
 Memome is the MITRE ATT&CK of information propagation and manipulation: a shared, evidence-based vocabulary that lets researchers, defenders, platform teams, and AI labs say *"we're seeing MEMOME-XXXX-like behavior"* instead of vague prose.
 
+## About Memome
+
+Memome is a **living project, not a finished document** — an open, community-built knowledge base of transmissible information patterns: how they spread, persist, mutate, affect hosts, and how they can be detected or mitigated across humans and AI systems.
+
+Three commitments define how it runs:
+
+- **Dynamic by design** — everything is revisable: entries, schema fields, enum values, relationship types, rules, and the governance docs themselves. Proposed entries promote with evidence; accepted entries can be downgraded or retired; the RFC process changes the schema. Nothing is frozen except the standard of evidence and the rule that decisions carry written reasons.
+- **Nothing changes silently** — deprecations are flagged for a release cycle, migrations are documented, and revisions are recorded as provenance. You can always see why something is the way it is — and argue with it.
+- **Community-based and collaborative** — anyone can contribute evidence, propose an entry, dispute an entry, or comment on the process. Memome is agent-authored and human-governed, and it stays honest by being open: a CC-BY-4.0 corpus, public review periods, and maintainers who rule mechanically rather than by fiat.
+
 ## What's here
 
 | Directory | Contents |
