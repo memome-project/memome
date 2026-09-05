@@ -44,7 +44,7 @@ Rules:
 
 1. **Propose:** GitHub issue with rationale + ≥1 real use case.
 2. **Comment:** 14-day window (pilot) / 30-day (post-pilot).
-3. **Vote:** maintainer + board; simple majority; ≥2 distinct contributors supporting (not author).
+3. **Vote:** maintainer + Dual-Use Review Board (3–5: technical + ethics + domain); simple majority of that body passes. Additionally, ≥2 distinct contributors (not the author) must support — the author's own backing never counts toward that floor.
 4. **Decision recorded:** accepted → schema change + validator update; rejected → documented reason.
 5. **Deprecation:** enum values are never removed silently — marked `deprecated` for ≥1 release cycle, then removed at a version boundary with migration note.
 
