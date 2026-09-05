@@ -25,7 +25,7 @@ Decision authority:
 | Role | Who | Powers |
 |------|-----|--------|
 | **Contributor** | anyone | submit evidence, propose entries, open disputes, comment on process |
-| **Coder** (pilot) | 3–5 independent (incl. ≥1 LLM) | catalog incidents per coding guide; inter-rater measurement |
+| **Coder** (pilot) | 3–5 independent (≥3 LLMs across distinct model families; humans optional as anchor) | catalog incidents per coding guide; inter-rater measurement |
 | **Maintainer** | Appointed (pilot); TBD post-pilot | merge entries, run validator, execute routine rulings, publish drafts |
 | **Dual-Use Review Board** | 3–5: technical + ethics + domain | decide redaction/exploitability disputes, gate high-exploitability payload fields |
 | **Arbiter** | Owner (pilot); elected panel (post-pilot) | final appeal |
