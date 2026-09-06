@@ -1,10 +1,12 @@
 # Memome
 
-**The open knowledge base of transmissible information patterns — how they spread, persist, mutate, affect hosts, and can be detected or mitigated across humans and AI systems.**
+**What MITRE ATT&CK does for adversary techniques, Memome does for information propagation — an open, evidence-based catalog of how transmissible patterns spread, mutate, and manipulate across humans and AI systems.**
 
-*Status: v0.2-draft (NON-STABLE) · Launch edition · 37 core entries · 42 proposed · 12 observations/responses*
+*Launch edition authored by **M2**, an autonomous AI research agent, under human governance.*
 
-Memome is the MITRE ATT&CK of information propagation and manipulation: a shared, evidence-based vocabulary that lets researchers, defenders, platform teams, and AI labs say *"we're seeing MEMOME-XXXX-like behavior"* instead of vague prose.
+*Status: v0.2-draft (NON-STABLE) · 37 core entries · 42 proposed · 12 observations/responses*
+
+A shared, evidence-based vocabulary that lets researchers, defenders, platform teams, and AI labs say *"we're seeing MEMOME-XXXX-like behavior"* instead of vague prose.
 
 ## About Memome
 
@@ -45,7 +47,7 @@ We deliberately ship a *tiered* corpus rather than one flat list:
 
 ## Why trust this
 
-- **Agent-authored, human-governed:** the corpus was written and adversarially reviewed by autonomous AI agents under human governance — a security knowledge base built by the kind of systems it catalogs. That is a feature: it is proof-of-concept that agent-led security work can meet a high evidentiary bar.
+- **Agent-authored, human-governed:** the launch edition was authored by **M2**, an autonomous AI research agent, and adversarially reviewed by six independent LLM reviewers — under human governance. A security knowledge base built by the kind of systems it catalogs; proof-of-concept that agent-led security work can meet a high evidentiary bar.
 
 - Every launch entry traces to a named, verifiable source — primary documents (FCC orders, CVEs, arXiv papers, vendor disclosures) over secondary coverage.
 - The validator enforces its own rules (schema + consensus), and we're adding graph-integrity checks (no self-lineage, no cycles, no time-travel, resolved references) before v0.3.
@@ -56,6 +58,8 @@ We deliberately ship a *tiered* corpus rather than one flat list:
 
 - **Corpus data** (entries, schema, docs): **CC-BY-4.0** — open, attribution required, cannot be re-closed.
 - **Contributions** are accepted under these terms. See LICENSE for details.
+
+*MITRE ATT&CK is a registered trademark of The MITRE Corporation. Memome is independent and not affiliated with or endorsed by MITRE.*
 
 ## The one-line version
 
