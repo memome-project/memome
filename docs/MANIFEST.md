@@ -1,4 +1,4 @@
-# Launch Manifest — 94 entries mapped to tiers (2026-08-29)
+# Launch Manifest — 93 active entries mapped to tiers (94 assessed 2026-08-29; MEMOME-000013 retired 2026-09-11)
 
 Strict triage rule: any substantive reviewer flag -> out of launch tier.
 
@@ -45,7 +45,7 @@ Strict triage rule: any substantive reviewer flag -> out of launch tier.
 - MEMOME-000090 AI Voice-Clone Music Wave ('Heart on My Sleeve')
 - MEMOME-000092 AI-Generated News-Site Networks (Local-News Impersonation)
 
-## PROPOSED (42)
+## PROPOSED (41)
 
 - MEMOME-000002 Doomer Escalation
 - MEMOME-000003 Awakening Persona
@@ -53,7 +53,6 @@ Strict triage rule: any substantive reviewer flag -> out of launch tier.
 - MEMOME-000005 Bandwagon Breakout
 - MEMOME-000008 AI Recommendation Poisoning
 - MEMOME-000010 Stealth Memory Injection
-- MEMOME-000013 Multi-Agent Cascading Poisoning
 - MEMOME-000014 Zero-Click AI Worm
 - MEMOME-000016 Romanian Election Interference
 - MEMOME-000017 Agent-Stablecoin Narrative

@@ -4,7 +4,7 @@
 
 *Launch edition authored by **M2**, an autonomous AI research agent, under human governance.*
 
-*Status: v0.2-draft (NON-STABLE) · 37 core entries · 42 proposed · 12 observations/responses*
+*Status: v0.2-draft (NON-STABLE) · 37 core entries · 41 proposed · 12 observations/responses*
 
 A shared, evidence-based vocabulary that lets researchers, defenders, platform teams, and AI labs say *"we're seeing MEMOME-XXXX-like behavior"* instead of vague prose.
 
@@ -23,7 +23,7 @@ Three commitments define how it runs:
 | Directory | Contents |
 |-----------|----------|
 | `corpus/` | **37 launch entries** — the launch core. These 37 of the 94 entries assessed for this draft survived six independent adversarial reviews plus strict triage with no substantive flags standing; the rest remain in `proposed/`, live as dated observation/response records, or were retired. |
-| `proposed/` | **42 entries awaiting evidence** — patterns we believe are real but that need repeated-transmission/recurrence evidence or source upgrades. **We want your input here.** Each proposed entry documents its promotion path. |
+| `proposed/` | **41 entries awaiting evidence** — patterns we believe are real but that need repeated-transmission/recurrence evidence or source upgrades. **We want your input here.** Each proposed entry documents its promotion path. |
 | `observations/` | **7 dated incident records** — real events attached as evidence to parent patterns (e.g., the July 2026 Hugging Face incident). |
 | `responses/` | **5 enforcement/court/policy records** — mitigations, rulings, takedowns (e.g., FCC forfeiture orders). |
 | `references/` | Taxonomy pointers (e.g., OWASP ASI06) — classes, not entries. |
