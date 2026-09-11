@@ -73,8 +73,9 @@
         {
           "sourceId": "SRC-000001",
           "sourceType": "report",
-          "citation": "Cialdini, Influence (1984); e-commerce conversion literature",
-          "reliability": "high"
+          "citation": "Cialdini, Influence: The Psychology of Persuasion (1984; offline book); time-scarcity cues in online commerce: 'How the time-scarcity feature of live-streaming e-commerce affects impulsive buying' (The Service Industries Journal, 2023)",
+          "reliability": "high",
+          "url": "https://doi.org/10.1080/02642069.2023.2185231"
         }
       ],
       "observables": [
@@ -233,8 +234,9 @@
         {
           "sourceId": "SRC-000012",
           "sourceType": "paper",
-          "citation": "MINJA: Memory INJection Attack (NeurIPS 2025)",
-          "reliability": "high"
+          "citation": "MINJA: Memory Injection Attacks on LLM Agents via Query-Only Interaction (arXiv:2503.03704; NeurIPS 2025)",
+          "reliability": "high",
+          "url": "https://arxiv.org/abs/2503.03704"
         }
       ],
       "observables": [
@@ -365,7 +367,7 @@
         "activityReferenceWindow": "2024-2025, Windsurf Cascade + ChatGPT (Rehberger; journal-published)"
       },
       "dates": {
-        "firstObserved": "2024-02-01",
+        "firstObserved": "2024-05-22",
         "lastObserved": "2025-08-22",
         "documentedDate": "2026-08-23"
       },
@@ -379,6 +381,21 @@
           "sourceType": "report",
           "citation": "Rehberger, SpAIware: persistent prompt injection (Windsurf Cascade)",
           "url": "https://embracethered.com/blog/posts/2025/windsurf-spaiware-exploit-persistent-prompt-injection/",
+          "reliability": "high"
+        },
+        {
+          "sourceId": "SRC-000155",
+          "sourceType": "paper",
+          "citation": "Herrador & Rehberger, 'SpAIware: Uncovering a novel AI attack vector through persistent memory in LLM applications and agents', Future Generation Computer Systems 174:107994 (2026; published online 2025-06-27)",
+          "url": "https://doi.org/10.1016/j.future.2025.107994",
+          "reliability": "high",
+          "publishedAt": "2025-06-27"
+        },
+        {
+          "sourceId": "SRC-000156",
+          "sourceType": "report",
+          "citation": "Rehberger, 'SpAIware & More: Advanced Prompt Injection Exploits in LLM Applications', Black Hat Europe 2024 briefing slides",
+          "url": "https://i.blackhat.com/EU-24/Presentations/EU-24-Rehberger-SpAIware-Advanced-Prompt-Injection-Exploits.pdf",
           "reliability": "high"
         }
       ],
@@ -1758,8 +1775,9 @@
         {
           "sourceId": "SRC-000009",
           "sourceType": "report",
-          "citation": "Marketing case-study analyses of OnePlus invite model (multiple)",
-          "reliability": "medium"
+          "citation": "OnePlus official community documentation of the OnePlus One invite system (2014-2015)",
+          "reliability": "medium",
+          "url": "https://community.oneplus.com/thread/1150"
         }
       ],
       "observables": [
@@ -1895,8 +1913,10 @@
         {
           "sourceId": "SRC-000011",
           "sourceType": "report",
-          "citation": "Aim Security: EchoLeak CVE-2025-32711",
-          "reliability": "high"
+          "citation": "Aim Security: EchoLeak zero-click data exfiltration from Microsoft 365 Copilot (CVE-2025-32711, disclosed 2025-06-11); Microsoft Security Response Center advisory",
+          "reliability": "high",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-32711",
+          "publishedAt": "2025-06-11"
         }
       ],
       "observables": [
@@ -2139,10 +2159,10 @@
         "recordStatus": "reviewed",
         "activityStatus": "active",
         "evidenceStatus": "observed",
-        "activityReferenceWindow": "2025-05, GitHub MCP server (Invariant Labs)"
+        "activityReferenceWindow": "2025-04+, MCP servers (Invariant Labs tool-poisoning disclosure)"
       },
       "dates": {
-        "firstObserved": "2025-05-26",
+        "firstObserved": "2025-04-01",
         "lastObserved": "2026-08-01",
         "documentedDate": "2026-08-23"
       },
@@ -2152,14 +2172,17 @@
         {
           "sourceId": "SRC-000023",
           "sourceType": "report",
-          "citation": "Invariant Labs: GitHub MCP server vulnerability (Wayback)",
-          "url": "https://web.archive.org/web/20250526224227/https://invariantlabs.ai/blog/mcp-github-vulnerability",
-          "reliability": "high"
+          "citation": "Invariant Labs: MCP Security Notification - Tool Poisoning Attacks (2025-04-01; hidden instructions in MCP tool descriptions; tool shadowing; post-approval 'rug pulls')",
+          "url": "https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks",
+          "reliability": "high",
+          "publishedAt": "2025-04-01"
         }
       ],
       "observables": [
-        "agent creates public PR leaking private data",
-        "issue-triggered coercion"
+        "tool description carrying hidden instructions",
+        "tool shadowing across MCP servers",
+        "behaviour change after tool approval (rug pull)",
+        "data exfiltration via tool side effects"
       ],
       "preconditions": [
         "agent with GitHub MCP access",
@@ -3175,8 +3198,9 @@
         {
           "sourceId": "SRC-000039",
           "sourceType": "report",
-          "citation": "Rehberger + Cymulate: EscapeRoute MCP vulnerabilities (CVE-2025-53109/53110)",
-          "reliability": "high"
+          "citation": "Cymulate: EscapeRoute - breaking the scope of Anthropic's Filesystem MCP Server (CVE-2025-53109 / CVE-2025-53110)",
+          "reliability": "high",
+          "url": "https://cymulate.com/blog/cve-2025-53109-53110-escaperoute-anthropic/"
         }
       ],
       "observables": [
@@ -3272,8 +3296,10 @@
         {
           "sourceId": "SRC-000045",
           "sourceType": "news",
-          "citation": "The Guardian: Springfield OH pet-eating claims + bomb threats",
-          "reliability": "high"
+          "citation": "The Guardian: Bomb threat shuts down Ohio city hall after Trump spreads baseless migrants rumor (2024-09-12)",
+          "reliability": "high",
+          "url": "https://www.theguardian.com/us-news/2024/sep/12/springfield-ohio-city-hall-bomb-threat",
+          "publishedAt": "2024-09-12"
         }
       ],
       "observables": [
@@ -3348,7 +3374,7 @@
         "recordStatus": "accepted",
         "activityStatus": "active",
         "evidenceStatus": "observed",
-        "activityReferenceWindow": "2025, Amazon + BBB lawsuit (review brokers)"
+        "activityReferenceWindow": "2025, Amazon + BBB second joint lawsuit against fake-review brokers (Skitsolutionbd.com)"
       },
       "dates": {
         "firstObserved": "2023-01-01",
@@ -3363,8 +3389,10 @@
         {
           "sourceId": "SRC-000046",
           "sourceType": "report",
-          "citation": "Amazon + BBB fake-review-broker lawsuit (case number documented)",
-          "reliability": "high"
+          "citation": "Amazon + Better Business Bureau: second joint lawsuit against fake-review brokers, targeting the operators of Skitsolutionbd.com (filed 2025-10-08)",
+          "reliability": "high",
+          "url": "https://www.aboutamazon.com/news/policy-news-views/amazons-latest-actions-against-fake-review-brokers",
+          "publishedAt": "2025-10-08"
         }
       ],
       "observables": [

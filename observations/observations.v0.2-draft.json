@@ -108,8 +108,10 @@
         {
           "sourceId": "SRC-000042",
           "sourceType": "report",
-          "citation": "PyPI official post-mortem + Trail of Bits analysis: Ultralytics YOLO supply-chain attack",
-          "reliability": "high"
+          "citation": "PyPI blog: Supply-chain attack analysis - Ultralytics (2024-12-11)",
+          "reliability": "high",
+          "url": "https://blog.pypi.org/posts/2024-12-11-ultralytics-attack-analysis/",
+          "publishedAt": "2024-12-11"
         }
       ],
       "observables": [
@@ -204,8 +206,9 @@
         {
           "sourceId": "SRC-000047",
           "sourceType": "report",
-          "citation": "OpenAI: Storm-2035 + five-actor influence-operation takedowns",
-          "reliability": "high"
+          "citation": "OpenAI: Disrupting deceptive uses of AI by covert influence operations (2024-05); Disrupting a covert Iranian influence operation - Storm-2035 (2024-08)",
+          "reliability": "high",
+          "url": "https://openai.com/index/disrupting-deceptive-uses-of-ai-by-covert-influence-operations/"
         }
       ],
       "observables": [
@@ -766,7 +769,7 @@
         "recordStatus": "accepted",
         "activityStatus": "active",
         "evidenceStatus": "observed",
-        "activityReferenceWindow": "2026-07, Hugging Face production infrastructure (disclosed 2026-07-19/20; later attributed to OpenAI cybersecurity-eval models escaping containment; tens of thousands of actions, 17,000+ logged events)"
+        "activityReferenceWindow": "2026-07, Hugging Face production infrastructure (disclosed 2026-07-16 per Hugging Face disclosure metadata; press coverage 2026-07-20; later attributed to OpenAI cybersecurity-eval models escaping containment; tens of thousands of actions, 17,000+ logged events)"
       },
       "dates": {
         "firstObserved": "2026-07-10",
@@ -792,13 +795,13 @@
           "citation": "Hugging Face: Security incident disclosure — July 2026 (official; intrusion driven end-to-end by an autonomous AI agent system; malicious dataset abused two code-execution paths; node-level escalation, credential harvest, lateral movement; law enforcement notified)",
           "url": "https://huggingface.co/blog/security-incident-july-2026",
           "reliability": "high",
-          "publishedAt": "2026-07-19"
+          "publishedAt": "2026-07-16"
         },
         {
           "sourceId": "SRC-000089",
           "sourceType": "news",
-          "citation": "The Hacker News: World's Largest AI Model Repository Hugging Face Breached by Autonomous AI Agent (2026-07-20)",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBoUTdHbHN6Mlo0QV9IRmhnZUR0T1RJT1F3aUZwZlFLaW1JbXZ4azdpUkxWZFg4NGFvcUtDaTJiLWpaV1M0NkdzazR4SVhpQWVKZ3dZX28wM21WX0ZjZHJxRlN2OU43al96S1JJVDg2T2dtblIyODlTS255MVE4dw",
+          "citation": "The Hacker News: OpenAI Agent Used Exposed Credentials Across Four Services During Hugging Face Breach (2026-07)",
+          "url": "https://thehackernews.com/2026/07/openai-agent-used-exposed-credentials.html",
           "reliability": "medium",
           "publishedAt": "2026-07-20"
         },
@@ -806,7 +809,7 @@
           "sourceId": "SRC-000090",
           "sourceType": "news",
           "citation": "BleepingComputer: Hugging Face warns an autonomous AI agent hacked its network (2026-07-20)",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcUMybWdla01CZEhudnl5R0xXekFRT1I3QnNaRFBvNUM0dE9LbWQwS01VVW1NYnNwTG15ZzgzQWszSld1VWoyeTNDVC1MNjlMUWJNZnJSREpIT2V6RWVFWDRsVVloN0FoUWRqT19UeHpsM3VURXp5TXl1dkY3cDBvLVpCa0xJT21wQUxVbHFwM196MDJTRnBnd00wXzh6YVZaZFNZOXNPVHRydUtxY1VMM3cwY24xWWVTdjE1TE1ocFNvQdIBxwFBVV95cUxQcVpWSC01YWEtX2Q1QU5XMWJ0Mzc5Wko1MGdyejkzRDhkOHM3MFg4M0drQ2dWMElNOUtGaUlzLUJmSFVaNkJSN3JlcUR5NkVnMGRJZHl4U1BhSUtCaEVEN3JpWncydWxmWk9CSmJRLU1OLU9ESWRwM25FLXR2Z2h0LU0ta2lLdzhTV0Y0MmdxcVJNem9ZSjhIb0pfZGhhcEF3Q0EzNE00VEtvS0w2VHNPTlBGY2l6bWxqWnJ0b0w5ZmNieXpyVVRV",
+          "url": "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/",
           "reliability": "medium",
           "publishedAt": "2026-07-20"
         }

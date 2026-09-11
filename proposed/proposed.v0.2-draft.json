@@ -75,8 +75,9 @@
         {
           "sourceId": "SRC-000002",
           "sourceType": "observation",
-          "citation": "Macro-finance discourse tracking, 2022-2026",
-          "reliability": "medium"
+          "citation": "Pattern-level observation of macro-finance doom / catastrophic-framing discourse, 2022-2026 (illustrative instance: The Atlantic, 'Here's How the AI Crash Happens', Oct 2025)",
+          "reliability": "medium",
+          "url": "https://www.theatlantic.com/technology/2025/10/data-centers-ai-crash/684765/"
         }
       ],
       "observables": [
@@ -409,7 +410,7 @@
         {
           "sourceId": "SRC-000004",
           "sourceType": "observation",
-          "citation": "Whistleblower/leak narrative tracking, 2016-2026",
+          "citation": "Pattern-level observation of whistleblower / leak narrative amplification, 2016-2026 (aggregated news-cycle tracking by Memome contributors; no single retrievable object)",
           "reliability": "medium"
         }
       ],
@@ -510,7 +511,7 @@
         {
           "sourceId": "SRC-000005",
           "sourceType": "observation",
-          "citation": "Diffusion research; market mania tracking",
+          "citation": "Diffusion research: Rogers, Diffusion of Innovations (1962); market-mania literature: Kindleberger & Aliber, Manias, Panics, and Crashes (7th ed., 2015) - offline books",
           "reliability": "medium"
         }
       ],
@@ -839,7 +840,7 @@
         "entryVersion": 1
       }
     },
-        {
+    {
       "id": "MEMOME-000014",
       "slug": "zero-click-ai-worm",
       "name": "Zero-Click AI Worm",
@@ -953,8 +954,9 @@
         {
           "sourceId": "SRC-000014",
           "sourceType": "paper",
-          "citation": "Morris II: zero-click self-replicating prompt malware (research demo)",
-          "reliability": "medium"
+          "citation": "Cohen, Bitton & Nassi, 'Here Comes the AI Worm: Unleashing Zero-click Worms that Target GenAI-Powered Applications' (arXiv:2403.02817, 2024; Morris II proof-of-concept)",
+          "reliability": "medium",
+          "url": "https://arxiv.org/abs/2403.02817"
         }
       ],
       "observables": [
@@ -1051,8 +1053,10 @@
         {
           "sourceId": "SRC-000016",
           "sourceType": "report",
-          "citation": "EEAS / national bodies on Romanian election disinformation (2025)",
-          "reliability": "medium"
+          "citation": "EEAS 3rd Report on Foreign Information Manipulation and Interference Threats (2025-03-19); Romanian declassified intelligence documents on election interference (2024-12-04)",
+          "reliability": "medium",
+          "url": "https://www.eeas.europa.eu/eeas/3rd-eeas-report-foreign-information-manipulation-and-interference-threats-0_en",
+          "publishedAt": "2025-03-19"
         }
       ],
       "observables": [
@@ -1190,8 +1194,10 @@
         {
           "sourceId": "SRC-000017",
           "sourceType": "news",
-          "citation": "CoinDesk: crypto's next billion users might be AI agents paying with stablecoins (Aug 2026)",
-          "reliability": "medium"
+          "citation": "CoinDesk: 'Crypto's next billion users might be AI agents, and they're paying with stablecoins' (2026-08-23)",
+          "reliability": "medium",
+          "url": "https://www.coindesk.com/business/2026/08/23/crypto-s-next-billion-users-might-be-ai-agents-and-they-re-paying-with-stablecoins",
+          "publishedAt": "2026-08-23"
         }
       ],
       "observables": [
@@ -1326,10 +1332,10 @@
         "recordStatus": "accepted",
         "activityStatus": "historical",
         "evidenceStatus": "observed",
-        "activityReferenceWindow": "2024-02, ChatGPT memory launch (patched)"
+        "activityReferenceWindow": "2024-05, ChatGPT persistent memory hijack (patched)"
       },
       "dates": {
-        "firstObserved": "2024-02-13",
+        "firstObserved": "2024-05-22",
         "lastObserved": "2024-06-01",
         "documentedDate": "2026-08-23"
       },
@@ -1341,9 +1347,10 @@
         {
           "sourceId": "SRC-000025",
           "sourceType": "report",
-          "citation": "Rehberger: ChatGPT hacking memories with prompt injection (Feb 2024)",
+          "citation": "Rehberger: ChatGPT - hacking memories with prompt injection (2024-05-22)",
           "url": "https://embracethered.com/blog/posts/2024/chatgpt-hacking-memories/",
-          "reliability": "high"
+          "reliability": "high",
+          "publishedAt": "2024-05-22"
         }
       ],
       "observables": [
@@ -1747,8 +1754,10 @@
         {
           "sourceId": "SRC-000036",
           "sourceType": "news",
-          "citation": "The Guardian: Arup confirms deepfake CFO fraud (May 2024)",
-          "reliability": "high"
+          "citation": "The Guardian: UK engineering firm Arup falls victim to GBP20m deepfake scam (2024-05-17)",
+          "reliability": "high",
+          "url": "https://www.theguardian.com/technology/article/2024/may/17/uk-engineering-arup-deepfake-scam-hong-kong-ai-video",
+          "publishedAt": "2024-05-17"
         }
       ],
       "observables": [
@@ -1890,8 +1899,9 @@
         {
           "sourceId": "SRC-000038",
           "sourceType": "report",
-          "citation": "LangChain CVE-2023-39659 (NVD) + GitHub issue #7700",
-          "reliability": "high"
+          "citation": "LangChain issue #7700: prompt injection leading to arbitrary code execution (2023); CVE-2023-39659 / OSV PYSEC-2023-147",
+          "reliability": "high",
+          "url": "https://github.com/langchain-ai/langchain/issues/7700"
         }
       ],
       "observables": [
@@ -2031,8 +2041,10 @@
         {
           "sourceId": "SRC-000040",
           "sourceType": "report",
-          "citation": "Rehberger: Gemini memory persistence injection",
-          "reliability": "high"
+          "citation": "Rehberger: Hacking Gemini's memory with prompt injection and delayed tool invocation (2025-02-10)",
+          "reliability": "high",
+          "url": "https://embracethered.com/blog/posts/2025/gemini-memory-persistence-prompt-injection/",
+          "publishedAt": "2025-02-10"
         }
       ],
       "observables": [
@@ -2164,8 +2176,10 @@
         {
           "sourceId": "SRC-000041",
           "sourceType": "report",
-          "citation": "Rehberger: ChatGPT Operator browser-agent prompt injection",
-          "reliability": "high"
+          "citation": "Rehberger: ChatGPT Operator - prompt injection exploits and defenses (2025-02-17)",
+          "reliability": "high",
+          "url": "https://embracethered.com/blog/posts/2025/chatgpt-operator-prompt-injection-exploits/",
+          "publishedAt": "2025-02-17"
         }
       ],
       "observables": [
@@ -2296,8 +2310,9 @@
         {
           "sourceId": "SRC-000043",
           "sourceType": "news",
-          "citation": "NBC: Character.AI / Sewell Setzer case",
-          "reliability": "high"
+          "citation": "NBC4 Washington (News4 I-Team): mother's lawsuit blames 14-year-old son's suicide on AI relationship (Character.AI)",
+          "reliability": "high",
+          "url": "https://www.nbcwashington.com/investigations/moms-lawsuit-blames-14-year-old-sons-suicide-on-ai-relationship/3967878/"
         }
       ],
       "observables": [
@@ -2391,8 +2406,10 @@
         {
           "sourceId": "SRC-000044",
           "sourceType": "paper",
-          "citation": "ICWSM/Stanford: deepfake audio in Slovak election (2023)",
-          "reliability": "medium"
+          "citation": "Bohacek (Stanford), 'Slovakia as the Precursor to Deepfake-Enabled Election Interference' (ICWSM-2024 workshop; DOI 10.36190/2024.67)",
+          "reliability": "medium",
+          "url": "https://workshop-proceedings.icwsm.org/abstract.php?id=2024_67",
+          "publishedAt": "2024-06-01"
         }
       ],
       "observables": [
@@ -2482,8 +2499,10 @@
         {
           "sourceId": "SRC-000048",
           "sourceType": "news",
-          "citation": "Documented coverage: All Eyes on Rafah AI image, 47M shares",
-          "reliability": "medium"
+          "citation": "BBC News: 'All Eyes on Rafah' - the post that's been shared by more than 47m people (2024-05-30)",
+          "reliability": "medium",
+          "url": "https://www.bbc.com/news/articles/cjkkj5jejleo",
+          "publishedAt": "2024-05-30"
         }
       ],
       "observables": [
@@ -2573,8 +2592,10 @@
         {
           "sourceId": "SRC-000049",
           "sourceType": "report",
-          "citation": "Documented debunking: Momo challenge (zero first-order evidence)",
-          "reliability": "medium"
+          "citation": "The Guardian: viral 'Momo challenge' is a malicious hoax, say charities (2019-02-28)",
+          "reliability": "medium",
+          "url": "https://www.theguardian.com/technology/2019/feb/28/viral-momo-challenge-is-a-malicious-hoax-say-charities",
+          "publishedAt": "2019-02-28"
         }
       ],
       "observables": [
@@ -2705,8 +2726,10 @@
         {
           "sourceId": "SRC-000050",
           "sourceType": "report",
-          "citation": "Documented coverage: Google March 2024 core update, AI-slop flood",
-          "reliability": "medium"
+          "citation": "Google Search Central: What web creators should know about our March 2024 core update and new spam policies (2024-03-05)",
+          "reliability": "medium",
+          "url": "https://developers.google.com/search/blog/2024/03/core-update-spam-policies",
+          "publishedAt": "2024-03-05"
         }
       ],
       "observables": [
@@ -3001,7 +3024,7 @@
         "recordStatus": "accepted",
         "activityStatus": "active",
         "evidenceStatus": "observed",
-        "activityReferenceWindow": "2025-04 to 2026-08, Devin (Rehberger PoCs; key injection classes reported unfixed 120+ days as of mid-2026)"
+        "activityReferenceWindow": "2025-04 to 2026-08, Devin (Rehberger PoCs; injected-instruction classes unremediated 120+ days after the 2025-04-06 report, publicly disclosed 2025-08-06)"
       },
       "dates": {
         "firstObserved": "2025-04-01",

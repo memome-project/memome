@@ -116,7 +116,8 @@
           "sourceId": "SRC-000019",
           "sourceType": "report",
           "citation": "OWASP Top 10 for Agentic Applications 2026 — ASI06 Memory & Context Poisoning",
-          "reliability": "high"
+          "reliability": "high",
+          "url": "https://genai.owasp.org/download/52117/?tmstv=1765059207"
         }
       ],
       "observables": [
