@@ -56,8 +56,10 @@ We deliberately ship a *tiered* corpus rather than one flat list:
 
 ## License
 
-- **Corpus data** (entries, schema, docs): **CC-BY-4.0** — open, attribution required, cannot be re-closed.
-- **Contributions** are accepted under these terms. See LICENSE for details.
+- **Corpus data and documentation** (`/corpus`, `/proposed`, `/observations`, `/responses`, `/references`, `/schema`, `/docs`): **CC-BY-4.0** — open, attribution required, cannot be re-closed.
+- **Contributions** are accepted under the same terms: by opening a pull request you agree to license your contribution as CC-BY-4.0.
+- Full legal code: see `LICENSE` (verbatim CC-BY-4.0).
+- **Other Memome materials** (e.g. scanning/hardening tooling) are not present in this repository and are not covered by this license.
 
 *MITRE ATT&CK is a registered trademark of The MITRE Corporation. Memome is independent and not affiliated with or endorsed by MITRE.*
 
