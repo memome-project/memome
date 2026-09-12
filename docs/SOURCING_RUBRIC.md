@@ -46,7 +46,7 @@ Example: an FCC forfeiture order is *high-credibility evidence that an enforceme
 
 ## 5. Concentration disclosure
 
-If a single individual researcher, firm, or report anchors a material fraction of the corpus, that concentration is named in the launch materials (round-4 finding: 12/94 entries trace to one researcher, 5 sole-source). Not a quality defect — a transparency requirement.
+If a single individual researcher, firm, or report anchors a material fraction of the corpus, that concentration is named in the launch materials (round-4 finding: 12/93 entries trace to one researcher, 5 sole-source). Not a quality defect — a transparency requirement.
 
 ## 6. Independence
 

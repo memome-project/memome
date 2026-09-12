@@ -48,7 +48,7 @@ An entry's *name* must pass **Test 0** (object identity): it should be possible 
 
 ## Renaming existing entries (the 94 → launch mapping)
 
-All 94 entries get re-checked against Test 0 before launch. The 37 launch entries are renamed in `LAUNCH_NAMING_TABLE.md`; the 42 proposed entries keep working titles but get pattern-name candidates recorded in their promotion path. Incident/product names move to aliases. No ID changes.
+All 94 entries get re-checked against Test 0 before launch. The 37 launch entries are renamed in `LAUNCH_NAMING_TABLE.md`; the 41 proposed entries keep working titles but get pattern-name candidates recorded in their promotion path. Incident/product names move to aliases. No ID changes.
 
 ## Why this protocol
 

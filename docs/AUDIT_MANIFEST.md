@@ -17,7 +17,7 @@
 | **Observed-single** | One named verifiable source | Counted below |
 | **Simulated/lab** | Evidence is from a research simulation or controlled lab setting, explicitly labeled lab-vs-field | Counted below |
 | **Contested** | Active dispute or conflicting evidence on record | Counted below |
-| **Proposed** | In `proposed/` — awaiting evidence, promotion paths documented | 42 |
+| **Proposed** | In `proposed/` — awaiting evidence, promotion paths documented | 41 |
 
 **Rule:** an entry's `evidenceStatus` in the schema must match its tier here. If they disagree, the manifest wins and the entry is flagged for correction.
 
@@ -46,9 +46,9 @@ All verified against the corpus JSON, not asserted:
 
 ## 4. Known limitations (disclosed, not hidden)
 
-- **60% graph isolation:** 56/94 entries in the full corpus have zero lineage and zero relationships. The launch tier's family edges are being completed; the isolation rate is a known limitation, not a fixable pre-launch blocker.
+- **~66% graph isolation:** 61/93 entries in the full corpus have no lineage and no relationships (recomputed 2026-09-12 against the shipped JSON; the earlier figure was 56/94). The launch tier's family edges are being completed; the isolation rate is a known limitation, not a fixable pre-launch blocker.
 - **observations[] empty:** the schema's observation entities are currently unpopulated across the corpus (dead code). Planned: populate as part of the Observation-layer rollout (v0.3).
-- **Rehberger concentration:** 12/94 entries trace to one independent researcher (5 sole-source). Disclosed per SOURCING_RUBRIC §5.
+- **Rehberger concentration:** 12/93 entries trace to one independent researcher (5 sole-source). Disclosed per SOURCING_RUBRIC §5.
 - **Open item — status-drift wording fix (NOT yet fixed):** 000082, 000088, 000090, 000092 flagged by round-4 review (Max; OpenAI on 000031) as active-on-stale-observation. Reviewed 2026-08-29 but the wording change was never applied — entries still carry `activityStatus: active` with 2023–2024 `lastObserved` dates and an `activityReferenceWindow` rationale. Flagged, not fixed; do not read as done.
 - **NON-STABLE:** IDs are provisional; enums and fields will change before v0.3. Nothing is frozen.
 

@@ -67,7 +67,7 @@ Incidents, products, court cases, and campaigns are still valuable — they beco
 
 ```
 corpus/        37 entries — accepted, interrogation-proof core (NON-STABLE)
-proposed/      42 entries — real patterns awaiting evidence; promotion paths documented
+proposed/      41 entries — real patterns awaiting evidence; promotion paths documented
 observations/  7 dated incident records — evidence attached to patterns
 responses/     5 enforcement/court/policy records — responses attached to patterns
 references/    1 taxonomy pointer — classes, not entries
