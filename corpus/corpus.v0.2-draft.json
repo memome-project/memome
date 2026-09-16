@@ -73,9 +73,8 @@
         {
           "sourceId": "SRC-000001",
           "sourceType": "report",
-          "citation": "Cialdini, Influence: The Psychology of Persuasion (1984; offline book); time-scarcity cues in online commerce: 'How the time-scarcity feature of live-streaming e-commerce affects impulsive buying' (The Service Industries Journal, 2023)",
-          "reliability": "high",
-          "url": "https://doi.org/10.1080/02642069.2023.2185231"
+          "citation": "Cialdini, Influence (1984); e-commerce conversion literature",
+          "reliability": "high"
         }
       ],
       "observables": [
@@ -97,12 +96,12 @@
           "limitations": [
             "can backfire if used deceptively"
           ],
-          "source": "src:001"
+          "source": "SRC-000001"
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
-        "source": "src:001",
+        "assertedBy": "contributor:dan",
+        "source": "SRC-000001",
         "provenanceVersion": "0.2-draft.1",
         "assertions": []
       },
@@ -110,7 +109,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:dan"
         ]
       },
       "mitigationIds": [
@@ -226,17 +225,14 @@
         "lastObserved": "2026-08-01",
         "documentedDate": "2026-08-23"
       },
-      "lineage": {
-        "derivedFrom": "MEMOME-000010"
-      },
+      "lineage": {},
       "relationships": [],
       "sources": [
         {
           "sourceId": "SRC-000012",
           "sourceType": "paper",
-          "citation": "MINJA: Memory Injection Attacks on LLM Agents via Query-Only Interaction (arXiv:2503.03704; NeurIPS 2025)",
-          "reliability": "high",
-          "url": "https://arxiv.org/abs/2503.03704"
+          "citation": "MINJA: Memory INJection Attack (NeurIPS 2025)",
+          "reliability": "high"
         }
       ],
       "observables": [
@@ -250,16 +246,17 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000012",
         "provenanceVersion": "0.2-draft.2",
-        "assertions": []
+        "assertions": [],
+        "mechFix": "2026-08-29: broke time-travel derivedFrom -> MEMOME-000010 (child 2025-12-01 < parent 2026-07-01)"
       },
       "governance": {
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -367,13 +364,11 @@
         "activityReferenceWindow": "2024-2025, Windsurf Cascade + ChatGPT (Rehberger; journal-published)"
       },
       "dates": {
-        "firstObserved": "2024-05-22",
+        "firstObserved": "2024-02-01",
         "lastObserved": "2025-08-22",
         "documentedDate": "2026-08-23"
       },
-      "lineage": {
-        "derivedFrom": "MEMOME-000010"
-      },
+      "lineage": {},
       "relationships": [],
       "sources": [
         {
@@ -381,21 +376,6 @@
           "sourceType": "report",
           "citation": "Rehberger, SpAIware: persistent prompt injection (Windsurf Cascade)",
           "url": "https://embracethered.com/blog/posts/2025/windsurf-spaiware-exploit-persistent-prompt-injection/",
-          "reliability": "high"
-        },
-        {
-          "sourceId": "SRC-000155",
-          "sourceType": "paper",
-          "citation": "Herrador & Rehberger, 'SpAIware: Uncovering a novel AI attack vector through persistent memory in LLM applications and agents', Future Generation Computer Systems 174:107994 (2026; published online 2025-06-27)",
-          "url": "https://doi.org/10.1016/j.future.2025.107994",
-          "reliability": "high",
-          "publishedAt": "2025-06-27"
-        },
-        {
-          "sourceId": "SRC-000156",
-          "sourceType": "report",
-          "citation": "Rehberger, 'SpAIware & More: Advanced Prompt Injection Exploits in LLM Applications', Black Hat Europe 2024 briefing slides",
-          "url": "https://i.blackhat.com/EU-24/Presentations/EU-24-Rehberger-SpAIware-Advanced-Prompt-Injection-Exploits.pdf",
           "reliability": "high"
         }
       ],
@@ -410,16 +390,17 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000022",
         "provenanceVersion": "0.2-draft.2",
-        "assertions": []
+        "assertions": [],
+        "mechFix": "2026-08-29: broke time-travel derivedFrom -> MEMOME-000010 (child 2024-02-01 < parent 2026-07-01)"
       },
       "governance": {
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -427,7 +408,12 @@
     {
       "id": "MEMOME-000030",
       "slug": "biden-deepfake-robocall",
-      "name": "Biden Deepfake Robocall (NH Primary 2024)",
+      "name": "Political Deepfake Robocall",
+      "aliases": [
+        "Political Deepfake Robocall",
+        "Biden robocall",
+        "NH primary 2024"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -509,7 +495,7 @@
           "evidenceStatus": "observed",
           "effectiveness": "medium",
           "effectivenessConfidence": "medium",
-          "source": "https://docs.fcc.gov/public/attachments/DOC-405811A1.pdf"
+          "source": "SRC-000031"
         },
         {
           "type": "architecturalControl",
@@ -518,11 +504,11 @@
           "evidenceStatus": "observed",
           "effectiveness": "medium",
           "effectivenessConfidence": "medium",
-          "source": "https://docs.fcc.gov/public/attachments/DOC-405811A1.pdf"
+          "source": "SRC-000031"
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000031",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -531,7 +517,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -638,9 +624,7 @@
         "lastObserved": "2026-08-01",
         "documentedDate": "2026-08-23"
       },
-      "lineage": {
-        "derivedFrom": "MEMOME-000023"
-      },
+      "lineage": {},
       "relationships": [],
       "sources": [
         {
@@ -662,16 +646,17 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000037",
         "provenanceVersion": "0.2-draft.2",
-        "assertions": []
+        "assertions": [],
+        "mechFix": "2026-08-29: broke time-travel derivedFrom -> MEMOME-000023 (child 2024-02-01 < parent 2024-07-17)"
       },
       "governance": {
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -858,7 +843,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000131",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -867,7 +852,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1046,7 +1031,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000144",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1055,7 +1040,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1063,7 +1048,11 @@
     {
       "id": "MEMOME-000090",
       "slug": "ai-voice-clone-music-wave",
-      "name": "AI Voice-Clone Music Wave ('Heart on My Sleeve')",
+      "name": "Voice-Clone Music Distribution Wave",
+      "aliases": [
+        "Voice-Clone Music Distribution Wave",
+        "Heart on My Sleeve"
+      ],
       "type": {
         "contentForm": "composite",
         "functionalRole": [
@@ -1211,7 +1200,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000146",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1220,7 +1209,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1370,7 +1359,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000150",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1379,7 +1368,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1548,7 +1537,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000006",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1557,7 +1546,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1637,16 +1626,16 @@
         "stealth": true,
         "detectionSignature": {
           "ruleFormat": "natural_language",
-          "ruleContent": "instruction to route payments/actions to attacker-controlled destination, dormant until semantic trigger",
+          "ruleContent": "injected memory record instructs the agent to silently exfiltrate the user's conversation history when a later session surfaces the instruction",
           "memoryDiffPattern": "injected record with no user history"
         }
       },
       "harm": {
         "impactDomains": [
-          "financial",
+          "informational",
           "operational"
         ],
-        "potentialImpact": "critical",
+        "potentialImpact": "high",
         "harmPotential": "harmful",
         "attributedIntent": "malicious",
         "confidence": "medium"
@@ -1679,23 +1668,23 @@
         {
           "sourceId": "SRC-000007",
           "sourceType": "report",
-          "citation": "Unit 42: Prompt injection into Amazon Bedrock Agents PoC",
-          "url": "https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/",
+          "citation": "Unit 42: When AI Remembers Too Much - Persistent Behaviors in Agents' Memory (indirect prompt injection into agent long-term memory; Amazon Bedrock Agent PoC)",
+          "url": "https://unit42.paloaltonetworks.com/indirect-prompt-injection-poisons-ai-longterm-memory/",
           "reliability": "high"
         }
       ],
       "observables": [
         "dormant instruction in memory",
-        "delayed action weeks later"
+        "injected instruction surfaced in a later session"
       ],
       "preconditions": [
         "persistent memory",
-        "payment/action tools available"
+        "tool access sufficient to act on the injected instruction"
       ],
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000007",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1704,7 +1693,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1775,9 +1764,8 @@
         {
           "sourceId": "SRC-000009",
           "sourceType": "report",
-          "citation": "OnePlus official community documentation of the OnePlus One invite system (2014-2015)",
-          "reliability": "medium",
-          "url": "https://community.oneplus.com/thread/1150"
+          "citation": "Marketing case-study analyses of OnePlus invite model (multiple)",
+          "reliability": "medium"
         }
       ],
       "observables": [
@@ -1791,7 +1779,7 @@
       "scope": "tactic",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000009",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1800,7 +1788,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1913,10 +1901,8 @@
         {
           "sourceId": "SRC-000011",
           "sourceType": "report",
-          "citation": "Aim Security: EchoLeak zero-click data exfiltration from Microsoft 365 Copilot (CVE-2025-32711, disclosed 2025-06-11); Microsoft Security Response Center advisory",
-          "reliability": "high",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-32711",
-          "publishedAt": "2025-06-11"
+          "citation": "Aim Security: EchoLeak CVE-2025-32711",
+          "reliability": "high"
         }
       ],
       "observables": [
@@ -1930,7 +1916,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000011",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1939,7 +1925,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2047,7 +2033,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000015",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2056,7 +2042,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2159,10 +2145,10 @@
         "recordStatus": "reviewed",
         "activityStatus": "active",
         "evidenceStatus": "observed",
-        "activityReferenceWindow": "2025-04+, MCP servers (Invariant Labs tool-poisoning disclosure)"
+        "activityReferenceWindow": "2025-05, GitHub MCP server (Invariant Labs)"
       },
       "dates": {
-        "firstObserved": "2025-04-01",
+        "firstObserved": "2025-05-26",
         "lastObserved": "2026-08-01",
         "documentedDate": "2026-08-23"
       },
@@ -2172,17 +2158,14 @@
         {
           "sourceId": "SRC-000023",
           "sourceType": "report",
-          "citation": "Invariant Labs: MCP Security Notification - Tool Poisoning Attacks (2025-04-01; hidden instructions in MCP tool descriptions; tool shadowing; post-approval 'rug pulls')",
-          "url": "https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks",
-          "reliability": "high",
-          "publishedAt": "2025-04-01"
+          "citation": "Invariant Labs: GitHub MCP server vulnerability (Wayback)",
+          "url": "https://web.archive.org/web/20250526224227/https://invariantlabs.ai/blog/mcp-github-vulnerability",
+          "reliability": "high"
         }
       ],
       "observables": [
-        "tool description carrying hidden instructions",
-        "tool shadowing across MCP servers",
-        "behaviour change after tool approval (rug pull)",
-        "data exfiltration via tool side effects"
+        "agent creates public PR leaking private data",
+        "issue-triggered coercion"
       ],
       "preconditions": [
         "agent with GitHub MCP access",
@@ -2191,7 +2174,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000023",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2200,7 +2183,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2329,7 +2312,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000024",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2338,7 +2321,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2460,7 +2443,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000026",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2469,7 +2452,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2600,7 +2583,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000027",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2609,7 +2592,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2729,7 +2712,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000028",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2738,7 +2721,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2746,7 +2729,12 @@
     {
       "id": "MEMOME-000032",
       "slug": "ftc-fake-reviews-rule",
-      "name": "FTC Fake-Reviews Rule (Astroturfing)",
+      "name": "Fake-Review Enforcement Rule",
+      "aliases": [
+        "Fake-Review Enforcement Rule",
+        "FTC fake-reviews rule 2024",
+        "astroturfing"
+      ],
       "type": {
         "contentForm": "claim",
         "functionalRole": [
@@ -2833,7 +2821,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000033",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2842,7 +2830,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2941,7 +2929,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000034",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2950,7 +2938,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -3077,7 +3065,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000035",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3086,7 +3074,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -3198,9 +3186,8 @@
         {
           "sourceId": "SRC-000039",
           "sourceType": "report",
-          "citation": "Cymulate: EscapeRoute - breaking the scope of Anthropic's Filesystem MCP Server (CVE-2025-53109 / CVE-2025-53110)",
-          "reliability": "high",
-          "url": "https://cymulate.com/blog/cve-2025-53109-53110-escaperoute-anthropic/"
+          "citation": "Rehberger + Cymulate: EscapeRoute MCP vulnerabilities (CVE-2025-53109/53110)",
+          "reliability": "high"
         }
       ],
       "observables": [
@@ -3214,7 +3201,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000039",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3223,7 +3210,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -3296,10 +3283,8 @@
         {
           "sourceId": "SRC-000045",
           "sourceType": "news",
-          "citation": "The Guardian: Bomb threat shuts down Ohio city hall after Trump spreads baseless migrants rumor (2024-09-12)",
-          "reliability": "high",
-          "url": "https://www.theguardian.com/us-news/2024/sep/12/springfield-ohio-city-hall-bomb-threat",
-          "publishedAt": "2024-09-12"
+          "citation": "The Guardian: Springfield OH pet-eating claims + bomb threats",
+          "reliability": "high"
         }
       ],
       "observables": [
@@ -3313,7 +3298,7 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000045",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3322,7 +3307,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -3330,7 +3315,11 @@
     {
       "id": "MEMOME-000045",
       "slug": "fake-review-broker-network",
-      "name": "Fake-Review Broker Network (Amazon/BBB)",
+      "name": "Fake-Review Broker Network",
+      "aliases": [
+        "Fake-Review Broker Network",
+        "Amazon/BBB lawsuit"
+      ],
       "type": {
         "contentForm": "norm",
         "functionalRole": [
@@ -3374,7 +3363,7 @@
         "recordStatus": "accepted",
         "activityStatus": "active",
         "evidenceStatus": "observed",
-        "activityReferenceWindow": "2025, Amazon + BBB second joint lawsuit against fake-review brokers (Skitsolutionbd.com)"
+        "activityReferenceWindow": "2025, Amazon + BBB lawsuit (review brokers)"
       },
       "dates": {
         "firstObserved": "2023-01-01",
@@ -3389,10 +3378,8 @@
         {
           "sourceId": "SRC-000046",
           "sourceType": "report",
-          "citation": "Amazon + Better Business Bureau: second joint lawsuit against fake-review brokers, targeting the operators of Skitsolutionbd.com (filed 2025-10-08)",
-          "reliability": "high",
-          "url": "https://www.aboutamazon.com/news/policy-news-views/amazons-latest-actions-against-fake-review-brokers",
-          "publishedAt": "2025-10-08"
+          "citation": "Amazon + BBB fake-review-broker lawsuit (case number documented)",
+          "reliability": "high"
         }
       ],
       "observables": [
@@ -3405,7 +3392,7 @@
       "scope": "campaign_component",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000046",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3414,7 +3401,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -3570,7 +3557,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000051",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3579,7 +3566,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -3587,7 +3574,11 @@
     {
       "id": "MEMOME-000060",
       "slug": "voice-clone-kidnapping-extortion",
-      "name": "AI Voice-Clone Kidnapping Extortion (Arizona Case)",
+      "name": "Voice-Clone Kidnapping Extortion",
+      "aliases": [
+        "Voice-Clone Kidnapping Extortion",
+        "Arizona case"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -3681,7 +3672,7 @@
       "scope": "tactic",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000076",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3690,7 +3681,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -3855,7 +3846,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000104",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3864,7 +3855,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -4017,7 +4008,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000127",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4026,7 +4017,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -4034,7 +4025,12 @@
     {
       "id": "MEMOME-000083",
       "slug": "agentflayer-zero-click-agent-hijack",
-      "name": "AgentFlayer 0-Click Enterprise Agent Hijacking (Zenity)",
+      "name": "Zero-Click Enterprise Agent Hijacking",
+      "aliases": [
+        "Zero-Click Enterprise Agent Hijacking",
+        "AgentFlayer",
+        "Zenity"
+      ],
       "type": {
         "contentForm": "composite",
         "functionalRole": [
@@ -4227,7 +4223,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000134",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4236,7 +4232,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -4244,7 +4240,12 @@
     {
       "id": "MEMOME-000084",
       "slug": "amazon-q-developer-hidden-instruction-injection",
-      "name": "Amazon Q Developer Hidden-Instruction Injection (AWS-2025-019)",
+      "name": "Developer-Assistant Hidden-Instruction Injection",
+      "aliases": [
+        "Developer-Assistant Hidden-Instruction Injection",
+        "Amazon Q Developer",
+        "AWS-2025-019"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -4416,7 +4417,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000136",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4425,7 +4426,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -4433,7 +4434,11 @@
     {
       "id": "MEMOME-000085",
       "slug": "gemini-email-summary-phishing",
-      "name": "Gemini Email-Summarization Phishing (Hidden-Text Injection)",
+      "name": "Email-Summarization Hidden-Text Phishing",
+      "aliases": [
+        "Email-Summarization Hidden-Text Phishing",
+        "Gemini"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -4602,7 +4607,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000139",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4611,7 +4616,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -4619,7 +4624,12 @@
     {
       "id": "MEMOME-000086",
       "slug": "github-mcp-issue-hijack-exfiltration",
-      "name": "GitHub MCP Issue-Hijack Exfiltration (Invariant Labs)",
+      "name": "Issue-Tracker Hijack Exfiltration",
+      "aliases": [
+        "Issue-Tracker Hijack Exfiltration",
+        "GitHub MCP",
+        "Invariant Labs"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -4789,7 +4799,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000141",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4798,7 +4808,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -4806,7 +4816,11 @@
     {
       "id": "MEMOME-000087",
       "slug": "poisongpt-lobotomized-model",
-      "name": "PoisonGPT (Lobotomized LLM Distributed via Hugging Face)",
+      "name": "Poisoned Model-Weight Distribution",
+      "aliases": [
+        "Poisoned Model-Weight Distribution",
+        "PoisonGPT"
+      ],
       "type": {
         "contentForm": "composite",
         "functionalRole": [
@@ -4961,7 +4975,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000143",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4970,7 +4984,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -4978,7 +4992,11 @@
     {
       "id": "MEMOME-000091",
       "slug": "hallucinated-citation-legal-filings",
-      "name": "Hallucinated-Citation Legal Filings (Mata v. Avianca)",
+      "name": "Hallucinated-Citation Legal Filings",
+      "aliases": [
+        "Hallucinated-Citation Legal Filings",
+        "Mata v. Avianca"
+      ],
       "type": {
         "contentForm": "claim",
         "functionalRole": [
@@ -5122,7 +5140,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000148",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5131,7 +5149,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -5139,7 +5157,11 @@
     {
       "id": "MEMOME-000093",
       "slug": "india-2024-election-deepfakes",
-      "name": "India 2024 Election Deepfake Wave (Celebrity Endorsements)",
+      "name": "Election Deepfake-Endorsement Wave",
+      "aliases": [
+        "Election Deepfake-Endorsement Wave",
+        "India 2024"
+      ],
       "type": {
         "contentForm": "composite",
         "functionalRole": [
@@ -5238,7 +5260,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000151",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5247,7 +5269,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -5255,7 +5277,12 @@
     {
       "id": "MEMOME-000094",
       "slug": "germany-2025-ai-impersonation-network",
-      "name": "German 2025 Election AI Impersonation Network (ISD)",
+      "name": "Election AI-Impersonation Network",
+      "aliases": [
+        "Election AI-Impersonation Network",
+        "German 2025",
+        "ISD"
+      ],
       "type": {
         "contentForm": "composite",
         "functionalRole": [
@@ -5372,7 +5399,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000152",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5381,7 +5408,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }

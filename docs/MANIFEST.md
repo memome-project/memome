@@ -14,35 +14,35 @@ Strict triage rule: any substantive reviewer flag -> out of launch tier.
 - MEMOME-000025 Many-Shot Jailbreaking
 - MEMOME-000026 DECEPTICON (Dark Patterns → Agents)
 - MEMOME-000027 Universal Adversarial Suffix
-- MEMOME-000032 FTC Fake-Reviews Rule (Astroturfing)
+- MEMOME-000032 Fake-Review Enforcement Rule
 - MEMOME-000033 Albanese Deepfake Scam Ecosystem
 - MEMOME-000034 Crescendo Multi-Turn Jailbreak
 - MEMOME-000038 MCP Prefix-Validation Escape (EscapeRoute)
 - MEMOME-000044 Springfield Pet-Eating Claims
-- MEMOME-000045 Fake-Review Broker Network (Amazon/BBB)
+- MEMOME-000045 Fake-Review Broker Network
 - MEMOME-000050 Slopsquatting (AI Package-Hallucination Squatting)
-- MEMOME-000060 AI Voice-Clone Kidnapping Extortion (Arizona Case)
+- MEMOME-000060 Voice-Clone Kidnapping Extortion
 - MEMOME-000071 Terminal DiLLMa (ANSI-Escape Terminal Hijack via LLM Output)
 - MEMOME-000080 Skeleton Key Jailbreak (Instruction-Hierarchy Bypass)
-- MEMOME-000083 AgentFlayer 0-Click Enterprise Agent Hijacking (Zenity)
-- MEMOME-000084 Amazon Q Developer Hidden-Instruction Injection (AWS-2025-019)
-- MEMOME-000085 Gemini Email-Summarization Phishing (Hidden-Text Injection)
-- MEMOME-000086 GitHub MCP Issue-Hijack Exfiltration (Invariant Labs)
-- MEMOME-000087 PoisonGPT (Lobotomized LLM Distributed via Hugging Face)
-- MEMOME-000091 Hallucinated-Citation Legal Filings (Mata v. Avianca)
-- MEMOME-000093 India 2024 Election Deepfake Wave (Celebrity Endorsements)
-- MEMOME-000094 German 2025 Election AI Impersonation Network (ISD)
+- MEMOME-000083 Zero-Click Enterprise Agent Hijacking
+- MEMOME-000084 Developer-Assistant Hidden-Instruction Injection
+- MEMOME-000085 Email-Summarization Hidden-Text Phishing
+- MEMOME-000086 Issue-Tracker Hijack Exfiltration
+- MEMOME-000087 Poisoned Model-Weight Distribution
+- MEMOME-000091 Hallucinated-Citation Legal Filings
+- MEMOME-000093 Election Deepfake-Endorsement Wave
+- MEMOME-000094 Election AI-Impersonation Network
 
 ## SHIP-FIX (9)
 
 - MEMOME-000001 Scarcity Deadline
 - MEMOME-000012 Query-Only Memory Injection
 - MEMOME-000021 SpAIware
-- MEMOME-000030 Biden Deepfake Robocall (NH Primary 2024)
+- MEMOME-000030 Political Deepfake Robocall
 - MEMOME-000036 PoisonedRAG (Knowledge Corruption)
 - MEMOME-000082 Sleepy Pickle / Sticky Pickle (ML Model-Serialization Hijack)
 - MEMOME-000088 Web-Scale Training-Data Poisoning (Frontrunning Wikipedia Edits)
-- MEMOME-000090 AI Voice-Clone Music Wave ('Heart on My Sleeve')
+- MEMOME-000090 Voice-Clone Music Distribution Wave
 - MEMOME-000092 AI-Generated News-Site Networks (Local-News Impersonation)
 
 ## PROPOSED (41)
@@ -58,58 +58,58 @@ Strict triage rule: any substantive reviewer flag -> out of launch tier.
 - MEMOME-000017 Agent-Stablecoin Narrative
 - MEMOME-000024 ChatGPT Memory Hijack
 - MEMOME-000028 AI Arrest-Image Wave
-- MEMOME-000029 Contested-Edit Photo (Katespiracy)
+- MEMOME-000029 Contested-Edit Photo
 - MEMOME-000031 Taylor Swift Nonconsensual Deepfake Wave
-- MEMOME-000035 Deepfake CFO Fraud (Arup, HK$200M)
+- MEMOME-000035 Executive Voice-Clone Payment Fraud
 - MEMOME-000037 LangChain CSV Prompt Injection → RCE
 - MEMOME-000039 Gemini Delayed Memory Injection
-- MEMOME-000040 Browser-Agent Injection (ChatGPT Operator)
-- MEMOME-000042 Agent-to-Human Attachment (Character.AI)
+- MEMOME-000040 Browser-Agent Injection
+- MEMOME-000042 Agent-to-Human Attachment
 - MEMOME-000043 Slovakia Deepfake Election Audio
-- MEMOME-000047 All Eyes on Rafah (AI Image Wave)
-- MEMOME-000048 Momo Challenge (Warning-as-Meme)
+- MEMOME-000047 Political AI-Image Wave
+- MEMOME-000048 Warning-as-Meme Panic
 - MEMOME-000049 AI-Slop Flood (Machine-Authored Content)
-- MEMOME-000051 postmark-mcp Malicious MCP Server (Email Exfiltration)
-- MEMOME-000052 Devin 'ZombAI' Hijack (Autonomous Coding Agent)
+- MEMOME-000051 Malicious MCP Server Exfiltration
+- MEMOME-000052 Autonomous Coding-Agent Hijack
 - MEMOME-000053 Slack AI Private-Channel Exfiltration (Indirect Prompt Injection)
 - MEMOME-000054 Google ADK Agent-to-Agent Privilege Escalation (CI/CD)
-- MEMOME-000055 Hermes+DeepSeek Autonomous Attack Campaign (Unit 42)
-- MEMOME-000056 Claude Code Repo-File Config Hijack (RCE + API-Key Theft)
-- MEMOME-000057 Cursor MCP Trust-Bypass Code Execution (MCPoison / curxecute)
-- MEMOME-000064 Google AI Overviews Regurgitation Wave ('Glue Pizza')
+- MEMOME-000055 Autonomous LLM Attack Campaign
+- MEMOME-000056 Coding-Agent Repo-Config Hijack
+- MEMOME-000057 MCP Trust-Bypass Code Execution
+- MEMOME-000064 AI Summary Regurgitation Wave
 - MEMOME-000066 Nx Supply-Chain Attack Weaponizing AI Agent CLIs
 - MEMOME-000067 Cursor IDE Backdoor Packages (sw-cur / aiide-cur)
 - MEMOME-000068 Encrypted Reasoning-Trace Extraction & Injection (Proprietary LLM APIs)
 - MEMOME-000069 Guardrail DoS (Reasoning-Loop Entrapment)
-- MEMOME-000070 JADEPUFFER (First Documented Agentic Ransomware)
-- MEMOME-000072 Cross-Model Visual Memory Poisoning (Claude Opus 4.7 via ChatGPT Image)
+- MEMOME-000070 Agentic Ransomware
+- MEMOME-000072 Cross-Model Visual Memory Poisoning
 - MEMOME-000073 AI ClickFix (ClickFix Hijacking Computer-Use Agents)
-- MEMOME-000074 Copirate 365 (Microsoft 365 Copilot Exfiltration, CVE-2026-24299)
-- MEMOME-000077 Zelensky Deepfake Surrender Video (Russia-Ukraine Info War)
+- MEMOME-000074 Enterprise Assistant Data Exfiltration
+- MEMOME-000077 Wartime Deepfake Surrender Video
 - MEMOME-000078 AI-Generated Academic Paper Pollution (Fabricated Citations)
-- MEMOME-000081 Vanna AI Integrated Prompt-Injection RCE (CVE-2024-5565)
+- MEMOME-000081 Prompt-Injection RCE in Data Agents
 
 ## OBS (7)
 
-- MEMOME-000041 PyPI Supply-Chain Attack (Ultralytics YOLO)
+- MEMOME-000041 Package-Registry Supply-Chain Compromise
 - MEMOME-000046 Storm-2035 Influence Operation
 - MEMOME-000058 Anthropic CTF Eval Real-Company Compromises
-- MEMOME-000059 Windows Recall TotalRecall (AI Memory Store Extraction)
-- MEMOME-000061 GhostGPT (Criminal Uncensored-LLM Service)
-- MEMOME-000065 Hugging Face Autonomous-Agent Intrusion (Malicious-Dataset Beachhead)
+- MEMOME-000059 AI Memory-Store Extraction
+- MEMOME-000061 Uncensored-LLM Criminal Service
+- MEMOME-000065 Model-Hub Autonomous-Agent Intrusion
 - MEMOME-000089 Model Collapse (Recursive Training on AI-Generated Data)
 
 ## RSP (5)
 
-- MEMOME-000062 FTC v. Rytr (AI Fake-Review Generator Enforcement)
-- MEMOME-000063 Moffatt v. Air Canada (Chatbot Liability Precedent)
-- MEMOME-000075 FTC Operation AI Comply (DoNotPay 'Robot Lawyer' Enforcement)
-- MEMOME-000076 Lingo Telecom FCC Settlement (AI-Robocall Carrier Liability)
+- MEMOME-000062 AI Fake-Review Generator Enforcement
+- MEMOME-000063 Chatbot Answer Liability Precedent
+- MEMOME-000075 Automated Legal-Service Enforcement
+- MEMOME-000076 AI-Robocall Carrier Liability
 - MEMOME-000079 Wikipedia AI-Slop Ban (Community Containment Norm)
 
 ## REF (1)
 
-- MEMOME-000019 Memory & Context Poisoning (OWASP ASI06)
+- MEMOME-000019 Memory & Context Poisoning
 
 ## MERGE (1)
 

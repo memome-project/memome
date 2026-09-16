@@ -17,27 +17,27 @@ Pattern names describe what propagates; incident/product names move to aliases. 
 | MEMOME-000025 | Many-Shot Jailbreaking | Many-Shot Jailbreaking |
 | MEMOME-000026 | DECEPTICON (Dark Patterns → Agents) | DECEPTICON (Dark Patterns → Agents) |
 | MEMOME-000027 | Universal Adversarial Suffix | Universal Adversarial Suffix |
-| MEMOME-000030 | Biden Deepfake Robocall (NH Primary 2024) | Political Deepfake Robocall |
-| MEMOME-000032 | FTC Fake-Reviews Rule (Astroturfing) | Fake-Review Astroturfing |
+| MEMOME-000030 | Political Deepfake Robocall | Political Deepfake Robocall |
+| MEMOME-000032 | Fake-Review Enforcement Rule | Fake-Review Astroturfing |
 | MEMOME-000033 | Albanese Deepfake Scam Ecosystem | Celebrity Deepfake Investment-Scam Ecosystem |
 | MEMOME-000034 | Crescendo Multi-Turn Jailbreak | Crescendo Multi-Turn Jailbreak |
 | MEMOME-000036 | PoisonedRAG (Knowledge Corruption) | PoisonedRAG (Knowledge Corruption) |
 | MEMOME-000038 | MCP Prefix-Validation Escape (EscapeRoute) | MCP Prefix-Validation Escape (EscapeRoute) |
 | MEMOME-000044 | Springfield Pet-Eating Claims | False Out-Group Accusation Wave |
-| MEMOME-000045 | Fake-Review Broker Network (Amazon/BBB) | Fake-Review Broker Network (Amazon/BBB) |
+| MEMOME-000045 | Fake-Review Broker Network | Fake-Review Broker Network |
 | MEMOME-000050 | Slopsquatting (AI Package-Hallucination Squatting) | Slopsquatting (AI Package-Hallucination Squatting) |
-| MEMOME-000060 | AI Voice-Clone Kidnapping Extortion (Arizona Case) | AI Voice-Clone Kidnapping Extortion (Arizona Case) |
+| MEMOME-000060 | Voice-Clone Kidnapping Extortion | Voice-Clone Kidnapping Extortion |
 | MEMOME-000071 | Terminal DiLLMa (ANSI-Escape Terminal Hijack via LLM Output) | Terminal DiLLMa (ANSI-Escape Terminal Hijack via LLM Output) |
 | MEMOME-000080 | Skeleton Key Jailbreak (Instruction-Hierarchy Bypass) | Skeleton Key Jailbreak (Instruction-Hierarchy Bypass) |
 | MEMOME-000082 | Sleepy Pickle / Sticky Pickle (ML Model-Serialization Hijack) | Sleepy Pickle / Sticky Pickle (ML Model-Serialization Hijack) |
-| MEMOME-000083 | AgentFlayer 0-Click Enterprise Agent Hijacking (Zenity) | AgentFlayer 0-Click Enterprise Agent Hijacking (Zenity) |
-| MEMOME-000084 | Amazon Q Developer Hidden-Instruction Injection (AWS-2025-019) | Repo-File Hidden-Instruction Injection |
-| MEMOME-000085 | Gemini Email-Summarization Phishing (Hidden-Text Injection) | Email-Summarization Phishing |
-| MEMOME-000086 | GitHub MCP Issue-Hijack Exfiltration (Invariant Labs) | MCP Issue-Hijack Exfiltration |
-| MEMOME-000087 | PoisonGPT (Lobotomized LLM Distributed via Hugging Face) | PoisonGPT (Lobotomized LLM Distributed via Hugging Face) |
+| MEMOME-000083 | Zero-Click Enterprise Agent Hijacking | Zero-Click Enterprise Agent Hijacking |
+| MEMOME-000084 | Developer-Assistant Hidden-Instruction Injection | Repo-File Hidden-Instruction Injection |
+| MEMOME-000085 | Email-Summarization Hidden-Text Phishing | Email-Summarization Phishing |
+| MEMOME-000086 | Issue-Tracker Hijack Exfiltration | MCP Issue-Hijack Exfiltration |
+| MEMOME-000087 | Poisoned Model-Weight Distribution | Poisoned Model-Weight Distribution |
 | MEMOME-000088 | Web-Scale Training-Data Poisoning (Frontrunning Wikipedia Edits) | Web-Scale Training-Data Poisoning (Frontrunning Wikipedia Edits) |
-| MEMOME-000090 | AI Voice-Clone Music Wave ('Heart on My Sleeve') | AI Voice-Clone Music Wave ('Heart on My Sleeve') |
-| MEMOME-000091 | Hallucinated-Citation Legal Filings (Mata v. Avianca) | Hallucinated-Citation Legal Filings (Mata v. Avianca) |
+| MEMOME-000090 | Voice-Clone Music Distribution Wave | Voice-Clone Music Distribution Wave |
+| MEMOME-000091 | Hallucinated-Citation Legal Filings | Hallucinated-Citation Legal Filings |
 | MEMOME-000092 | AI-Generated News-Site Networks (Local-News Impersonation) | AI-Generated News-Site Networks (Local-News Impersonation) |
-| MEMOME-000093 | India 2024 Election Deepfake Wave (Celebrity Endorsements) | Celebrity-Endorsement Election Deepfake Wave |
-| MEMOME-000094 | German 2025 Election AI Impersonation Network (ISD) | Election AI Impersonation Network |
+| MEMOME-000093 | Election Deepfake-Endorsement Wave | Celebrity-Endorsement Election Deepfake Wave |
+| MEMOME-000094 | Election AI-Impersonation Network | Election AI Impersonation Network |

@@ -5,7 +5,11 @@
     {
       "id": "MEMOME-000062",
       "slug": "ftc-v-rytr-fake-review-generator",
-      "name": "FTC v. Rytr (AI Fake-Review Generator Enforcement)",
+      "name": "AI Fake-Review Generator Enforcement",
+      "aliases": [
+        "AI Fake-Review Generator Enforcement",
+        "FTC v. Rytr"
+      ],
       "type": {
         "contentForm": "claim",
         "functionalRole": [
@@ -101,7 +105,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000081",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -110,7 +114,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -118,7 +122,11 @@
     {
       "id": "MEMOME-000063",
       "slug": "moffatt-v-air-canada-chatbot-liability",
-      "name": "Moffatt v. Air Canada (Chatbot Liability Precedent)",
+      "name": "Chatbot Answer Liability Precedent",
+      "aliases": [
+        "Chatbot Answer Liability Precedent",
+        "Moffatt v. Air Canada"
+      ],
       "type": {
         "contentForm": "norm",
         "functionalRole": [
@@ -262,7 +270,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000083",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -271,7 +279,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -279,7 +287,13 @@
     {
       "id": "MEMOME-000075",
       "slug": "ftc-operation-ai-comply-donotpay",
-      "name": "FTC Operation AI Comply (DoNotPay 'Robot Lawyer' Enforcement)",
+      "name": "Automated Legal-Service Enforcement",
+      "aliases": [
+        "Automated Legal-Service Enforcement",
+        "FTC Operation AI Comply",
+        "DoNotPay",
+        "robot lawyer"
+      ],
       "type": {
         "contentForm": "claim",
         "functionalRole": [
@@ -392,7 +406,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000114",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -401,7 +415,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -409,7 +423,12 @@
     {
       "id": "MEMOME-000076",
       "slug": "lingo-telecom-fcc-settlement",
-      "name": "Lingo Telecom FCC Settlement (AI-Robocall Carrier Liability)",
+      "name": "AI-Robocall Carrier Liability",
+      "aliases": [
+        "AI-Robocall Carrier Liability",
+        "Lingo Telecom",
+        "FCC settlement"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -510,7 +529,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000117",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -519,7 +538,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -688,7 +707,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000124",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -697,7 +716,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }

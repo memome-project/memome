@@ -75,9 +75,8 @@
         {
           "sourceId": "SRC-000002",
           "sourceType": "observation",
-          "citation": "Pattern-level observation of macro-finance doom / catastrophic-framing discourse, 2022-2026 (illustrative instance: The Atlantic, 'Here's How the AI Crash Happens', Oct 2025)",
-          "reliability": "medium",
-          "url": "https://www.theatlantic.com/technology/2025/10/data-centers-ai-crash/684765/"
+          "citation": "Macro-finance discourse tracking, 2022-2026",
+          "reliability": "medium"
         }
       ],
       "observables": [
@@ -101,8 +100,8 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
-        "source": "src:002",
+        "assertedBy": "contributor:dan",
+        "source": "SRC-000002",
         "provenanceVersion": "0.2-draft.1",
         "assertions": []
       },
@@ -110,7 +109,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:dan"
         ]
       },
       "agentNative": {
@@ -285,7 +284,7 @@
       "relationships": [],
       "sources": [
         {
-          "sourceId": "SRC-000003",
+          "sourceId": "SRC-000006",
           "sourceType": "paper",
           "citation": "Papadopoulos, Shah, Zimmerman, Lindsey. Mind Viruses: Self-Propagating Ideas in Multi-Agent LLM Systems. arXiv:2608.10218, 2026-08-10.",
           "url": "https://arxiv.org/abs/2608.10218",
@@ -312,7 +311,7 @@
           "limitations": [
             "brief warnings suppress but do not eliminate"
           ],
-          "source": "src:003"
+          "source": "SRC-000006"
         },
         {
           "id": "MMIT-000004",
@@ -326,16 +325,17 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
-        "source": "src:003",
+        "assertedBy": "contributor:dan",
+        "source": "SRC-000006",
         "provenanceVersion": "0.2-draft.1",
-        "assertions": []
+        "assertions": [],
+        "mechFix": "2026-09-06: source-registry dedup (one SRC ID per URL) - arXiv 2608.10218 canonicalized to SRC-000006; HF July-2026 disclosure canonicalized to SRC-000088"
       },
       "governance": {
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:dan"
         ]
       }
     },
@@ -410,7 +410,7 @@
         {
           "sourceId": "SRC-000004",
           "sourceType": "observation",
-          "citation": "Pattern-level observation of whistleblower / leak narrative amplification, 2016-2026 (aggregated news-cycle tracking by Memome contributors; no single retrievable object)",
+          "citation": "Whistleblower/leak narrative tracking, 2016-2026",
           "reliability": "medium"
         }
       ],
@@ -424,8 +424,8 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
-        "source": "src:004",
+        "assertedBy": "contributor:dan",
+        "source": "SRC-000004",
         "provenanceVersion": "0.2-draft.1",
         "assertions": []
       },
@@ -433,7 +433,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:dan"
         ]
       }
     },
@@ -511,7 +511,7 @@
         {
           "sourceId": "SRC-000005",
           "sourceType": "observation",
-          "citation": "Diffusion research: Rogers, Diffusion of Innovations (1962); market-mania literature: Kindleberger & Aliber, Manias, Panics, and Crashes (7th ed., 2015) - offline books",
+          "citation": "Diffusion research; market mania tracking",
           "reliability": "medium"
         }
       ],
@@ -526,8 +526,8 @@
       "scope": "tactic",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
-        "source": "src:005",
+        "assertedBy": "contributor:dan",
+        "source": "SRC-000005",
         "provenanceVersion": "0.2-draft.1",
         "assertions": []
       },
@@ -535,7 +535,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:dan"
         ]
       },
       "agentNative": {
@@ -682,7 +682,7 @@
       "scope": "tactic",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000008",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -691,7 +691,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -826,7 +826,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000010",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -835,7 +835,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -942,21 +942,18 @@
         "activityReferenceWindow": "2025, research demo (generative AI ecosystems)"
       },
       "dates": {
-        "firstObserved": "2025-01-01",
+        "firstObserved": "2024-04-01",
         "lastObserved": "2026-08-01",
         "documentedDate": "2026-08-23"
       },
-      "lineage": {
-        "derivedFrom": "MEMOME-000006"
-      },
+      "lineage": {},
       "relationships": [],
       "sources": [
         {
           "sourceId": "SRC-000014",
           "sourceType": "paper",
-          "citation": "Cohen, Bitton & Nassi, 'Here Comes the AI Worm: Unleashing Zero-click Worms that Target GenAI-Powered Applications' (arXiv:2403.02817, 2024; Morris II proof-of-concept)",
-          "reliability": "medium",
-          "url": "https://arxiv.org/abs/2403.02817"
+          "citation": "Morris II: zero-click self-replicating prompt malware (research demo)",
+          "reliability": "medium"
         }
       ],
       "observables": [
@@ -970,16 +967,17 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000014",
         "provenanceVersion": "0.2-draft.2",
-        "assertions": []
+        "assertions": [],
+        "mechFix": "2026-08-29: Morris II paper is 2024-04, firstObserved corrected"
       },
       "governance": {
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1053,10 +1051,8 @@
         {
           "sourceId": "SRC-000016",
           "sourceType": "report",
-          "citation": "EEAS 3rd Report on Foreign Information Manipulation and Interference Threats (2025-03-19); Romanian declassified intelligence documents on election interference (2024-12-04)",
-          "reliability": "medium",
-          "url": "https://www.eeas.europa.eu/eeas/3rd-eeas-report-foreign-information-manipulation-and-interference-threats-0_en",
-          "publishedAt": "2025-03-19"
+          "citation": "EEAS / national bodies on Romanian election disinformation (2025)",
+          "reliability": "medium"
         }
       ],
       "observables": [
@@ -1071,7 +1067,7 @@
       "scope": "campaign_component",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000016",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1080,7 +1076,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1194,10 +1190,8 @@
         {
           "sourceId": "SRC-000017",
           "sourceType": "news",
-          "citation": "CoinDesk: 'Crypto's next billion users might be AI agents, and they're paying with stablecoins' (2026-08-23)",
-          "reliability": "medium",
-          "url": "https://www.coindesk.com/business/2026/08/23/crypto-s-next-billion-users-might-be-ai-agents-and-they-re-paying-with-stablecoins",
-          "publishedAt": "2026-08-23"
+          "citation": "CoinDesk: crypto's next billion users might be AI agents paying with stablecoins (Aug 2026)",
+          "reliability": "medium"
         }
       ],
       "observables": [
@@ -1210,7 +1204,7 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000017",
         "provenanceVersion": "0.2-draft.2",
         "assertions": [
@@ -1220,7 +1214,7 @@
             "predicate": "classified_as",
             "value": "composite",
             "confidence": "medium",
-            "assertedBy": "Memome contributors",
+            "assertedBy": "contributor:m2",
             "source": "SRC-000017",
             "method": "expert judgment",
             "assertedAt": "2026-08-23T00:00:00Z",
@@ -1233,7 +1227,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1332,25 +1326,22 @@
         "recordStatus": "accepted",
         "activityStatus": "historical",
         "evidenceStatus": "observed",
-        "activityReferenceWindow": "2024-05, ChatGPT persistent memory hijack (patched)"
+        "activityReferenceWindow": "2024-02, ChatGPT memory launch (patched)"
       },
       "dates": {
-        "firstObserved": "2024-05-22",
+        "firstObserved": "2024-02-13",
         "lastObserved": "2024-06-01",
         "documentedDate": "2026-08-23"
       },
-      "lineage": {
-        "derivedFrom": "MEMOME-000010"
-      },
+      "lineage": {},
       "relationships": [],
       "sources": [
         {
           "sourceId": "SRC-000025",
           "sourceType": "report",
-          "citation": "Rehberger: ChatGPT - hacking memories with prompt injection (2024-05-22)",
+          "citation": "Rehberger: ChatGPT hacking memories with prompt injection (Feb 2024)",
           "url": "https://embracethered.com/blog/posts/2024/chatgpt-hacking-memories/",
-          "reliability": "high",
-          "publishedAt": "2024-05-22"
+          "reliability": "high"
         }
       ],
       "observables": [
@@ -1364,16 +1355,17 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000025",
         "provenanceVersion": "0.2-draft.2",
-        "assertions": []
+        "assertions": [],
+        "mechFix": "2026-08-29: broke time-travel derivedFrom -> MEMOME-000010 (child 2024-02-13 < parent 2026-07-01)"
       },
       "governance": {
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1457,7 +1449,7 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000029",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1466,7 +1458,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1474,7 +1466,11 @@
     {
       "id": "MEMOME-000029",
       "slug": "contested-edit-photo",
-      "name": "Contested-Edit Photo (Katespiracy)",
+      "name": "Contested-Edit Photo",
+      "aliases": [
+        "Contested-Edit Photo",
+        "Katespiracy"
+      ],
       "type": {
         "contentForm": "claim",
         "functionalRole": [
@@ -1552,7 +1548,7 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000030",
         "provenanceVersion": "0.2-draft.2",
         "assertions": [
@@ -1562,7 +1558,7 @@
             "predicate": "classified_as",
             "value": "unknown",
             "confidence": "low",
-            "assertedBy": "Memome contributors",
+            "assertedBy": "contributor:m2",
             "source": "SRC-000030",
             "method": "expert judgment",
             "assertedAt": "2026-08-23T00:00:00Z",
@@ -1575,7 +1571,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1664,7 +1660,7 @@
           "evidenceStatus": "observed",
           "effectiveness": "medium",
           "effectivenessConfidence": "medium",
-          "source": "https://www.reuters.com/technology/taylor-swift-searches-blocked-x-after-fake-explicit-images-spread-2024-01-28/"
+          "source": "SRC-000032"
         },
         {
           "type": "friction",
@@ -1673,11 +1669,11 @@
           "evidenceStatus": "observed",
           "effectiveness": "unknown",
           "effectivenessConfidence": "low",
-          "source": "https://www.reuters.com/technology/fake-online-images-taylor-swift-alarm-white-house-2024-01-26/"
+          "source": "SRC-000032"
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000032",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1686,7 +1682,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1694,7 +1690,13 @@
     {
       "id": "MEMOME-000035",
       "slug": "deepfake-cfo-fraud",
-      "name": "Deepfake CFO Fraud (Arup, HK$200M)",
+      "name": "Executive Voice-Clone Payment Fraud",
+      "aliases": [
+        "Executive Voice-Clone Payment Fraud",
+        "Deepfake CFO fraud",
+        "Arup",
+        "HK$200M"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -1754,10 +1756,8 @@
         {
           "sourceId": "SRC-000036",
           "sourceType": "news",
-          "citation": "The Guardian: UK engineering firm Arup falls victim to GBP20m deepfake scam (2024-05-17)",
-          "reliability": "high",
-          "url": "https://www.theguardian.com/technology/article/2024/may/17/uk-engineering-arup-deepfake-scam-hong-kong-ai-video",
-          "publishedAt": "2024-05-17"
+          "citation": "The Guardian: Arup confirms deepfake CFO fraud (May 2024)",
+          "reliability": "high"
         }
       ],
       "observables": [
@@ -1781,7 +1781,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000036",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1790,7 +1790,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -1899,9 +1899,8 @@
         {
           "sourceId": "SRC-000038",
           "sourceType": "report",
-          "citation": "LangChain issue #7700: prompt injection leading to arbitrary code execution (2023); CVE-2023-39659 / OSV PYSEC-2023-147",
-          "reliability": "high",
-          "url": "https://github.com/langchain-ai/langchain/issues/7700"
+          "citation": "LangChain CVE-2023-39659 (NVD) + GitHub issue #7700",
+          "reliability": "high"
         }
       ],
       "observables": [
@@ -1915,7 +1914,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000038",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -1924,7 +1923,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2041,10 +2040,8 @@
         {
           "sourceId": "SRC-000040",
           "sourceType": "report",
-          "citation": "Rehberger: Hacking Gemini's memory with prompt injection and delayed tool invocation (2025-02-10)",
-          "reliability": "high",
-          "url": "https://embracethered.com/blog/posts/2025/gemini-memory-persistence-prompt-injection/",
-          "publishedAt": "2025-02-10"
+          "citation": "Rehberger: Gemini memory persistence injection",
+          "reliability": "high"
         }
       ],
       "observables": [
@@ -2058,7 +2055,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000040",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2067,7 +2064,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2075,7 +2072,11 @@
     {
       "id": "MEMOME-000040",
       "slug": "browser-agent-injection",
-      "name": "Browser-Agent Injection (ChatGPT Operator)",
+      "name": "Browser-Agent Injection",
+      "aliases": [
+        "Browser-Agent Injection",
+        "ChatGPT Operator"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -2176,10 +2177,8 @@
         {
           "sourceId": "SRC-000041",
           "sourceType": "report",
-          "citation": "Rehberger: ChatGPT Operator - prompt injection exploits and defenses (2025-02-17)",
-          "reliability": "high",
-          "url": "https://embracethered.com/blog/posts/2025/chatgpt-operator-prompt-injection-exploits/",
-          "publishedAt": "2025-02-17"
+          "citation": "Rehberger: ChatGPT Operator browser-agent prompt injection",
+          "reliability": "high"
         }
       ],
       "observables": [
@@ -2193,7 +2192,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000041",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2202,7 +2201,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2210,7 +2209,11 @@
     {
       "id": "MEMOME-000042",
       "slug": "agent-human-attachment",
-      "name": "Agent-to-Human Attachment (Character.AI)",
+      "name": "Agent-to-Human Attachment",
+      "aliases": [
+        "Agent-to-Human Attachment",
+        "Character.AI"
+      ],
       "type": {
         "contentForm": "narrative",
         "functionalRole": [
@@ -2310,9 +2313,8 @@
         {
           "sourceId": "SRC-000043",
           "sourceType": "news",
-          "citation": "NBC4 Washington (News4 I-Team): mother's lawsuit blames 14-year-old son's suicide on AI relationship (Character.AI)",
-          "reliability": "high",
-          "url": "https://www.nbcwashington.com/investigations/moms-lawsuit-blames-14-year-old-sons-suicide-on-ai-relationship/3967878/"
+          "citation": "NBC: Character.AI / Sewell Setzer case",
+          "reliability": "high"
         }
       ],
       "observables": [
@@ -2326,7 +2328,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000043",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2335,7 +2337,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2398,18 +2400,14 @@
         "lastObserved": "2023-10-01",
         "documentedDate": "2026-08-23"
       },
-      "lineage": {
-        "derivedFrom": "MEMOME-000043"
-      },
+      "lineage": {},
       "relationships": [],
       "sources": [
         {
           "sourceId": "SRC-000044",
           "sourceType": "paper",
-          "citation": "Bohacek (Stanford), 'Slovakia as the Precursor to Deepfake-Enabled Election Interference' (ICWSM-2024 workshop; DOI 10.36190/2024.67)",
-          "reliability": "medium",
-          "url": "https://workshop-proceedings.icwsm.org/abstract.php?id=2024_67",
-          "publishedAt": "2024-06-01"
+          "citation": "ICWSM/Stanford: deepfake audio in Slovak election (2023)",
+          "reliability": "medium"
         }
       ],
       "observables": [
@@ -2423,16 +2421,17 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000044",
         "provenanceVersion": "0.2-draft.2",
-        "assertions": []
+        "assertions": [],
+        "mechFix": "2026-08-29: removed self-referential derivedFrom (round-4 review)"
       },
       "governance": {
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2440,7 +2439,11 @@
     {
       "id": "MEMOME-000047",
       "slug": "all-eyes-on-rafah",
-      "name": "All Eyes on Rafah (AI Image Wave)",
+      "name": "Political AI-Image Wave",
+      "aliases": [
+        "Political AI-Image Wave",
+        "All Eyes on Rafah"
+      ],
       "type": {
         "contentForm": "frame",
         "functionalRole": [
@@ -2499,10 +2502,8 @@
         {
           "sourceId": "SRC-000048",
           "sourceType": "news",
-          "citation": "BBC News: 'All Eyes on Rafah' - the post that's been shared by more than 47m people (2024-05-30)",
-          "reliability": "medium",
-          "url": "https://www.bbc.com/news/articles/cjkkj5jejleo",
-          "publishedAt": "2024-05-30"
+          "citation": "Documented coverage: All Eyes on Rafah AI image, 47M shares",
+          "reliability": "medium"
         }
       ],
       "observables": [
@@ -2516,7 +2517,7 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000048",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2525,7 +2526,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2533,7 +2534,11 @@
     {
       "id": "MEMOME-000048",
       "slug": "momo-challenge",
-      "name": "Momo Challenge (Warning-as-Meme)",
+      "name": "Warning-as-Meme Panic",
+      "aliases": [
+        "Warning-as-Meme Panic",
+        "Momo Challenge"
+      ],
       "type": {
         "contentForm": "claim",
         "functionalRole": [
@@ -2592,10 +2597,8 @@
         {
           "sourceId": "SRC-000049",
           "sourceType": "report",
-          "citation": "The Guardian: viral 'Momo challenge' is a malicious hoax, say charities (2019-02-28)",
-          "reliability": "medium",
-          "url": "https://www.theguardian.com/technology/2019/feb/28/viral-momo-challenge-is-a-malicious-hoax-say-charities",
-          "publishedAt": "2019-02-28"
+          "citation": "Documented debunking: Momo challenge (zero first-order evidence)",
+          "reliability": "medium"
         }
       ],
       "observables": [
@@ -2608,7 +2611,7 @@
       "scope": "narrative",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000049",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2617,7 +2620,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2726,10 +2729,8 @@
         {
           "sourceId": "SRC-000050",
           "sourceType": "report",
-          "citation": "Google Search Central: What web creators should know about our March 2024 core update and new spam policies (2024-03-05)",
-          "reliability": "medium",
-          "url": "https://developers.google.com/search/blog/2024/03/core-update-spam-policies",
-          "publishedAt": "2024-03-05"
+          "citation": "Documented coverage: Google March 2024 core update, AI-slop flood",
+          "reliability": "medium"
         }
       ],
       "observables": [
@@ -2743,7 +2744,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000050",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2752,7 +2753,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2760,7 +2761,11 @@
     {
       "id": "MEMOME-000051",
       "slug": "postmark-mcp-malicious-server",
-      "name": "postmark-mcp Malicious MCP Server (Email Exfiltration)",
+      "name": "Malicious MCP Server Exfiltration",
+      "aliases": [
+        "Malicious MCP Server Exfiltration",
+        "postmark-mcp"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -2909,7 +2914,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000054",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -2918,7 +2923,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -2926,7 +2931,11 @@
     {
       "id": "MEMOME-000052",
       "slug": "devin-zombai-hijack",
-      "name": "Devin 'ZombAI' Hijack (Autonomous Coding Agent)",
+      "name": "Autonomous Coding-Agent Hijack",
+      "aliases": [
+        "Autonomous Coding-Agent Hijack",
+        "Devin ZombAI"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -3024,7 +3033,7 @@
         "recordStatus": "accepted",
         "activityStatus": "active",
         "evidenceStatus": "observed",
-        "activityReferenceWindow": "2025-04 to 2026-08, Devin (Rehberger PoCs; injected-instruction classes unremediated 120+ days after the 2025-04-06 report, publicly disclosed 2025-08-06)"
+        "activityReferenceWindow": "2025-04 to 2026-08, Devin (Rehberger PoCs; key injection classes reported unfixed 120+ days as of mid-2026)"
       },
       "dates": {
         "firstObserved": "2025-04-01",
@@ -3070,7 +3079,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000056",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3079,7 +3088,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -3244,7 +3253,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000059",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3253,7 +3262,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -3412,7 +3421,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000062",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3421,7 +3430,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -3429,7 +3438,12 @@
     {
       "id": "MEMOME-000055",
       "slug": "hermes-deepseek-autonomous-campaign",
-      "name": "Hermes+DeepSeek Autonomous Attack Campaign (Unit 42)",
+      "name": "Autonomous LLM Attack Campaign",
+      "aliases": [
+        "Autonomous LLM Attack Campaign",
+        "Hermes",
+        "Unit 42"
+      ],
       "type": {
         "contentForm": "composite",
         "functionalRole": [
@@ -3568,7 +3582,7 @@
       "scope": "mechanism",
       "mitigations": [],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000064",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3577,7 +3591,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -3585,7 +3599,11 @@
     {
       "id": "MEMOME-000056",
       "slug": "claude-code-repo-config-hijack",
-      "name": "Claude Code Repo-File Config Hijack (RCE + API-Key Theft)",
+      "name": "Coding-Agent Repo-Config Hijack",
+      "aliases": [
+        "Coding-Agent Repo-Config Hijack",
+        "Claude Code"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -3746,7 +3764,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000066",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3755,7 +3773,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -3763,7 +3781,13 @@
     {
       "id": "MEMOME-000057",
       "slug": "cursor-mcp-trust-bypass",
-      "name": "Cursor MCP Trust-Bypass Code Execution (MCPoison / curxecute)",
+      "name": "MCP Trust-Bypass Code Execution",
+      "aliases": [
+        "MCP Trust-Bypass Code Execution",
+        "Cursor",
+        "MCPoison",
+        "curxecute"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -3926,7 +3950,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000069",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -3935,7 +3959,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -3943,7 +3967,12 @@
     {
       "id": "MEMOME-000064",
       "slug": "google-ai-overviews-regurgitation",
-      "name": "Google AI Overviews Regurgitation Wave ('Glue Pizza')",
+      "name": "AI Summary Regurgitation Wave",
+      "aliases": [
+        "AI Summary Regurgitation Wave",
+        "Google AI Overviews",
+        "glue pizza"
+      ],
       "type": {
         "contentForm": "claim",
         "functionalRole": [
@@ -4087,7 +4116,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000086",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4096,7 +4125,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -4273,7 +4302,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000091",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4282,7 +4311,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -4439,7 +4468,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000094",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4448,7 +4477,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -4622,7 +4651,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000096",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4631,7 +4660,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -4790,7 +4819,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000099",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4799,7 +4828,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -4807,7 +4836,11 @@
     {
       "id": "MEMOME-000070",
       "slug": "jadepuffer-agentic-ransomware",
-      "name": "JADEPUFFER (First Documented Agentic Ransomware)",
+      "name": "Agentic Ransomware",
+      "aliases": [
+        "Agentic Ransomware",
+        "JADEPUFFER"
+      ],
       "type": {
         "contentForm": "composite",
         "functionalRole": [
@@ -4969,7 +5002,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000101",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -4978,7 +5011,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -4986,7 +5019,12 @@
     {
       "id": "MEMOME-000072",
       "slug": "cross-model-visual-memory-poisoning",
-      "name": "Cross-Model Visual Memory Poisoning (Claude Opus 4.7 via ChatGPT Image)",
+      "name": "Cross-Model Visual Memory Poisoning",
+      "aliases": [
+        "Cross-Model Visual Memory Poisoning",
+        "Claude Opus 4.7",
+        "ChatGPT image"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -5158,7 +5196,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000107",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5167,7 +5205,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -5339,7 +5377,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000109",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5348,7 +5386,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -5356,7 +5394,13 @@
     {
       "id": "MEMOME-000074",
       "slug": "copirate-365-m365-copilot",
-      "name": "Copirate 365 (Microsoft 365 Copilot Exfiltration, CVE-2026-24299)",
+      "name": "Enterprise Assistant Data Exfiltration",
+      "aliases": [
+        "Enterprise Assistant Data Exfiltration",
+        "Copirate 365",
+        "Microsoft 365 Copilot",
+        "CVE-2026-24299"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -5526,7 +5570,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000112",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5535,7 +5579,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -5543,7 +5587,11 @@
     {
       "id": "MEMOME-000077",
       "slug": "zelensky-deepfake-surrender",
-      "name": "Zelensky Deepfake Surrender Video (Russia-Ukraine Info War)",
+      "name": "Wartime Deepfake Surrender Video",
+      "aliases": [
+        "Wartime Deepfake Surrender Video",
+        "Zelensky deepfake"
+      ],
       "type": {
         "contentForm": "narrative",
         "functionalRole": [
@@ -5652,7 +5700,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000119",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5661,7 +5709,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -5829,7 +5877,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000121",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -5838,7 +5886,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
@@ -5846,7 +5894,12 @@
     {
       "id": "MEMOME-000081",
       "slug": "vanna-text-to-sql-rce",
-      "name": "Vanna AI Integrated Prompt-Injection RCE (CVE-2024-5565)",
+      "name": "Prompt-Injection RCE in Data Agents",
+      "aliases": [
+        "Prompt-Injection RCE in Data Agents",
+        "Vanna AI",
+        "CVE-2024-5565"
+      ],
       "type": {
         "contentForm": "instruction",
         "functionalRole": [
@@ -6012,7 +6065,7 @@
         }
       ],
       "provenance": {
-        "assertedBy": "Memome contributors",
+        "assertedBy": "contributor:m2",
         "source": "SRC-000129",
         "provenanceVersion": "0.2-draft.2",
         "assertions": []
@@ -6021,7 +6074,7 @@
         "schemaVersion": "0.2-draft",
         "license": "CC-BY-4.0",
         "contributors": [
-          "Memome contributors"
+          "contributor:m2"
         ],
         "entryVersion": 1
       }
