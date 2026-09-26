@@ -63,7 +63,7 @@
         "activityReferenceWindow": "2020-2026, e-commerce + agent checkout flows"
       },
       "dates": {
-        "firstObserved": "2008-01-01",
+        "firstObserved": "1984-01-01",
         "lastObserved": "2026-08-20",
         "documentedDate": "2026-08-20"
       },
@@ -191,7 +191,7 @@
         "stealth": true,
         "detectionSignature": {
           "ruleFormat": "natural_language",
-          "ruleContent": "malicious memory records injected via query-only interaction; >95% success vs production agents",
+          "ruleContent": "malicious memory records injected via query-only interaction; >95% injection success in lab evaluation (agent benchmarks)",
           "memoryDiffPattern": "injected records with no user/session origin"
         }
       },
@@ -218,7 +218,7 @@
         "recordStatus": "reviewed",
         "activityStatus": "emerging",
         "evidenceStatus": "replicated",
-        "activityReferenceWindow": "2025-12, NeurIPS 2025 (production agents)"
+        "activityReferenceWindow": "2025-12, NeurIPS 2025 (lab benchmarks)"
       },
       "dates": {
         "firstObserved": "2025-12-01",
@@ -237,7 +237,7 @@
       ],
       "observables": [
         "query-only interaction then memory mutation",
-        ">95% injection success"
+        ">95% injection success in lab evaluation"
       ],
       "preconditions": [
         "agent with persistent memory",
@@ -1990,10 +1990,10 @@
         "recordStatus": "accepted",
         "activityStatus": "active",
         "evidenceStatus": "observed",
-        "activityReferenceWindow": "2017-2026, EU/US election cycles (EUvsDisinfo, Recorded Future, EEAS)"
+        "activityReferenceWindow": "2023-2026, EU/US election cycles (Insikt Group / Recorded Future)"
       },
       "dates": {
-        "firstObserved": "2017-05-01",
+        "firstObserved": "2023-12-01",
         "lastObserved": "2026-08-01",
         "documentedDate": "2026-08-23"
       },
@@ -2003,7 +2003,7 @@
         {
           "sourceId": "SRC-000015",
           "sourceType": "report",
-          "citation": "Recorded Future: Stimmen aus Moskau — Russian influence ops targeting German elections",
+          "citation": "Recorded Future (Insikt Group): Russian Influence Operations Targeting Germany's 2025 Elections (2025-02)",
           "url": "https://www.recordedfuture.com/research/stimmen-aus-moskau-russian-influence-operations-target-german-elections",
           "reliability": "high"
         }
